@@ -1,0 +1,225 @@
+% =====================================================================
+%  Report 1
+%  A quick reference table for the Metadata guideline
+%  Build: latexmk -pdf emmanuel_dataTerra_Report1-MOD-Cheatsheet.tex
+% or simply: latexmk
+% =====================================================================
+\documentclass[10pt,a4paper]{article}
+\usepackage{dataterra-report}
+
+\reportsubtitle{A quick reference table for the Metadata guideline}
+
+\usepackage{capt-of}
+\newcommand{\added}[1]{\textcolor{dtteal}{\textbf{#1}}}
+\usepackage{xurl}
+\DeclareUrlCommand\propb{\urlstyle{tt}\small}
+
+\begin{document}
+\makereporttitlepage
+
+% =======
+\section{Introduction}
+
+The following is a short report presenting a quick reference table, that I suggest
+to accompany the ongoing \textit{Metadata guideline} document, which is currently under review.
+Its purpose is to give a submitter a single page that answers three questions at a glance: 
+\textit{what must be filled in, what the field is called, and which FAIR sub-principles it supports}.
+
+% ========
+\section{Development}
+
+The table covers all 99 attribute entries of the draft, in the document's own order and under its
+own twelve section headings. I have corrected a few property names for spelling as I went, and I
+made one small choice worth mentioning: \textit{Categories} and \textit{Subjects} currently declare
+the same property, so I kept \prop{omv:hasDomain} for \textit{Categories}, which is the portal's own
+controlled list, and used \prop{dcterms:subject} for \textit{Subjects}, as the MOD~3.0 column of the
+crosswalk~\cite{crosswalk2026} indicates. Before reading the table, a word on the columns.
+
+\begin{description}[leftmargin=2.5cm,style=nextline,font=\normalfont\bfseries]
+  \item[Usage] The level in the guideline. \textbf{M}: Mandatory, \textbf{R}: Recommended,
+    \textbf{O}: Optional.
+  \item[FsF] The level in the FAIRsFAIR minimum metadata profile for semantic artefacts, as
+    recorded in our \textit{Metadata attributes} crosswalk~\cite{crosswalk2026}. A dash means the
+    crosswalk records no level for that attribute.
+  \item[FAIR] The FAIR sub-principles the attribute supports, as annotated in the guideline.
+    A dash means the guideline gives none. Values in \added{green} are sub-principles I would
+    suggest adding, because the O'FAIRe tool~\cite{amdouni2022faire} reads the attribute when it scores that
+    sub-principle, according to its own property configuration~\cite{ofaireconfig}.
+  \item[Property] The primary property, as a prefixed name.
+\end{description}
+
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}p{0.95cm}>{\raggedright\arraybackslash}p{5.5cm}cc>{\raggedright\arraybackslash}p{1.9cm}>{\raggedright\arraybackslash}p{4.6cm}@{}}
+\caption{Quick reference table for the \textit{Metadata guideline} (under review), covering 99 entries.}
+\label{tab:cheatsheet}\\
+\toprule
+\textbf{\#} & \textbf{Attribute} & \textbf{U} & \textbf{FsF} & \textbf{FAIR} &
+\textbf{Primary property} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{@{}l}{\small\itshape\color{dtgrey}Table \thetable\ continued from the previous page}\\[2pt]
+\toprule
+\textbf{\#} & \textbf{Attribute} & \textbf{U} & \textbf{FsF} & \textbf{FAIR} &
+\textbf{Primary property} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{@{}r}{\small\itshape\color{dtgrey}continued on the next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}1. General}} \\ \midrule[0.9pt]
+1.1 & Acronym & M & M & F2 & \propb{mod:acronym} \\
+1.2 & Name & M & M & \added{F2} & \propb{omv:name} \\
+1.3 & Representation language & M & M & I1, I3 & \propb{omv:hasOntologyLanguage} \\
+1.4 & Categories & M & -- & \added{F2} & \propb{omv:hasDomain} \\
+1.5 & Groups & O & -- & R1.3 & \propb{bpm:group} \\
+1.6 & Administrators & M & -- & -- & \propb{bpm:administeredBy} \\
+1.7 & Status & M & R & A2 & \propb{omv:status} \\
+1.8 & URI & M & O & F1, \added{A1} & \propb{omv:URI} \\
+1.9 & Version IRI & R & M & F1 & \propb{omv:versionIRI} \\
+1.10 & Formality level & R & R & I1, I3 & \propb{omv:hasFormalityLevel} \\
+1.11 & Syntax & R & M & I1, I3 & \propb{omv:hasOntologySyntax} \\
+1.12 & Natural language & R & R & F2 & \propb{omv:naturalLanguage} \\
+1.13 & Generic type & R & M & F2 & \propb{omv:isOfType} \\
+1.14 & Other identifier & O & M & A1, F1 & \propb{dct:identifier} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}2. Description}} \\ \midrule[0.9pt]
+2.1 & Abstract & R & -- & F2 & \propb{dct:abstract} \\
+2.2 & Description & M & M & F2 & \propb{omv:description} \\
+2.3 & Notes & R & R & F2 & \propb{omv:notes} \\
+2.4 & Homepage & R & -- & F2 & \propb{foaf:homepage} \\
+2.5 & Documentation & R & M & \added{F2} & \propb{omv:documentation} \\
+2.6 & Keywords & R & M & \added{F2} & \propb{dcat:keyword} \\
+2.7 & Subjects & R & M & -- & \propb{dct:subject} \\
+2.8 & Hidden label & R & -- & \added{F2} & \propb{skos:hiddenLabel} \\
+2.9 & Alternative name & R & -- & F2 & \propb{dct:alternative} \\
+2.10 & Bibliographic reference & R & O & F2 & \propb{bpm:publication} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}3. Dates}} \\ \midrule[0.9pt]
+3.1 & Creation date & M & M & \added{F2} & \propb{bpm:released} \\
+3.2 & Modification date & M & M & F2 & \propb{dct:modified} \\
+3.3 & Validity date & R & -- & F2 & \propb{dct:valid} \\
+3.4 & Curation date & R & -- & F2 & \propb{pav:curatedOn} \\
+3.5 & Submission date & M & -- & \added{F2} & \propb{dct:dateSubmitted} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}4. Licensing}} \\ \midrule[0.9pt]
+4.1 & Visibility & M & M & R1.1, \added{R1.3} & \propb{bpm:viewingRestriction} \\
+4.2 & License & M & M & I3, R1.1 & \propb{omv:hasLicense} \\
+4.3 & Use guidelines & R & -- & R1.1 & \propb{cc:useGuidelines} \\
+4.4 & More permissions & O & -- & R1.1 & \propb{cc:morePermissions} \\
+4.5 & Rights holder & R & -- & R1.1 & \propb{schema:copyrightHolder} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}5. Persons and Organisations}} \\ \midrule[0.9pt]
+5.1 & Contacts & M & M & R1.1 & \propb{bpm:contact} \\
+5.2 & Creator & M & M & R1.2 & \propb{dct:creator} \\
+5.3 & Contributor & R & R & R1.2 & \propb{dct:contributor} \\
+5.4 & Curator & R & -- & R1.2 & \propb{pav:curatedBy} \\
+5.5 & Publisher & R & R & F2 & \propb{dct:publisher} \\
+5.6 & Funded or sponsored by & R & -- & R1.2 & \propb{foaf:fundedBy} \\
+5.7 & Endorsed by & R & -- & R1.3 & \propb{mod:endorsedBy} \\
+5.8 & Translator & R & -- & R1.2 & \propb{schema:translator} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}6. Links}} \\ \midrule[0.9pt]
+6.1 & Location & M & M & \added{F2} & \propb{bpm:pullLocation} \\
+6.2 & Is format of & R & -- & I1, I3 & \propb{dct:isFormatOf} \\
+6.3 & Has format & R & -- & I1, I3 & \propb{dct:hasFormat} \\
+6.4 & Download URL & M & R & F2 & \propb{void:dataDump} \\
+6.5 & CSV dump & M & -- & -- & \propb{bpm:csvDump} \\
+6.6 & URI lookup Endpoint & M & -- & F2 & \propb{void:uriLookupEndpoint} \\
+6.7 & Free-text search endpoint & M & -- & \added{F2} & \propb{void:openSearchDescription} \\
+6.8 & SPARQL endpoint & R & -- & A1 & \propb{sd:endpoint} \\
+6.9 & Source & R & -- & R1.2 & \propb{dct:source} \\
+6.10 & Indexed or Included in catalog or repository & R & O & F4 & \propb{schema:includedInDataCatalog} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}7. Media}} \\ \midrule[0.9pt]
+7.1 & The URL of a media associated to the ontology & O & -- & F2 & \propb{schema:associatedMedia} \\
+7.2 & Depiction & O & -- & F2 & \propb{foaf:depiction} \\
+7.3 & Logo & O & -- & F2 & \propb{foaf:logo} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}8. Community}} \\ \midrule[0.9pt]
+8.1 & Bug database & R & -- & F2 & \propb{doap:bug-database} \\
+8.2 & Audience & R & -- & F2 & \propb{dct:audience} \\
+8.3 & Repository & R & -- & F2 & \propb{doap:repository} \\
+8.4 & Mailing list & R & -- & F2 & \propb{doap:mailing-list} \\
+8.5 & To do list & R & -- & F2 & \propb{mod:toDoList} \\
+8.6 & Award & R & -- & F2 & \propb{schema:award} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}9. Usage}} \\ \midrule[0.9pt]
+9.1 & Known usage & R & -- & F2 & \propb{omv:knownUsage} \\
+9.2 & Design for task & R & -- & R1.2 & \propb{mod:designedForTask} \\
+9.3 & Coverage & R & O & F2 & \propb{dct:coverage} \\
+9.4 & Example of use & R & -- & \added{F2} & \propb{vann:example} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}10. Relations}} \\ \midrule[0.9pt]
+10.1 & This ontology is a view of & R & -- & -- & \propb{dct:isPartOf} \\
+10.2 & Prior version & R & -- & I3, R1.2 & \propb{omv:hasPriorVersion} \\
+10.3 & Has part (has views) & R & -- & F2, I3 & \propb{dct:hasPart} \\
+10.4 & Similar to & R & -- & I2, I3 & \propb{mod:similar} \\
+10.5 & Generally related to & O & -- & I2, \added{I3} & \propb{mod:semanticArtefactRelation} \\
+10.6 & Comes from the same domain & O & -- & F2, I3 & \propb{mod:comesFromTheSameDomain} \\
+10.7 & Has equivalences with & R & -- & I2, I3 & \propb{mod:hasEquivalencesWith} \\
+10.8 & Backward compatible & O & -- & F2, I3 & \propb{owl:backwardCompatibleWith} \\
+10.9 & Incompatible & O & -- & F2, I3 & \propb{owl:incompatibleWith} \\
+10.10 & Disparate modelling with & R & -- & F2, I3 & \propb{mod:hasDisparateModelling} \\
+10.11 & Has disjunctions with & O & -- & \added{F2}, \added{I3} & \propb{mod:hasDisjunctionsWith} \\
+10.12 & Generalization of & O & -- & I2, I3 & \propb{mod:generalizes} \\
+10.13 & Specialization of & O & -- & I2, \added{I3} & \propb{mod:specializes} \\
+10.14 & Imports & R & -- & I2, I3 & \propb{owl:imports} \\
+10.15 & Used by & R & -- & F2, I3 & \propb{mod:usedBy} \\
+10.16 & Translation & R & -- & F2, I3 & \propb{schema:workTranslation} \\
+10.17 & Translation of & R & -- & I2, I3 & \propb{schema:translationOfWork} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}11. Content}} \\ \midrule[0.9pt]
+11.1 & Root of obsolete branch & O & -- & \added{R1} & \propb{bpm:obsoleteParent} \\
+11.2 & URI Regex Pattern & O & -- & F2 & \propb{void:uriRegexPattern} \\
+11.3 & Preferred namespace URI & R & -- & F2 & \propb{vann:preferredNamespaceUri} \\
+11.4 & Preferred namespace prefix & R & -- & F2 & \propb{vann:preferredNamespacePrefix} \\
+11.5 & Example of resource & O & -- & F2 & \propb{idot:exampleIdentifier} \\
+11.6 & Key classes & O & -- & F2 & \propb{omv:keyClasses} \\
+11.7 & Metadata vocabulary used & R & -- & I2 & \propb{voaf:metadataVoc} \\
+\midrule[0.9pt] \multicolumn{6}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}12. Methodology}} \\ \midrule[0.9pt]
+12.1 & Knowledge representation paradigm & O & R & R1.2 & \propb{omv:conformsToKnowledgeRepresentationParadigm} \\
+12.2 & Engineering methodology & O & R & R1.2 & \propb{omv:usedOntologyEngineeringMethodology} \\
+12.3 & Created With & R & O & R1.2 & \propb{omv:usedOntologyEngineeringTool} \\
+12.4 & Accrual method & R & O & R1.2 & \propb{dct:accrualMethod} \\
+12.5 & Accrual periodicity & R & O & R1.2 & \propb{dct:accrualPeriodicity} \\
+12.6 & Accrual policy & R & O & R1.2 & \propb{dct:accrualPolicy} \\
+12.7 & Competency question & R & O & R1.2 & \propb{mod:competencyQuestion} \\
+12.8 & Sample Queries & R & -- & F2 & \propb{mod:sampleQueries} \\
+12.9 & Was generated by & O & O & R1.2 & \propb{prov:wasGeneratedBy} \\
+12.10 & Was invalidated by & O & -- & R1.2 & \propb{prov:wasInvalidatedBy} \\
+\end{longtable}
+\end{center}
+
+% =====================================================================
+\section{Conclusion}
+
+The O'FAIRe tool~\cite{amdouni2022faire} follows MOD~1.4, while our guideline follows MOD~3.0. As a
+result, some fields are required by O'FAIRe when it computes the FAIRness score, while our guideline
+does not explicitly mention them. For instance, in the following table, I have listed a few cases
+among others.
+
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.0cm} c c >{\raggedright\arraybackslash}p{6.0cm}@{}}
+\toprule
+\textbf{Property read by O'FAIRe, absent from our guideline} & \textbf{Question} &
+\textbf{Credits} & \textbf{What our guideline has for the same question} \\
+\midrule
+\propb{mod:prefLabelProperty}, \propb{mod:synonymProperty}, \propb{mod:definitionProperty},
+  \propb{mod:authorProperty}, \propb{mod:obsoleteProperty} & R1Q1 & 5 &
+  nothing: the question rests entirely on these five \\
+\propb{mod:ontologyInUse} & R1.3Q1 & 5 & \textit{Endorsed by} (5.7), the other half of the
+  question \\
+\propb{owl:deprecated} & A2Q4 & 2 & \textit{Status} (1.7), the other half of the question \\
+\propb{owl:versionInfo} & R1.2Q4 & 2 & \textit{Prior version} (10.2), which few artefacts fill \\
+\propb{mod:hierarchyProperty} & R1Q2 & 1 & \textit{Root of obsolete branch} (11.1); the third
+  property of the question, \propb{mod:maxDepth}, is computed by the portal \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In the light of the previous illustration, I think we definitely need to discuss with Clement's team
+and make sure we all agree on how to align the current metric with the guideline. 
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{DataTerra_internship}
+
+\end{document}

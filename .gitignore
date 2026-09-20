@@ -1,0 +1,22 @@
+# =====================================================================
+#  Every .tex in docs/ folder is tracked, and from docs/build/ only the
+#  compiled PDFs are tracked. Everything else latexmk produces is noise.
+# =====================================================================
+
+docs/build/*
+!docs/build/*.pdf
+
+# ---- editors and operating systems ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# API keys, portal credentials, anything with a secret in it --.
+.env
+*.key
+*_apikey*
+*credentials*

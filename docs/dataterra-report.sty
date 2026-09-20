@@ -1,0 +1,168 @@
+% =====================================================================
+%  dataterra-report.sty
+%  Shared preamble and title page for the short reports written during
+%  the internship on Management and Curation of EarthPortal Resources.
+%
+%  Usage in a report:
+%      \documentclass[11pt,a4paper]{article}
+%      \usepackage{dataterra-report}
+%      \reportsubtitle{A quick reference table for the Metadata guideline}
+%      \begin{document}
+%      \makereporttitlepage
+%      ...
+%
+%  Build:  latexmk -pdf <file>.tex     (uses .latexmkrc, output in build/)
+%  Author: Emmanuel Nyandu Kagarabi
+% =====================================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{dataterra-report}[2026/09/17 v1.0 Data Terra internship report style]
+
+% ------- encoding
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\IfFileExists{lmodern.sty}{\RequirePackage{lmodern}}
+%\RequirePackage[english]{babel}
+
+% --- layout
+\RequirePackage[top=3cm,bottom=3cm,left=2.4cm,right=2.4cm,headheight=26pt]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{booktabs}
+\RequirePackage{longtable}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{multirow}
+\RequirePackage{caption}
+\RequirePackage{xcolor}
+\RequirePackage{colortbl}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{titlesec}
+\RequirePackage{listings}
+\RequirePackage{float}
+\RequirePackage{parskip}
+\RequirePackage[final,protrusion=true,expansion=false]{microtype}
+\RequirePackage{tikz}
+\RequirePackage{etoolbox}
+\RequirePackage[hidelinks]{hyperref}
+
+\graphicspath{{Figures/}{./Figures/}{../Figures/}}
+
+% ------- palette
+\definecolor{dtnavy}{HTML}{22245C}
+\definecolor{dtblue}{HTML}{0B4F6C}
+\definecolor{dtteal}{HTML}{1B7F5C}
+\definecolor{dtred}{HTML}{A4303F}
+\definecolor{dtamber}{HTML}{9A6A00}
+\definecolor{dtband}{HTML}{EDF1F4}
+\definecolor{dtgrey}{HTML}{5A6672}
+\definecolor{codebg}{HTML}{F6F8FA}
+\definecolor{codeframe}{HTML}{D6DEE5}
+
+% ----- headings
+\titleformat{\section}{\color{dtnavy}\Large\bfseries}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\color{dtnavy}\large\bfseries}{\thesubsection}{0.7em}{}
+\titleformat{\subsubsection}{\color{dtnavy}\normalsize\bfseries}{\thesubsubsection}{0.7em}{}
+
+% ----- metadata
+\newcommand{\@reportsubtitle}{}
+\newcommand{\reportsubtitle}[1]{\renewcommand{\@reportsubtitle}{#1}}
+
+\newcommand{\dtmaintitle}{Management and Curation of EarthPortal Resources}
+\newcommand{\dtstudent}{Emmanuel \textsc{Nyandu Kagarabi}}
+\newcommand{\dtsupervisor}{Christelle \textsc{Pierkot}}
+
+% Date of compilation, 
+\newcommand{\dtdate}{\number\day\ \ifcase\month\or January\or February\or March\or
+  April\or May\or June\or July\or August\or September\or October\or November\or
+  December\fi\ \number\year}
+
+% ------- headers
+\pagestyle{fancy}\fancyhf{}
+\lhead{\small\color{dtnavy}\@reportsubtitle}
+\rhead{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{dtnavy}\leaders\hrule height \headrulewidth\hfill}}
+
+% ------- code
+\lstset{
+  backgroundcolor=\color{codebg}, frame=single, rulecolor=\color{codeframe},
+  basicstyle=\ttfamily\footnotesize, keywordstyle=\color{dtnavy}\bfseries,
+  stringstyle=\color{dtteal}, commentstyle=\color{dtgrey}\itshape,
+  breaklines=true, columns=fullflexible, showstringspaces=false,
+  xleftmargin=6pt, framexleftmargin=4pt, aboveskip=9pt, belowskip=9pt,
+}
+
+% ------ helpers
+\newcommand{\prop}[1]{\texttt{\small #1}}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+
+%
+\newenvironment{keypoint}{%
+  \par\medskip\noindent
+  \begin{tabular}{@{}p{0.30cm}@{\hspace{6pt}}p{\dimexpr\linewidth-1.02cm}@{}}
+  \cellcolor{dtnavy}\rule{0pt}{2.4ex} & \itshape}
+  {\end{tabular}\par\medskip}
+
+% =====================================================================
+%  The title page. 
+% =====================================================================
+\newcommand{\makereporttitlepage}{%
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+
+% ---- the three partners --
+\vspace*{0.6cm}
+\begin{minipage}{0.94\textwidth}\centering
+  \begin{minipage}[c][2.5cm][c]{0.33\linewidth}\centering
+    \includegraphics[height=1.35cm]{Logo_CNRS-fr.png}
+  \end{minipage}%
+  \begin{minipage}[c][2.5cm][c]{0.33\linewidth}\centering
+    \includegraphics[height=1.70cm]{Logo_DATATERRA-fr.jpg}
+  \end{minipage}%
+  \begin{minipage}[c][2.5cm][c]{0.33\linewidth}\centering
+    \includegraphics[height=2.25cm]{Logo_SISSA-it.png}
+  \end{minipage}
+\end{minipage}
+
+\vfill
+
+% ---- main title, two rules above and two below ---------------------
+{\color{dtnavy}\rule{\textwidth}{1.2pt}}\\[2.2pt]
+{\color{dtnavy}\rule{\textwidth}{0.5pt}}
+
+\vspace{0.5cm}
+{\LARGE\bfseries\color{dtnavy}\dtmaintitle\par}
+\vspace{0.5cm}
+
+{\color{dtnavy}\rule{\textwidth}{0.5pt}}\\[2.2pt]
+{\color{dtnavy}\rule{\textwidth}{1.2pt}}
+
+% ---- subtitle ------
+\vspace{1.4cm}
+{\Large\color{dtgrey}\@reportsubtitle\par}
+
+\vfill
+
+% ---- people
+{\large
+ \textit{Student}\\[0.25cm]
+ \dtstudent\par}
+
+\vspace{1.1cm}
+
+{\large
+ \textit{Internship Supervisor}\\[0.25cm]
+ \dtsupervisor\par}
+
+\vfill
+
+% ---- compilation date
+{\dtdate\par}
+\vspace{0.4cm}
+
+\end{titlepage}
+\setcounter{page}{1}
+}
+
+\endinput
