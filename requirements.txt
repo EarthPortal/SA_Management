@@ -1,0 +1,31 @@
+# Management and Curation of EarthPortal Resources: Python dependencies
+# Python >= 3.12  |  install inside .venv:  pip install -r requirements.txt
+
+# Web: query the EarthPortal REST API and the O'FAIRe service
+requests==2.34.2
+
+# Settings: read the API key and other variables from the single .env file
+python-dotenv==1.2.4
+
+# Data: arrays, tables, CSV files and scores
+numpy==2.5.3 
+pandas==2.3.3 
+
+# Documents: read the Metadata Guidelines (.docx) as XML, write Excel workbooks
+lxml==6.1.3
+openpyxl==3.1.5
+
+# Semantic Web: read ontologies and vocabularies such as MOD (RDF, Turtle, OWL)
+rdflib==7.6.0
+
+# Exploratory Data Analysis (EDA) and plots: data profiling reports (successor of ydata-profiling) and figures
+fg-data-profiling==4.20.0
+matplotlib==3.11.2        
+
+# Notebooks: Jupyter kernel for VS Code (needed to run the EDA notebook)
+ipykernel==7.4.0
+# Notebooks: show the profiling report inside the notebook
+ipywidgets==8.1.9
+
+# Tests: run the automated checks of the code
+pytest==9.1.1
