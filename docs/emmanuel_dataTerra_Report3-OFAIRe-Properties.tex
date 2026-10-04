@@ -1,0 +1,234 @@
+% =====================================================================
+%  Report 3
+%  The O'FAIRe properties in a human-readable format
+%  Build: latexmk -pdf emmanuel_dataTerra_Report3-OFAIRe-Properties.tex
+%  The table was written from properties.config.json and
+%  questions.config.json (github.com/agroportal/fairness, commit 24def6b of 4 June 2026).
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage{dataterra-report}
+
+\reportsubtitle{The O'FAIRe properties in a human-readable format}
+
+% \propb: a property name that may break at the end of a line inside a table cell
+\usepackage{xurl}
+\DeclareUrlCommand\propb{\urlstyle{tt}}
+
+\begin{document}
+\makereporttitlepage
+
+% =====================================================================
+\section{Introduction}
+
+In this short report, our goal is to consider the JSON file that lists the metadata properties
+read by O'FAIRe~\cite{ofaireconfig} and to convert it into a human-readable format. The
+questions of O'FAIRe name a property in one way and the portal stores it under another, so I
+need this list at hand to move from one name to the other during my internship.
+
+% =====================================================================
+\section{Development}
+
+\subsection{The file}
+
+The file is called \prop{properties.config.json}. I took it from the source code of
+O'FAIRe~\cite{ofaireconfig}, as it was on 4 June 2026. It holds 123 entries, one per property.
+Each entry gives the information of Table~\ref{tab:fields}.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{13.6cm}@{}}
+\toprule
+\textbf{Field} & \textbf{What it says} \\
+\midrule
+\prop{portal} & The name of the property in the portal. O'FAIRe keeps the part after the colon and
+  uses it to find the value in the answer of the portal API (for example \prop{omv:hasLicense}
+  gives \prop{hasLicense}). \\
+\prop{mod} & The MOD~1.4 name of the same property. It is the name used in the lists of the
+  questions file. \\
+\prop{type} & \prop{string} for a single value (109 entries) or \prop{array} for several values
+  (14 entries). \\
+\prop{source} & The part of the API answer where the value is read: the submission
+  (99 entries), the ontology record (5), the metrics (10), or the links of the ontology record
+  (9). \\
+\prop{key} & Present in 4 entries only. For \prop{bpm:contact}, it asks for the name of each contact.
+  For three metrics, it is the name under which the portal gives the number (\prop{classes},
+  \prop{individuals}, \prop{properties}). \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The fields of one entry. The way O'FAIRe uses them comes from my reading of its
+Java code.}
+\label{tab:fields}
+\end{center}
+
+\subsection{The 123 properties}
+
+Table~\ref{tab:properties} gives all the entries, grouped by source and sorted by portal name. I
+added one column that is not in the file: the questions whose list names the property, taken
+from the questions file (Report~2).
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{4.9cm}>{\raggedright\arraybackslash}p{4.9cm}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{3.0cm}@{}}
+\caption{The 123 properties of \prop{properties.config.json}.}
+\label{tab:properties}\\
+\toprule
+\textbf{Portal name} & \textbf{MOD name} & \textbf{Type} & \textbf{Listed by questions} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Portal name} & \textbf{MOD name} & \textbf{Type} & \textbf{Listed by questions} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{4}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}Read from the submission} (99)}\\*
+\propb{bpm:authorProperty} & \propb{mod:authorProperty} & string & I3Q3, R1Q1 \\
+\propb{bpm:contact} & \propb{dct:rightsHolder} & array (key: \prop{name}) & R1.1Q3 \\
+\propb{bpm:creationDate} & \propb{dct:dateSubmitted} & string & F2Q3 \\
+\propb{bpm:definitionProperty} & \propb{mod:definitionProperty} & string & I3Q3, R1Q1 \\
+\propb{bpm:diffFilePath} & \propb{vann:changes} & string & \textit{none} \\
+\propb{bpm:hierarchyProperty} & \propb{mod:hierarchyProperty} & string & I3Q3, R1Q2 \\
+\propb{bpm:notes} & \propb{rdfs:comment} & string & F2Q3 \\
+\propb{bpm:notes} & \propb{schema:comment} & string & F2Q3 \\
+\propb{bpm:obsoleteParent} & \propb{mod:obsoleteParent} & string & R1Q2 \\
+\propb{bpm:obsoleteProperty} & \propb{mod:obsoleteProperty} & string & I3Q3, R1Q1 \\
+\propb{bpm:prefLabelProperty} & \propb{mod:prefLabelProperty} & string & I3Q3, R1Q1 \\
+\propb{bpm:publication} & \propb{dct:bibliographicCitation} & string & F2Q3 \\
+\propb{bpm:pullLocation} & \propb{omv:resourceLocator} & string & F2Q1 \\
+\propb{bpm:released} & \propb{dct:created} & string & F2Q3 \\
+\propb{bpm:synonymProperty} & \propb{mod:synonymProperty} & string & I3Q3, R1Q1 \\
+\propb{cc:morePermissions} & \propb{cc:morePermissions} & string & R1.1Q2 \\
+\propb{cc:useGuidelines} & \propb{cc:useGuidelines} & string & R1.1Q3 \\
+\propb{dct:abstract} & \propb{dct:abstract} & string & F2Q3 \\
+\propb{dct:accrualMethod} & \propb{dct:accrualMethod} & string & R1.2Q3 \\
+\propb{dct:accrualPeriodicity} & \propb{dct:accrualPeriodicity} & string & R1.2Q3 \\
+\propb{dct:accrualPolicy} & \propb{dct:accrualPolicy} & string & R1.2Q3 \\
+\propb{dct:alternative} & \propb{dct:alternative} & string & F2Q1 \\
+\propb{dct:audience} & \propb{dct:audience} & string & F2Q1 \\
+\propb{dct:coverage} & \propb{dct:coverage} & string & F2Q1 \\
+\propb{dct:hasFormat} & \propb{dct:hasFormat} & string & I1Q5, I3Q3 \\
+\propb{dct:hasPart} & \propb{dct:hasPart} & string & F2Q3, I3Q3 \\
+\propb{dct:identifier} & \propb{dct:identifier} & array & F1Q2, A1Q1 \\
+\propb{dct:isFormatOf} & \propb{dct:isFormatOf} & string & I1Q5, I3Q3 \\
+\propb{dct:publisher} & \propb{dct:publisher} & string & F2Q1 \\
+\propb{dct:source} & \propb{dct:source} & string & R1.2Q2 \\
+\propb{dct:valid} & \propb{dct:valid} & string & F2Q3 \\
+\propb{doap:bugDatabase} & \propb{doap:bugDatabase} & string & F2Q1 \\
+\propb{doap:mailingList} & \propb{doap:mailing-list} & string & F2Q1 \\
+\propb{doap:repository} & \propb{doap:repository} & string & F2Q1 \\
+\propb{door:comesFromTheSameDomain} & \propb{door:comesFromTheSameDomain} & string & F2Q1, I3Q3 \\
+\propb{door:explanationEvolution} & \propb{voaf:specializes} & string & I2Q6, I3Q3 \\
+\propb{door:hasDisparateModelling} & \propb{door:hasDisparateModelling} & string & F2Q3, I3Q3 \\
+\propb{door:isAlignedTo} & \propb{voaf:hasEquivalencesWith} & array & I2Q4, I3Q3 \\
+\propb{door:ontologyRelatedTo} & \propb{dct:relation} & array & I2Q2, I3Q3 \\
+\propb{door:similarTo} & \propb{voaf:similar} & array & I2Q6, I3Q3 \\
+\propb{foaf:depiction} & \propb{foaf:depiction} & string & F2Q3 \\
+\propb{foaf:fundedBy} & \propb{foaf:fundedBy} & string & R1.2Q8 \\
+\propb{foaf:homepage} & \propb{foaf:homepage} & string & F2Q1 \\
+\propb{foaf:logo} & \propb{foaf:logo} & string & F2Q3 \\
+\propb{idot:exampleIdentifier} & \propb{idot:exampleIdentifier} & string & F2Q1 \\
+\propb{mod:competencyQuestion} & \propb{mod:competencyQuestion} & string & R1.2Q7 \\
+\propb{omv:conformsToKnowledgeRepresentationParadigm} & \propb{omv:conformsToKnowledgeRepresentationParadigm} & string & R1.2Q6 \\
+\propb{omv:description} & \propb{dct:description} & string & F2Q1 \\
+\propb{omv:designedForOntologyTask} & \propb{omv:designedForOntologyTask} & string & R1.2Q7 \\
+\propb{omv:documentation} & \propb{foaf:page} & string & F2Q1 \\
+\propb{omv:endorsedBy} & \propb{omv:endorsedBy} & array & R1.3Q1 \\
+\propb{omv:hasContributor} & \propb{dct:contributor} & string & R1.2Q1 \\
+\propb{omv:hasCreator} & \propb{dct:creator} & string & R1.2Q1 \\
+\propb{omv:hasDomain} & \propb{dct:subject} & string & F2Q1, I3Q3 \\
+\propb{omv:hasFormalityLevel} & \propb{omv:hasFormalityLevel} & string & I1Q4, I3Q3 \\
+\propb{omv:hasLicense} & \propb{dct:license} & string & I3Q3, R1.1Q1 \\
+\propb{omv:hasOntologyLanguage} & \propb{omv:hasOntologyLanguage} & string & I1Q1, I1Q2 \\
+\propb{omv:hasOntologySyntax} & \propb{omv:hasOntologySyntax} & string & I1Q3, I3Q3 \\
+\propb{omv:hasPriorVersion} & \propb{owl:priorVersion} & string & I3Q3, R1.2Q4 \\
+\propb{omv:isBackwardCompatibleWith} & \propb{owl:backwardCompatibleWith} & string & F2Q1, I3Q3 \\
+\propb{omv:isIncompatibleWith} & \propb{owl:incompatibleWith} & array & F2Q3, I3Q3 \\
+\propb{omv:isOfType} & \propb{omv:isOfType} & string & F2Q3 \\
+\propb{omv:keyClasses} & \propb{omv:keyClasses} & string & F2Q3 \\
+\propb{omv:keywords} & \propb{omv:keywords} & string & F2Q1 \\
+\propb{omv:knownUsage} & \propb{omv:knownUsage} & string & F2Q1 \\
+\propb{omv:modificationDate} & \propb{dct:modified} & string & F2Q3 \\
+\propb{omv:naturalLanguage} & \propb{dct:language} & array & F2Q3 \\
+\propb{omv:status} & \propb{omv:status} & string & A2Q4 \\
+\propb{omv:URI} & \propb{owl:ontologyIRI} & string & F1Q1, A1Q1, A1Q3 \\
+\propb{omv:usedOntologyEngineeringMethodology} & \propb{omv:usedOntologyEngineeringMethodology} & string & R1.2Q6 \\
+\propb{omv:usedOntologyEngineeringTool} & \propb{omv:usedOntologyEngineeringTool} & string & R1.2Q6 \\
+\propb{omv:useImports} & \propb{owl:imports} & array & I2Q1, I3Q3 \\
+\propb{omv:version} & \propb{owl:versionInfo} & string & R1.2Q4 \\
+\propb{owl:deprecated} & \propb{owl:deprecated} & string & A2Q4 \\
+\propb{owl:versionIRI} & \propb{owl:versionIRI} & string & F1Q4 \\
+\propb{pav:curatedBy} & \propb{pav:curatedBy} & string & R1.2Q1 \\
+\propb{pav:curatedOn} & \propb{pav:curatedOn} & string & F2Q3 \\
+\propb{prov:wasGeneratedBy} & \propb{prov:wasGeneratedBy} & string & R1.2Q2 \\
+\propb{prov:wasInvalidatedBy} & \propb{prov:wasInvalidatedBy} & string & R1.2Q2 \\
+\propb{schema:associatedMedia} & \propb{schema:associatedMedia} & string & F2Q3 \\
+\propb{schema:award} & \propb{schema:award} & string & F2Q3 \\
+\propb{schema:includedInDataCatalog} & \propb{schema:includedInDataCatalog} & array & F4Q1, F4Q2 \\
+\propb{schema:translationOfWork} & \propb{schema:translationOfWork} & string & I2Q6, I3Q3 \\
+\propb{schema:translator} & \propb{schema:translator} & string & R1.2Q1 \\
+\propb{schema:workTranslation} & \propb{schema:workTranslation} & string & F2Q3, I3Q3 \\
+\propb{sd:endpoint} & \propb{sd:endpoint} & string & A1Q4 \\
+\propb{skos:hiddenLabel} & \propb{skos:hiddenLabel} & string & F2Q1 \\
+\propb{vann:example} & \propb{vann:example} & string & F2Q1 \\
+\propb{vann:preferredNamespacePrefix} & \propb{vann:preferredNamespacePrefix} & string & F2Q2 \\
+\propb{vann:preferredNamespaceUri} & \propb{vann:preferredNamespaceUri} & string & F2Q1 \\
+\propb{voaf:generalizes} & \propb{voaf:generalizes} & string & I2Q6, I3Q3 \\
+\propb{voaf:hasDisjunctionsWith} & \propb{voaf:hasDisjunctionsWith} & string & F2Q3, I3Q3 \\
+\propb{voaf:metadataVoc} & \propb{voaf:metadataVoc} & array & I2Q7 \\
+\propb{voaf:toDoList} & \propb{voaf:toDoList} & string & F2Q3 \\
+\propb{voaf:usedBy} & \propb{voaf:usedBy} & string & F2Q3, I3Q3 \\
+\propb{void:dataDump} & \propb{void:dataDump} & string & F2Q3 \\
+\propb{void:openSearchDescription} & \propb{void:openSearchDescription} & string & F2Q3 \\
+\propb{void:uriLookupEndpoint} & \propb{void:uriLookupEndpoint} & string & F2Q3 \\
+\propb{void:uriRegexPattern} & \propb{void:uriRegexPattern} & string & F2Q1 \\
+\multicolumn{4}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}Read from the ontology record} (5)}\\*
+\propb{bpm:group} & \propb{mod:group} & array & R1.3Q2 \\
+\propb{bpm:viewingRestriction} & \propb{dct:accessRights} & string & R1.1Q2, R1.3Q3 \\
+\propb{bpm:viewOf} & \propb{dct:isPartOf} & string & I2Q6, I3Q3 \\
+\propb{omv:acronym} & \propb{omv:acronym} & string & F2Q1 \\
+\propb{omv:name} & \propb{dct:title} & string & F2Q1 \\
+\multicolumn{4}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}Read from the metrics} (10)}\\*
+\propb{bpm:averageChildCount} & \propb{mod:averageChildCount} & string & \textit{none} \\
+\propb{bpm:classesWithMoreThan25Children} & \propb{mod:classesWithMoreThan25Children} & string & F2Q3 \\
+\propb{bpm:classesWithNoDefinition} & \propb{mod:classesWithNoDefinition} & string & F2Q3 \\
+\propb{bpm:classesWithOneChild} & \propb{mod:classesWithOneChild} & string & F2Q3 \\
+\propb{bpm:maxChildCount} & \propb{mod:maxChildCount} & string & F2Q3 \\
+\propb{bpm:maxDepth} & \propb{mod:maxDepth} & string & R1Q2 \\
+\propb{omv:numberOfAxioms} & \propb{omv:numberOfAxioms} & string & F2Q2 \\
+\propb{omv:numberOfClasses} & \propb{omv:numberOfClasses} & string (key: \prop{classes}) & F2Q2 \\
+\propb{omv:numberOfIndividuals} & \propb{omv:numberOfIndividuals} & string (key: \prop{individuals}) & F2Q2 \\
+\propb{omv:numberOfProperties} & \propb{omv:numberOfProperties} & string (key: \prop{properties}) & F2Q2 \\
+\multicolumn{4}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}Read from the links of the ontology record} (9)}\\*
+\propb{bpm:analytics} & \propb{mod:analytics} & string & F2Q3 \\
+\propb{bpm:classes} & \propb{void:classPartition} & string & F2Q3 \\
+\propb{bpm:projects} & \propb{mod:ontologyInUse} & array & R1.3Q1 \\
+\propb{bpm:properties} & \propb{void:propertyPartition} & string & F2Q3 \\
+\propb{bpm:reviews} & \propb{mod:hasEvaluation} & array & F2Q1 \\
+\propb{bpm:roots} & \propb{void:rootResource} & string & F2Q3 \\
+\propb{bpm:submissions} & \propb{dct:hasVersion} & string & I3Q3, R1.2Q4 \\
+\propb{bpm:ui} & \propb{mod:browsingUI} & string & F2Q3 \\
+\propb{mod:metrics} & \propb{mod:metrics} & string & F2Q2 \\
+\end{longtable}}
+
+
+% =====================================================================
+\section{Conclusion}
+Below are some observations that may be useful soon or later in my internship.
+
+\begin{itemize}
+  \item 71 entries have the same name on both sides; the other 52 are stored by the portal under
+    a name that differs from the MOD name.
+  \item The portal name \prop{bpm:notes} appears twice: it is given for \prop{rdfs:comment} and
+    again for \prop{schema:comment}.
+  \item Two MOD names are in no list of the questions file. They are \prop{mod:averageChildCount} and
+    \prop{vann:changes}.
+  \item In the other direction, the list of F2Q3 names \prop{void;classPartition} (with a semicolon),
+    which is not in this file; the file has \prop{void:classPartition}.
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{DataTerra_internship}
+
+\end{document}
