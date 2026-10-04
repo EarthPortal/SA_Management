@@ -1,0 +1,7 @@
+entry,portal_object,portal_attribute,reason
+Acronym,ontology,omv:acronym,"The cheatsheet names mod:acronym (MOD 3.0); the portal stores omv:acronym on the ontology record"
+Categories,ontology,omv:hasDomain,"omv:hasDomain exists on both the ontology record and the submission; the categories are the ones on the ontology record"
+Version IRI,submission,owl:versionIRI,"The cheatsheet names omv:versionIRI; the portal stores owl:versionIRI"
+This ontology is a view of,ontology,bpm:viewOf,"The cheatsheet names dct:isPartOf; the portal stores this relation as viewOf on the ontology record"
+Generally related to,submission,door:ontologyRelatedTo,"The cheatsheet names mod:semanticArtefactRelation; the portal stores door:ontologyRelatedTo"
+Disparate modelling with,submission,door:hasDisparateModelling,"The cheatsheet names mod:hasDisparateModelling; the portal stores door:hasDisparateModelling"

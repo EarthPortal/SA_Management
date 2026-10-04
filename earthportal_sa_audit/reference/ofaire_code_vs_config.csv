@@ -1,0 +1,5 @@
+question,property,change,reason,evidence
+F2Q1,schema:translator,add,"The code also counts the translator, which the configuration does not list for this question","F2.java line 29"
+I3Q3,dct:language,add,"The code also tests the natural language, which the configuration does not list for this question","I3.java line 59"
+I3Q3,dct:subject,remove,"The configuration lists it, but the code asks the portal for a field named subject, which does not exist (the portal stores the subjects as hasDomain), so it can never count","I3.java line 58; Ontology.java lines 538 to 540"
+R1.3Q2,omv:acronym,add,"The code also compares the acronym with six OBO Foundry acronyms, which the configuration does not list for this question","R13.java lines 51 and 54"
