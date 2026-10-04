@@ -1,0 +1,182 @@
+question,max_credits,ofaire_property,api_key,cheatsheet_id,cheatsheet_entry,usage,who_fixes
+F1Q1,9.0,owl:ontologyIRI,URI,1.8,URI,Mandatory,author
+F1Q2,11.0,dct:identifier,identifier,1.14,Other identifier,Optional,author
+F1Q3,12.0,,,,,,tool or repository
+F1Q4,9.0,owl:versionIRI,versionIRI,1.9,Version IRI,Recommended,author
+F2Q1,16.0,dct:alternative,alternative,2.9,Alternative name,Recommended,author
+F2Q1,16.0,dct:audience,audience,8.2,Audience,Recommended,author
+F2Q1,16.0,dct:coverage,coverage,9.3,Coverage,Recommended,author
+F2Q1,16.0,dct:description,description,2.2,Description,Mandatory,author
+F2Q1,16.0,dct:publisher,publisher,5.5,Publisher,Recommended,author
+F2Q1,16.0,dct:subject,hasDomain,2.7,Subjects,Recommended,author
+F2Q1,16.0,dct:title,name,1.2,Name,Mandatory,author
+F2Q1,16.0,doap:bugDatabase,bugDatabase,8.1,Bug database,Recommended,author
+F2Q1,16.0,doap:mailing-list,mailingList,8.4,Mailing list,Recommended,author
+F2Q1,16.0,doap:repository,repository,8.3,Repository,Recommended,author
+F2Q1,16.0,door:comesFromTheSameDomain,comesFromTheSameDomain,10.6,Comes from the same domain,Optional,author
+F2Q1,16.0,foaf:homepage,homepage,2.4,Homepage,Recommended,author
+F2Q1,16.0,foaf:page,documentation,2.5,Documentation,Recommended,author
+F2Q1,16.0,idot:exampleIdentifier,exampleIdentifier,11.5,Example of resource,Optional,author
+F2Q1,16.0,mod:hasEvaluation,reviews,,,,portal
+F2Q1,16.0,omv:acronym,acronym,1.1,Acronym,Mandatory,author
+F2Q1,16.0,omv:keywords,keywords,2.6,Keywords,Recommended,author
+F2Q1,16.0,omv:knownUsage,knownUsage,9.1,Known usage,Recommended,author
+F2Q1,16.0,omv:resourceLocator,pullLocation,6.1,Location,Mandatory,author
+F2Q1,16.0,owl:backwardCompatibleWith,isBackwardCompatibleWith,10.8,Backward compatible,Optional,author
+F2Q1,16.0,schema:translator,translator,5.8,Translator,Recommended,author
+F2Q1,16.0,skos:hiddenLabel,hiddenLabel,2.8,Hidden label,Recommended,author
+F2Q1,16.0,vann:example,example,9.4,Example of use,Recommended,author
+F2Q1,16.0,vann:preferredNamespaceUri,preferredNamespaceUri,11.3,Preferred namespace URI,Recommended,author
+F2Q1,16.0,void:uriRegexPattern,uriRegexPattern,11.2,URI Regex Pattern,Optional,author
+F2Q2,4.0,mod:metrics,metrics,,,,portal
+F2Q2,4.0,omv:numberOfAxioms,numberOfAxioms,,,,portal
+F2Q2,4.0,omv:numberOfClasses,classes,,,,portal
+F2Q2,4.0,omv:numberOfIndividuals,individuals,,,,portal
+F2Q2,4.0,omv:numberOfProperties,properties,,,,portal
+F2Q2,4.0,vann:preferredNamespacePrefix,preferredNamespacePrefix,11.4,Preferred namespace prefix,Recommended,author
+F2Q3,7.0,dct:abstract,abstract,2.1,Abstract,Recommended,author
+F2Q3,7.0,dct:bibliographicCitation,publication,2.10,Bibliographic reference,Recommended,author
+F2Q3,7.0,dct:created,released,3.1,Creation date,Mandatory,author
+F2Q3,7.0,dct:dateSubmitted,creationDate,3.5,Submission date,Mandatory,portal
+F2Q3,7.0,dct:hasPart,hasPart,10.3,Has part (has views),Recommended,author
+F2Q3,7.0,dct:language,naturalLanguage,1.12,Natural language,Recommended,author
+F2Q3,7.0,dct:modified,modificationDate,3.2,Modification date,Mandatory,author
+F2Q3,7.0,dct:valid,valid,3.3,Validity date,Recommended,author
+F2Q3,7.0,door:hasDisparateModelling,hasDisparateModelling,10.10,Disparate modelling with,Recommended,author
+F2Q3,7.0,foaf:depiction,depiction,7.2,Depiction,Optional,author
+F2Q3,7.0,foaf:logo,logo,7.3,Logo,Optional,author
+F2Q3,7.0,mod:analytics,analytics,,,,portal
+F2Q3,7.0,mod:browsingUI,ui,,,,portal
+F2Q3,7.0,mod:classesWithMoreThan25Children,classesWithMoreThan25Children,,,,portal
+F2Q3,7.0,mod:classesWithNoDefinition,classesWithNoDefinition,,,,portal
+F2Q3,7.0,mod:classesWithOneChild,classesWithOneChild,,,,portal
+F2Q3,7.0,mod:maxChildCount,maxChildCount,,,,portal
+F2Q3,7.0,omv:isOfType,isOfType,1.13,Generic type,Recommended,author
+F2Q3,7.0,omv:keyClasses,keyClasses,11.6,Key classes,Optional,author
+F2Q3,7.0,owl:incompatibleWith,isIncompatibleWith,10.9,Incompatible,Optional,author
+F2Q3,7.0,pav:curatedOn,curatedOn,3.4,Curation date,Recommended,curator
+F2Q3,7.0,schema:associatedMedia,associatedMedia,7.1,The URL of a media associated to the ontology,Optional,author
+F2Q3,7.0,schema:award,award,8.6,Award,Recommended,author
+F2Q3,7.0,schema:comment,notes,2.3,Notes,Recommended,author
+F2Q3,7.0,schema:workTranslation,workTranslation,10.16,Translation,Recommended,author
+F2Q3,7.0,voaf:hasDisjunctionsWith,hasDisjunctionsWith,10.11,Has disjunctions with,Optional,author
+F2Q3,7.0,voaf:toDoList,toDoList,8.5,To do list,Recommended,author
+F2Q3,7.0,voaf:usedBy,usedBy,10.15,Used by,Recommended,author
+F2Q3,7.0,void:classPartition,classes,,,,portal
+F2Q3,7.0,void:dataDump,dataDump,6.4,Download URL,Mandatory,portal
+F2Q3,7.0,void:openSearchDescription,openSearchDescription,6.7,Free-text search endpoint,Mandatory,portal
+F2Q3,7.0,void:propertyPartition,properties,,,,portal
+F2Q3,7.0,void:rootResource,roots,,,,portal
+F2Q3,7.0,void:uriLookupEndpoint,uriLookupEndpoint,6.6,URI lookup Endpoint,Mandatory,portal
+F3Q1,21.0,,,,,,tool or repository
+F3Q2,11.0,,,,,,tool or repository
+F3Q3,10.0,,,,,,tool or repository
+F4Q1,6.0,schema:includedInDataCatalog,includedInDataCatalog,6.10,Indexed or Included in catalog or repository,Recommended,curator
+F4Q2,10.0,schema:includedInDataCatalog,includedInDataCatalog,6.10,Indexed or Included in catalog or repository,Recommended,curator
+F4Q3,8.0,,,,,,tool or repository
+A1Q1,6.0,dct:identifier,identifier,1.14,Other identifier,Optional,author
+A1Q1,6.0,owl:ontologyIRI,URI,1.8,URI,Mandatory,author
+A1Q2,7.0,,,,,,tool or repository
+A1Q3,24.0,owl:ontologyIRI,URI,1.8,URI,Mandatory,author
+A1Q4,6.0,sd:endpoint,endpoint,6.8,SPARQL endpoint,Recommended,author
+A1.1Q1,20.0,,,,,,tool or repository
+A1.1Q2,4.0,,,,,,tool or repository
+A1.1Q3,4.0,,,,,,tool or repository
+A1.2Q1,11.0,,,,,,tool or repository
+A1.2Q2,11.0,,,,,,tool or repository
+A2Q1,7.0,,,,,,tool or repository
+A2Q2,5.0,,,,,,tool or repository
+A2Q3,4.0,,,,,,tool or repository
+A2Q4,4.0,omv:status,status,1.7,Status,Mandatory,author
+A2Q4,4.0,owl:deprecated,deprecated,,,,author
+I1Q1,18.0,omv:hasOntologyLanguage,hasOntologyLanguage,1.3,Representation language,Mandatory,author
+I1Q2,10.0,omv:hasOntologyLanguage,hasOntologyLanguage,1.3,Representation language,Mandatory,author
+I1Q3,5.0,omv:hasOntologySyntax,hasOntologySyntax,1.11,Syntax,Recommended,author
+I1Q4,5.0,omv:hasFormalityLevel,hasFormalityLevel,1.10,Formality level,Recommended,author
+I1Q5,4.0,dct:hasFormat,hasFormat,6.3,Has format,Recommended,author
+I1Q5,4.0,dct:isFormatOf,isFormatOf,6.2,Is format of,Recommended,author
+I2Q1,5.0,owl:imports,useImports,10.14,Imports,Recommended,author
+I2Q2,5.0,dct:relation,ontologyRelatedTo,10.5,Generally related to,Optional,author
+I2Q3,3.0,,,,,,tool or repository
+I2Q4,5.0,voaf:hasEquivalencesWith,isAlignedTo,10.7,Has equivalences with,Recommended,author
+I2Q5,7.0,,,,,,tool or repository
+I2Q6,2.0,dct:isPartOf,viewOf,10.1,This ontology is a view of,Recommended,curator
+I2Q6,2.0,schema:translationOfWork,translationOfWork,10.17,Translation of,Recommended,author
+I2Q6,2.0,voaf:generalizes,generalizes,10.12,Generalization of,Optional,author
+I2Q6,2.0,voaf:similar,similarTo,10.4,Similar to,Recommended,author
+I2Q6,2.0,voaf:specializes,explanationEvolution,10.13,Specialization of,Optional,author
+I2Q7,5.0,voaf:metadataVoc,metadataVoc,11.7,Metadata vocabulary used,Recommended,author
+I3Q1,20.0,,,,,,tool or repository
+I3Q2,6.0,,,,,,tool or repository
+I3Q3,7.0,dct:hasFormat,hasFormat,6.3,Has format,Recommended,author
+I3Q3,7.0,dct:hasPart,hasPart,10.3,Has part (has views),Recommended,author
+I3Q3,7.0,dct:hasVersion,submissions,,,,portal
+I3Q3,7.0,dct:isFormatOf,isFormatOf,6.2,Is format of,Recommended,author
+I3Q3,7.0,dct:isPartOf,viewOf,10.1,This ontology is a view of,Recommended,curator
+I3Q3,7.0,dct:language,naturalLanguage,1.12,Natural language,Recommended,author
+I3Q3,7.0,dct:license,hasLicense,4.2,License,Mandatory,author
+I3Q3,7.0,dct:relation,ontologyRelatedTo,10.5,Generally related to,Optional,author
+I3Q3,7.0,door:comesFromTheSameDomain,comesFromTheSameDomain,10.6,Comes from the same domain,Optional,author
+I3Q3,7.0,door:hasDisparateModelling,hasDisparateModelling,10.10,Disparate modelling with,Recommended,author
+I3Q3,7.0,mod:authorProperty,authorProperty,,,,author
+I3Q3,7.0,mod:definitionProperty,definitionProperty,,,,author
+I3Q3,7.0,mod:hierarchyProperty,hierarchyProperty,,,,author
+I3Q3,7.0,mod:obsoleteProperty,obsoleteProperty,,,,author
+I3Q3,7.0,mod:prefLabelProperty,prefLabelProperty,,,,author
+I3Q3,7.0,mod:synonymProperty,synonymProperty,,,,author
+I3Q3,7.0,omv:hasFormalityLevel,hasFormalityLevel,1.10,Formality level,Recommended,author
+I3Q3,7.0,omv:hasOntologySyntax,hasOntologySyntax,1.11,Syntax,Recommended,author
+I3Q3,7.0,owl:backwardCompatibleWith,isBackwardCompatibleWith,10.8,Backward compatible,Optional,author
+I3Q3,7.0,owl:imports,useImports,10.14,Imports,Recommended,author
+I3Q3,7.0,owl:incompatibleWith,isIncompatibleWith,10.9,Incompatible,Optional,author
+I3Q3,7.0,owl:priorVersion,hasPriorVersion,10.2,Prior version,Recommended,author
+I3Q3,7.0,schema:translationOfWork,translationOfWork,10.17,Translation of,Recommended,author
+I3Q3,7.0,schema:workTranslation,workTranslation,10.16,Translation,Recommended,author
+I3Q3,7.0,voaf:generalizes,generalizes,10.12,Generalization of,Optional,author
+I3Q3,7.0,voaf:hasDisjunctionsWith,hasDisjunctionsWith,10.11,Has disjunctions with,Optional,author
+I3Q3,7.0,voaf:hasEquivalencesWith,isAlignedTo,10.7,Has equivalences with,Recommended,author
+I3Q3,7.0,voaf:similar,similarTo,10.4,Similar to,Recommended,author
+I3Q3,7.0,voaf:specializes,explanationEvolution,10.13,Specialization of,Optional,author
+I3Q3,7.0,voaf:usedBy,usedBy,10.15,Used by,Recommended,author
+R1Q1,5.0,mod:authorProperty,authorProperty,,,,author
+R1Q1,5.0,mod:definitionProperty,definitionProperty,,,,author
+R1Q1,5.0,mod:obsoleteProperty,obsoleteProperty,,,,author
+R1Q1,5.0,mod:prefLabelProperty,prefLabelProperty,,,,author
+R1Q1,5.0,mod:synonymProperty,synonymProperty,,,,author
+R1Q2,3.0,mod:hierarchyProperty,hierarchyProperty,,,,author
+R1Q2,3.0,mod:maxDepth,maxDepth,,,,portal
+R1Q2,3.0,mod:obsoleteParent,obsoleteParent,11.1,Root of obsolete branch,Optional,author
+R1Q3,7.0,,,,,,tool or repository
+R1Q4,6.0,,,,,,tool or repository
+R1Q5,6.0,,,,,,tool or repository
+R1Q6,5.0,,,,,,tool or repository
+R1.1Q1,15.0,dct:license,hasLicense,4.2,License,Mandatory,author
+R1.1Q2,7.0,cc:morePermissions,morePermissions,4.4,More permissions,Optional,author
+R1.1Q2,7.0,dct:accessRights,viewingRestriction,4.1,Visibility,Mandatory,curator
+R1.1Q3,15.0,cc:useGuidelines,useGuidelines,4.3,Use guidelines,Recommended,author
+R1.1Q3,15.0,dct:rightsHolder,contact,5.1,Contacts,Mandatory,author
+R1.2Q1,8.0,dct:contributor,hasContributor,5.3,Contributor,Recommended,author
+R1.2Q1,8.0,dct:creator,hasCreator,5.2,Creator,Mandatory,author
+R1.2Q1,8.0,pav:curatedBy,curatedBy,5.4,Curator,Recommended,curator
+R1.2Q1,8.0,schema:translator,translator,5.8,Translator,Recommended,author
+R1.2Q2,6.0,dct:source,source,6.9,Source,Recommended,author
+R1.2Q2,6.0,prov:wasGeneratedBy,wasGeneratedBy,12.9,Was generated by,Optional,author
+R1.2Q2,6.0,prov:wasInvalidatedBy,wasInvalidatedBy,12.10,Was invalidated by,Optional,author
+R1.2Q3,6.0,dct:accrualMethod,accrualMethod,12.4,Accrual method,Recommended,author
+R1.2Q3,6.0,dct:accrualPeriodicity,accrualPeriodicity,12.5,Accrual periodicity,Recommended,author
+R1.2Q3,6.0,dct:accrualPolicy,accrualPolicy,12.6,Accrual policy,Recommended,author
+R1.2Q4,4.0,dct:hasVersion,submissions,,,,portal
+R1.2Q4,4.0,owl:priorVersion,hasPriorVersion,10.2,Prior version,Recommended,author
+R1.2Q4,4.0,owl:versionInfo,version,,,,author
+R1.2Q5,2.0,,,,,,tool or repository
+R1.2Q6,6.0,omv:conformsToKnowledgeRepresentationParadigm,conformsToKnowledgeRepresentationParadigm,12.1,Knowledge representation paradigm,Optional,author
+R1.2Q6,6.0,omv:usedOntologyEngineeringMethodology,usedOntologyEngineeringMethodology,12.2,Engineering methodology,Optional,author
+R1.2Q6,6.0,omv:usedOntologyEngineeringTool,usedOntologyEngineeringTool,12.3,Created With,Recommended,author
+R1.2Q7,4.0,mod:competencyQuestion,competencyQuestion,12.7,Competency question,Recommended,author
+R1.2Q7,4.0,omv:designedForOntologyTask,designedForOntologyTask,9.2,Design for task,Recommended,author
+R1.2Q8,2.0,foaf:fundedBy,fundedBy,5.6,Funded or sponsored by,Recommended,author
+R1.3Q1,10.0,mod:ontologyInUse,projects,,,,portal
+R1.3Q1,10.0,omv:endorsedBy,endorsedBy,5.7,Endorsed by,Recommended,author
+R1.3Q2,20.0,mod:group,group,1.5,Groups,Optional,curator
+R1.3Q2,20.0,omv:acronym,acronym,1.1,Acronym,Mandatory,author
+R1.3Q3,6.0,dct:accessRights,viewingRestriction,4.1,Visibility,Mandatory,curator
