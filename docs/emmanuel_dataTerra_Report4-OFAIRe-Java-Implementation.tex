@@ -1,0 +1,249 @@
+% =====================================================================
+%  Report 4
+%  How the Java code implements the O'FAIRe questions
+%  Build: latexmk -pdf emmanuel_dataTerra_Report4-OFAIRe-Java-Implementation.tex
+%  Everything here comes from reading the source code of O'FAIRe
+%  (github.com/agroportal/fairness, branch master, commit 24def6b of 4 June 2026).
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage{dataterra-report}
+
+\reportsubtitle{How the Java code implements the O'FAIRe questions}
+
+% \band{F1}: the grey line that opens the questions of one sub-principle
+\newcommand{\band}[1]{\multicolumn{4}{@{}l}{\cellcolor{dtband}\textbf{\color{dtnavy}#1}}\\*}
+
+\begin{document}
+\makereporttitlepage
+
+% =====================================================================
+\section{Introduction}
+
+In this short report, our goal is to look at how the Java code of O'FAIRe implements the 61
+questions presented in Report~2. The JSON file says what is asked and how many points an answer
+is worth, but it is the code that decides which answer an artefact receives. Since the scores
+shown in EarthPortal come from this code, I wanted to read it once, question by question.
+
+% =====================================================================
+\section{Development}
+
+\subsection{Where the code is, and what I read}
+
+The source code of O'FAIRe is public\footnote{\url{https://github.com/agroportal/fairness}, folder
+\prop{src/main/java/fr/lirmm/fairness/assessment}.}. I read it as it was on 4 June 2026 (branch
+\prop{master}, commit \prop{24def6b}). 
+
+Each sub-principle has one Java class (\prop{F1.java}, \prop{F2.java}, and so on until
+\prop{R13.java}), in the folder \prop{principles/criterion/impl}. For one artefact, the code asks
+the portal API for the latest submission with all its fields, and then goes through the questions
+one by one. For most questions, the code only checks that the field has a value; I then say
+that the field is \emph{filled}. Whether the value is correct is not checked, except where
+Table~\ref{tab:rules} says so.
+
+The points of the questions are added for each sub-principle, then for each principle, then for the
+artefact. The score out of 100 is the total divided by 478, and the decimals are dropped (for
+example, 77.9 is shown as 77).
+
+\subsection{Four kinds of questions}
+
+The code does not treat the 61 questions in the same way. Table~\ref{tab:kinds} gives the four cases.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{9.2cm}rr@{}}
+\toprule
+\textbf{Kind} & \textbf{What the code does} & \textbf{Questions} & \textbf{Points} \\
+\midrule
+Tested & It reads one or several fields of the artefact and chooses the answer. & 38 & 300 \\
+Given & It gives the best answer to every artefact, because the answer depends on the portal
+  and not on the artefact. & 12 & 106 \\
+Not implemented & It gives 0 to every artefact, with the message \textit{This question cannot be
+  evaluated in the repository at this time}. & 10 & 70 \\
+Always 0 & F3Q1 only: it gives 0 to every artefact, with an unfinished message. & 1 & 21 \\
+\midrule
+\textbf{Total} & & \textbf{61} & \textbf{497} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The four kinds of questions in the code. \textit{Points} is the sum of the best
+answers.}
+\label{tab:kinds}
+\end{center}
+
+\subsection{Question by question}
+
+Table~\ref{tab:rules} gives the rule of each question in one or two lines. The fields are written
+with the names the portal uses in its API; Report~3 gives the MOD name of each of them. A
+\emph{valid URL} is a text that has the form of an \prop{http} or \prop{https} address. A URL
+\emph{resolves} when the connection is made within one second and the server answers with the
+code 200, or with the code 302 and a content type; redirections are not followed.
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{@{}p{1.5cm}r>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{10.45cm}@{}}
+\caption{What the code does for each question. \textit{Max} is the best answer of the question.}
+\label{tab:rules}\\
+\toprule
+\textbf{Question} & \textbf{Max} & \textbf{Kind} & \textbf{What the code does} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Question} & \textbf{Max} & \textbf{Kind} & \textbf{What the code does} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\band{Findable}
+F1Q1 & 9 & Tested & \prop{URI}: empty 0; filled but not a valid URL 3; a valid URL 9. \\
+F1Q2 & 11 & Tested & \prop{identifier}: empty 0; not a valid URL 3; a valid URL 6; a
+  \prop{doi.org} address that the DOI service does not know 9; a DOI that the DOI service knows 11.
+  With several identifiers, the last one decides. \\
+F1Q3 & 12 & Given & \\
+F1Q4 & 9 & Tested & \prop{versionIRI}: empty 0; not a valid URL 2; a valid URL that does not
+  resolve 4; a URL that resolves 9. \\
+F2Q1 & 16 & Tested & Counts the filled fields among 25: the 24 of the list in Report~3, and
+  \prop{translator}. 2 points for each, up to 8 fields. \\
+F2Q2 & 4 & Tested & Counts the filled values among six: the link to the metrics, the numbers of
+  classes, properties, individuals and axioms, and \prop{preferredNamespacePrefix}. The points are
+  0, 1, 2, 3, 3, 4, 4. \\
+F2Q3 & 7 & Tested & Counts the filled fields among the 34 behind the list in Report~3. 1 point for
+  each, up to 7 fields. \\
+F3Q1 & 21 & Always 0 & The message is \textit{This question}, and nothing more. \\
+F3Q2 & 11 & Given & \\
+F3Q3 & 10 & Given & \\
+F4Q1 & 6 & Tested & Starts at 1 if the portal itself is in the list of repositories of O'FAIRe.
+  Then, for each value of \prop{includedInDataCatalog}, adds 1 if it is in the list of repositories
+  and 1 if it is in the list of libraries. 2 points for each unit, up to 3. \\
+F4Q2 & 10 & Tested & The same count, with the list of repositories only. 2 points for each unit,
+  up to 5. \\
+F4Q3 & 8 & Not implemented & \\
+\band{Accessible}
+A1Q1 & 6 & Tested & Tests whether \prop{URI} and each \prop{identifier} is a valid URL that
+  resolves. One of them is enough for the 6 points. \\
+A1Q2 & 7 & Given & \\
+A1Q3 & 24 & Tested & Asks the \prop{URI}, and then the address of the metadata in the portal API,
+  for five formats (JSON, XML, HTML, plain text, RDF/XML), and counts the formats accepted. 3 points
+  for each, up to 8. \\
+A1Q4 & 6 & Tested & \prop{endpoint} filled: 6. The endpoint itself is not tested. \\
+A1.1Q1 & 20 & Given & \\
+A1.1Q2 & 4 & Given & \\
+A1.1Q3 & 4 & Given & \\
+A1.2Q1 & 11 & Given & \\
+A1.2Q2 & 11 & Given & \\
+A2Q1 & 7 & Given & \\
+A2Q2 & 5 & Given & \\
+A2Q3 & 4 & Given & \\
+A2Q4 & 4 & Tested & Counts \prop{status} and \prop{deprecated}. 2 points for each. \\
+\band{Interoperable}
+I1Q1 & 18 & Tested & \prop{hasOntologyLanguage} must be exactly PDF, TXT, CSV, XML, OBO, RDFS, SKOS
+  or OWL, for 5, 7, 9, 10, 11, 12, 15 or 18 points. Any other value: 0. \\
+I1Q2 & 10 & Tested & \prop{hasOntologyLanguage} is exactly XML, RDFS, SKOS or OWL: 10. \\
+I1Q3 & 5 & Tested & \prop{hasOntologySyntax} filled: 5. \\
+I1Q4 & 5 & Tested & \prop{hasFormalityLevel} filled: 5. \\
+I1Q5 & 4 & Tested & \prop{hasFormat} and \prop{isFormatOf} both filled: 4. One of them alone: 0. \\
+I2Q1 & 5 & Tested & \prop{useImports} filled: 5. \\
+I2Q2 & 5 & Tested & \prop{ontologyRelatedTo} filled: 5. \\
+I2Q3 & 3 & Not implemented & \\
+I2Q4 & 5 & Tested & \prop{isAlignedTo} filled: 5. \\
+I2Q5 & 7 & Not implemented & \\
+I2Q6 & 2 & Tested & At least one of \prop{similarTo}, \prop{translationOfWork},
+  \prop{explanationEvolution}, \prop{generalizes} and \prop{viewOf} filled: 2. \\
+I2Q7 & 5 & Tested & O'FAIRe has a list of 34 metadata vocabularies, each with a weight of 0.25, 0.5
+  or 0.75. The result is 5 times the average weight of the vocabularies of \prop{metadataVoc} that
+  are in this list. \\
+I3Q1 & 20 & Not implemented & \\
+I3Q2 & 6 & Not implemented & \\
+I3Q3 & 7 & Tested & Looks at the fields of the list in Report~3 and at \prop{naturalLanguage}, and
+  counts those whose values are all valid URLs. 1 point for each, up to 7. \\
+\band{Reusable}
+R1Q1 & 5 & Tested & Counts \prop{prefLabelProperty}, \prop{synonymProperty},
+  \prop{definitionProperty}, \prop{authorProperty} and \prop{obsoleteProperty}. 1 point for each. \\
+R1Q2 & 3 & Tested & Counts \prop{hierarchyProperty}, \prop{obsoleteParent} and the metric
+  \prop{maxDepth}. 1 point for each. \\
+R1Q3 & 7 & Not implemented & \\
+R1Q4 & 6 & Not implemented & \\
+R1Q5 & 6 & Not implemented & \\
+R1Q6 & 5 & Not implemented & \\
+R1.1Q1 & 15 & Tested & \prop{hasLicense}: empty 0; not a valid URL 4; a valid URL that does not
+  resolve 8; a URL that resolves but accepts none of the five formats of A1Q3 12; a URL that accepts
+  at least one of them 15. \\
+R1.1Q2 & 7 & Tested & \prop{viewingRestriction} filled: 4; \prop{morePermissions} filled as well: 7. \\
+R1.1Q3 & 15 & Tested & Counts \prop{useGuidelines} and \prop{contact}: 0, 7 or 15. The copyright
+  holder of the question is read from the contacts. \\
+R1.2Q1 & 8 & Tested & Counts \prop{hasCreator}, \prop{curatedBy}, \prop{hasContributor} and
+  \prop{translator}: 0, 3, 5, 7 or 8. \\
+R1.2Q2 & 6 & Tested & Counts \prop{source}, \prop{wasGeneratedBy} and \prop{wasInvalidatedBy}.
+  2 points for each. \\
+R1.2Q3 & 6 & Tested & Counts \prop{accrualMethod}, \prop{accrualPeriodicity} and
+  \prop{accrualPolicy}. 2 points for each. \\
+R1.2Q4 & 4 & Tested & Counts \prop{version}, \prop{hasPriorVersion} and the link to the list of
+  submissions. 2 points for each, up to 2. \\
+R1.2Q5 & 2 & Not implemented & \\
+R1.2Q6 & 6 & Tested & Counts \prop{usedOntologyEngineeringTool},
+  \prop{usedOntologyEngineeringMethodology} and \prop{conformsToKnowledgeRepresentationParadigm}.
+  2 points for each. \\
+R1.2Q7 & 4 & Tested & Counts \prop{designedForOntologyTask} and \prop{competencyQuestion}.
+  2 points for each. \\
+R1.2Q8 & 2 & Tested & \prop{fundedBy} filled: 2. \\
+R1.3Q1 & 10 & Tested & Counts \prop{endorsedBy} and the projects that use the artefact in the
+  portal. 5 points for each. \\
+R1.3Q2 & 20 & Tested & Looks at the groups of the artefact: 10 if a group name contains WHEAT, CROP
+  or INRAE; 15 if it contains OBO-FOUNDRY; 20 if, in addition, the acronym is BFO, CHEBI, GO, PATO,
+  PO or PR. \\
+R1.3Q3 & 6 & Tested & \prop{viewingRestriction} contains the word \textit{public}: 6. \\
+\end{longtable}}
+
+
+% =====================================================================
+\section{Conclusion}
+Throught the reading of the code, I noticed a few points that are not obvious from the JSON file.
+
+\begin{itemize}
+  \item \textbf{The lists of properties} in the JSON file does not decide the score, it only decides what is displayed next to the score.
+  
+  Actually, in \texttt{questions.config.json} (Report 2), most questions carry a properties list. 
+  For example, I1Q5 lists \texttt{dct:hasFormat} and \texttt{dct:isFormatOf}.
+  Reading this, We would think that the program takes this list and checks those properties to compute the score.
+  However, the code works differently,in two separate steps:
+ \begin{itemize}
+  \item
+  \textbf{The test}. 
+  Each question has its own small piece of Java, and the fields to check are written by hand inside it.
+  For I1Q5, the code says, in substance, "if \texttt{hasFormat} is filled and \texttt{isFormatOf} is filled, give 4 points, otherwise 0". 
+  This step never looks at the JSON list.
+  \item
+  \textbf{The display}. 
+  Once the score is chosen, another piece of code (\texttt{Tester.java}) takes the JSON list and
+  copies the values of those properties into the result. This is what we see in the O'FAIRe panel, next to the explanation. 
+  For \textbf{OSO}, it shows the six formats under \texttt{dct:hasFormat} and \textit{null} under \texttt{dct:isFormatOf}.
+  
+So there are two lists for each question: one in the Java code, which gives the points, and one in the JSON, which only shows values to the reader.
+Most of the time the two lists are the same, but they are maintained separately, and in three questions they have drifted apart:
+\begin{itemize}
+  \item F2Q1: the code counts the \texttt{translator}, but the JSON list does not show it.
+  \item I3Q3: the code also checks the \texttt{naturalLanguage}, which the JSON list does not show. The JSON list shows the subjects, but the code can never count them.
+  \item R1.3Q2: the code also looks at the \texttt{acronym}, which is not in the JSON list.
+\end{itemize}
+\end{itemize}
+
+  \item \textbf{F3.} F3Q1 always gives 0, F3Q2 and F3Q3 are always given, and the weight of F3 (21)
+    counts only these two. Every artefact therefore has 21 out of 21 on F3.
+  \item \textbf{I1.} The best answers of I1 add up to 42, while its weight is 44. No artefact can
+    have more than 95\,\% on I1.
+  \item \textbf{I2Q7.} The highest weight in the list of vocabularies is 0.75, so the result cannot
+    be more than 3.75 out of 5.
+  \item \textbf{A1Q1.} The answer worth 3 points is never used: one identifier that resolves
+    already gives 6.
+  \item \textbf{R1.3Q2.} The names of the groups are written in the code. None of the groups used
+    in EarthPortal has such a name, so its artefacts have 0 out of 20.
+  \item \textbf{F4Q1 and F4Q2.} EarthPortal is not in the list of repositories of O'FAIRe. An
+    artefact that declares only EarthPortal in \prop{includedInDataCatalog} has 0 on both questions.
+\end{itemize}
+
+For an artefact of EarthPortal, this leaves 386 of the 478 points within reach: 478, minus the 70
+points of the ten questions that are not implemented, minus the 20 points of R1.3Q2, minus the
+2 points that no question of I1 gives.
+
+
+\end{document}
