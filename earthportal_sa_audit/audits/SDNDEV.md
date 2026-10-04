@@ -1,0 +1,101 @@
+# SDNDEV: SeaDataNet Device Thesaurus
+
+Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SDNDEV
+
+| O'FAIRe score | Points | Reachable score | Rank |
+|---|---|---|---|
+| 51 / 100 | 248 / 478 | 64.2 % of 386 | 49 of 71 artefacts |
+
+## Where O'FAIRe points are lost
+
+| Question | Points | Lost | O'FAIRe says |
+|---|---|---|---|
+| F1Q2 | 0 / 11 | 11 | External identifier is absent. |
+| F4Q2 | 0 / 10 | 10 | The ontology is registered in 0 ontology repository.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome] |
+| F1Q4 | 0 / 9 | 9 | Version URI is absent. |
+| R1.1Q3 | 7 / 15 | 8 | Ontology usage guidelines or copyright holder is absent. |
+| F2Q1 | 10 / 16 | 6 | The ontology is described with 5 'MIRO must' properties. |
+| F4Q1 | 0 / 6 | 6 | The ontology is registered in 0 ontology library.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome][OBO Foundry, Agrisemantics, FAIRsharing, ROMULUS, DAML Ontology Library, Colore, BARTOC, TaxoBank, LusTRE, LOV4IoT, VOCAB OEG, LiveSchema, Protege Ontology Library] |
+| A1Q4 | 0 / 6 | 6 | The ontology is not accessible through a SPARQL endpoint. |
+| R1.2Q2 | 0 / 6 | 6 | The ontology provides O property to inform on its general provenance. |
+| R1.2Q3 | 0 / 6 | 6 | The ontology provides 0 accrual property. |
+| R1.2Q6 | 0 / 6 | 6 | The ontology provides 0 property to inform about methodology and tools used. |
+| I1Q4 | 0 / 5 | 5 | Ontology formality level absent. |
+| I2Q1 | 0 / 5 | 5 | The ontology does not import other vocabularies. |
+| I2Q2 | 0 / 5 | 5 | The ontology does not declare reusing other vocabularies. |
+| I2Q4 | 0 / 5 | 5 | The ontology does not declare being aligned to other vocabularies. |
+| I2Q7 | 0 / 5 | 5 | The ontology does not declare reusing standards metadata vocabularies to describe its metadata. |
+| R1Q1 | 0 / 5 | 5 | The ontology provides 0 property to inform how classes or concepts are defined. |
+| R1.2Q1 | 3 / 8 | 5 | The ontology provides 1 property to inform about the actors involved in its development. |
+| R1.3Q1 | 5 / 10 | 5 | The ontology provide information about projects or endorsing organizations. |
+| I1Q5 | 0 / 4 | 4 | No information is provided about the availability of the ontology in other formats. |
+| R1.2Q7 | 0 / 4 | 4 | The ontology provides 0 property to inform about rationale documentation. |
+| I1Q1 | 15 / 18 | 3 | Ontology and ontology metadata are represented in SKOS. |
+| I3Q3 | 4 / 7 | 3 | The ontology provides at least 4 metadata values encoded as URIs. |
+| R1.1Q2 | 4 / 7 | 3 | Ontology access rights are clearly specified. |
+| A2Q4 | 2 / 4 | 2 | Ontology status partially specified. |
+| I2Q6 | 0 / 2 | 2 | The ontology does not declare influential relations to other vocabularies. |
+| R1Q2 | 1 / 3 | 2 | The ontology provides 1 property to inform about its hierarchy. |
+| F2Q2 | 3 / 4 | 1 | The ontology is described with 4 'should or optional' properties. |
+
+## Suggested actions
+
+Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. The share is the points lost on the questions in brackets, divided among the empty attributes these questions read.
+
+### By the author (in the file or the submission form)
+
+- [P1] Fill **Location** (cheatsheet 6.1, Mandatory, `bpm:pullLocation`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P1] Fill **Modification date** (cheatsheet 3.2, Mandatory, `omv:modificationDate`)
+- [P2] Fill **Version IRI** (cheatsheet 1.9, Recommended, `owl:versionIRI`); share of the O'FAIRe points lost: 9 (F1Q4)
+- [P2] Fill **Use guidelines** (cheatsheet 4.3, Recommended, `cc:useGuidelines`); share of the O'FAIRe points lost: 8 (R1.1Q3)
+- [P2] Fill **SPARQL endpoint** (cheatsheet 6.8, Recommended, `sd:endpoint`); share of the O'FAIRe points lost: 6 (A1Q4)
+- [P2] Fill **Formality level** (cheatsheet 1.10, Recommended, `omv:hasFormalityLevel`); share of the O'FAIRe points lost: 5.2 (I1Q4 I3Q3)
+- [P2] Fill **Has equivalences with** (cheatsheet 10.7, Recommended, `door:isAlignedTo`); share of the O'FAIRe points lost: 5.2 (I2Q4 I3Q3)
+- [P2] Fill **Imports** (cheatsheet 10.14, Recommended, `omv:useImports`); share of the O'FAIRe points lost: 5.2 (I2Q1 I3Q3)
+- [P2] Fill **Metadata vocabulary used** (cheatsheet 11.7, Recommended, `voaf:metadataVoc`); share of the O'FAIRe points lost: 5 (I2Q7)
+- [P2] Fill **Source** (cheatsheet 6.9, Recommended, `dct:source`); share of the O'FAIRe points lost: 3 (R1.2Q2)
+- [P2] Fill **Is format of** (cheatsheet 6.2, Recommended, `dct:isFormatOf`); share of the O'FAIRe points lost: 2.2 (I1Q5 I3Q3)
+- [P2] Fill **Has format** (cheatsheet 6.3, Recommended, `dct:hasFormat`); share of the O'FAIRe points lost: 2.2 (I1Q5 I3Q3)
+- [P2] Fill **Translator** (cheatsheet 5.8, Recommended, `schema:translator`); share of the O'FAIRe points lost: 2 (F2Q1 R1.2Q1)
+- [P2] Fill **Design for task** (cheatsheet 9.2, Recommended, `omv:designedForOntologyTask`); share of the O'FAIRe points lost: 2 (R1.2Q7)
+- [P2] Fill **Created With** (cheatsheet 12.3, Recommended, `omv:usedOntologyEngineeringTool`); share of the O'FAIRe points lost: 2 (R1.2Q6)
+- [P2] Fill **Accrual method** (cheatsheet 12.4, Recommended, `dct:accrualMethod`); share of the O'FAIRe points lost: 2 (R1.2Q3)
+- [P2] Fill **Accrual periodicity** (cheatsheet 12.5, Recommended, `dct:accrualPeriodicity`); share of the O'FAIRe points lost: 2 (R1.2Q3)
+- [P2] Fill **Accrual policy** (cheatsheet 12.6, Recommended, `dct:accrualPolicy`); share of the O'FAIRe points lost: 2 (R1.2Q3)
+- [P2] Fill **Competency question** (cheatsheet 12.7, Recommended, `mod:competencyQuestion`); share of the O'FAIRe points lost: 2 (R1.2Q7)
+- [P2] Fill **Contributor** (cheatsheet 5.3, Recommended, `omv:hasContributor`); share of the O'FAIRe points lost: 1.7 (R1.2Q1)
+- [P2] Fill **Preferred namespace prefix** (cheatsheet 11.4, Recommended, `vann:preferredNamespacePrefix`); share of the O'FAIRe points lost: 1 (F2Q2)
+- [P2] Fill **Similar to** (cheatsheet 10.4, Recommended, `door:similarTo`); share of the O'FAIRe points lost: 0.7 (I2Q6 I3Q3)
+- [P2] Fill **Translation of** (cheatsheet 10.17, Recommended, `schema:translationOfWork`); share of the O'FAIRe points lost: 0.7 (I2Q6 I3Q3)
+- [P2] Fill **Homepage** (cheatsheet 2.4, Recommended, `foaf:homepage`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Documentation** (cheatsheet 2.5, Recommended, `omv:documentation`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Keywords** (cheatsheet 2.6, Recommended, `omv:keywords`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Subjects** (cheatsheet 2.7, Recommended, `omv:hasDomain`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Hidden label** (cheatsheet 2.8, Recommended, `skos:hiddenLabel`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Bug database** (cheatsheet 8.1, Recommended, `doap:bugDatabase`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Audience** (cheatsheet 8.2, Recommended, `dct:audience`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Repository** (cheatsheet 8.3, Recommended, `doap:repository`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Mailing list** (cheatsheet 8.4, Recommended, `doap:mailingList`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Known usage** (cheatsheet 9.1, Recommended, `omv:knownUsage`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Coverage** (cheatsheet 9.3, Recommended, `dct:coverage`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Example of use** (cheatsheet 9.4, Recommended, `vann:example`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Preferred namespace URI** (cheatsheet 11.3, Recommended, `vann:preferredNamespaceUri`); share of the O'FAIRe points lost: 0.3 (F2Q1)
+- [P2] Fill **Prior version** (cheatsheet 10.2, Recommended, `omv:hasPriorVersion`); share of the O'FAIRe points lost: 0.2 (I3Q3)
+- [P2] Fill **Has part (has views)** (cheatsheet 10.3, Recommended, `dct:hasPart`); share of the O'FAIRe points lost: 0.2 (I3Q3)
+- [P2] Fill **Disparate modelling with** (cheatsheet 10.10, Recommended, `door:hasDisparateModelling`); share of the O'FAIRe points lost: 0.2 (I3Q3)
+- [P2] Fill **Used by** (cheatsheet 10.15, Recommended, `voaf:usedBy`); share of the O'FAIRe points lost: 0.2 (I3Q3)
+- [P2] Fill **Translation** (cheatsheet 10.16, Recommended, `schema:workTranslation`); share of the O'FAIRe points lost: 0.2 (I3Q3)
+
+### By the curator (EarthPortal team)
+
+- [P1] Fill **Categories** (cheatsheet 1.4, Mandatory, `omv:hasDomain`)
+- [P2] Fill **Curator** (cheatsheet 5.4, Recommended, `pav:curatedBy`); share of the O'FAIRe points lost: 1.7 (R1.2Q1)
+
+### By the portal (generated values: check that processing succeeded)
+
+- [P1] Fill **Download URL** (cheatsheet 6.4, Mandatory, `void:dataDump`)
+- [P1] Fill **CSV dump** (cheatsheet 6.5, Mandatory, `bpm:csvDump`)
+- [P1] Fill **URI lookup Endpoint** (cheatsheet 6.6, Mandatory, `void:uriLookupEndpoint`)
+- [P1] Fill **Free-text search endpoint** (cheatsheet 6.7, Mandatory, `void:openSearchDescription`)
+
+Later (priorities 3 and 4): Generic type, Abstract, Notes, Bibliographic reference, Validity date, Curation date, Rights holder, To do list, Award, Sample Queries, Other identifier, Generally related to, More permissions, Was generated by, Root of obsolete branch, Knowledge representation paradigm, Engineering methodology, Generalization of, Specialization of, Comes from the same domain, Backward compatible, URI Regex Pattern, Example of resource, Incompatible, Has disjunctions with.
