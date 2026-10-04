@@ -1,22 +1,36 @@
-# =====================================================================
-#  Every .tex in docs/ folder is tracked, and from docs/build/ only the
-#  compiled PDFs are tracked. Everything else latexmk produces is noise.
-# =====================================================================
+# ==================================================
+# I. Common files
+# ==================================================
 
-docs/build/*
-!docs/build/*.pdf
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
 
-# ---- editors and operating systems ---
+# Editor and operating systems
 .vscode/
-.idea/
-*.swp
-*~
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# API keys, portal credentials, anything with a secret in it --.
+# Secrets: the API key lives in .env, which must never be committed
 .env
-*.key
-*_apikey*
-*credentials*
+.env.*
+!.env.example
+
+# ==================================================
+# II. Documentation (docs/)
+# ==================================================
+
+# latexmk writes everything to build/; keep only the compiled PDFs
+docs/build/*
+!docs/build/*.pdf
+
+# ==================================================
+# III. EarthPortal state-of-the-art audit (earthportal_sa_audit/)
+# ==================================================
+
+# Raw API answers: they contain contact e-mail addresses, and some records
+# expose other portals' API keys in their pull URL
+earthportal_sa_audit/data/raw/
