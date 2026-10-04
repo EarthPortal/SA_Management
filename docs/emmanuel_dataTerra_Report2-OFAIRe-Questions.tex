@@ -1,0 +1,446 @@
+% =====================================================================
+%  Report 2
+%  The O'FAIRe questions in a human-readable format
+%  Build: latexmk -pdf emmanuel_dataTerra_Report2-OFAIRe-Questions.tex
+%  The tables were written from questions.config.json
+%  (github.com/agroportal/fairness, commit 24def6b of 4 June 2026).
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage{dataterra-report}
+
+\reportsubtitle{The O'FAIRe questions in a human-readable format}
+
+% \propb: a property name that may break at the end of a line inside a table cell
+\usepackage{xurl}
+\DeclareUrlCommand\propb{\urlstyle{tt}}
+% \pts{points}{answer}: one possible answer of a question, with its points in front
+\newcommand{\pts}[2]{\par\hangindent=2.1em\hangafter=1\noindent\makebox[1.5em][r]{\textbf{#1}}\hspace{0.6em}#2}
+
+\begin{document}
+\makereporttitlepage
+
+% =====================================================================
+\section{Introduction}
+
+In this short report, our goal is to consider the JSON file that contains the O'FAIRe
+questions~\cite{ofaireconfig} and to convert it into a human-readable format. This should make
+life easier and the questions better understood, since I will be using them throughout my
+internship.
+
+% =====================================================================
+\section{Development}
+
+\subsection{The file}
+
+The file is called \prop{questions.config.json}. I took it from the source code of
+O'FAIRe~\cite{ofaireconfig}, as it was on 4 June 2026. It follows the grid of the O'FAIRe
+paper~\cite{amdouni2022faire}: the four FAIR principles are divided into 15 sub-principles, and
+each sub-principle has its own questions, 61 in total. For every question, the
+file gives:
+\begin{itemize}
+  \item the text of the question;
+  \item the possible answers, each with its points;
+  \item for 38 questions, the list of the metadata properties that the question looks at.
+\end{itemize}
+
+Each sub-principle also carries two numbers. The first, \prop{maxCredits}, is its weight in the
+final score. The second, \prop{portalMaxCredits}, is described in the documentation of O'FAIRe
+as the maximum that can be obtained in AgroPortal with the current implementation.
+Table~\ref{tab:overview} gives both.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+\textbf{Sub-principle} & \textbf{Questions} & \textbf{With a list} & \textbf{Points of the} & \textbf{maxCredits} & \textbf{portalMaxCredits} \\
+ & & \textbf{of properties} & \textbf{questions} & & \\
+\midrule
+F1 & 4 & 3 & 41 & 41 & 41 \\
+F2 & 3 & 3 & 27 & 27 & 27 \\
+F3 & 3 & 0 & 42 & 21 & 21 \\
+F4 & 3 & 2 & 24 & 24 & 16 \\
+\addlinespace[2pt]
+A1 & 4 & 3 & 43 & 43 & 43 \\
+A1.1 & 3 & 0 & 28 & 28 & 28 \\
+A1.2 & 2 & 0 & 22 & 22 & 22 \\
+A2 & 4 & 1 & 20 & 20 & 20 \\
+\addlinespace[2pt]
+I1 & 5 & 5 & 42 & 44 & 44 \\
+I2 & 7 & 5 & 32 & 32 & 22 \\
+I3 & 3 & 1 & 33 & 33 & 7 \\
+\addlinespace[2pt]
+R1 & 6 & 2 & 32 & 32 & 5 \\
+R1.1 & 3 & 3 & 37 & 37 & 37 \\
+R1.2 & 8 & 7 & 38 & 38 & 36 \\
+R1.3 & 3 & 3 & 36 & 36 & 36 \\
+\midrule
+\textbf{Total} & \textbf{61} & \textbf{38} & \textbf{497} & \textbf{478} & \textbf{405} \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The 15 sub-principles. \textit{Points of the questions} is the sum of the
+best answer of each question.}
+\label{tab:overview}
+\end{center}
+
+\subsection{The 61 questions}
+
+The four tables below give the questions, one table per principle. The texts are copied as they
+are in the file. When the answers of a question only count something, for example the number of
+properties that are filled, I give them as a small grid instead of repeating the same sentence.
+The properties are written with the names used in the file; the three longest lists are in
+Table~\ref{tab:long}.
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}p{1.5cm}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{8.8cm}@{}}
+\caption{Findable: the questions of F1 to F4.}\\
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}F1.} Ontologies and ontology metadata are assigned a globally unique and persistent identifier. \textit{(maxCredits 41, portalMaxCredits 41)}}\\*
+F1Q1 & Does the ontology have a ``local`' identifier, i.e., a globally unique and potentially permanent identifier assigned by the developer (or developing organization)?\par\smallskip{\color{dtgrey}Properties: \propb{owl:ontologyIRI}} &
+    \pts{0}{Ontology URI is absent.}
+    \pts{3}{Ontology URI is present but invalid.}
+    \pts{9}{Ontology URI is present and valid.} \\
+F1Q2 & Does the ontology provide an additional ``external`' identifier, i.e., a guarantee globally unique and persistent identifier assigned by an accredited body? If yes, is the external identifier a DOI?\par\smallskip{\color{dtgrey}Properties: \propb{dct:identifier}} &
+    \pts{0}{External identifier is absent.}
+    \pts{3}{External identifier is present but invalid.}
+    \pts{6}{External identifier is present and valid.}
+    \pts{9}{External identifier is an invalid DOI.}
+    \pts{11}{External identifier is a valid DOI.} \\
+F1Q3 & Are the ontology metadata clearly identified either by the same identifier than the ontology (if included in the ontology file) or with its own globally unique and persistent identifier? &
+    \pts{12}{Ontology metadata clearly identified: the repository explicitly identifies its metadata.} \\
+F1Q4 & Does the ontology provide a version-specific URI, and is this URI resolvable?\par\smallskip{\color{dtgrey}Properties: \propb{owl:versionIRI}} &
+    \pts{0}{Version URI is absent.}
+    \pts{2}{Version URI is present but invalid.}
+    \pts{4}{Version URI is present, valid but not resolvable.}
+    \pts{9}{Version URI is present, valid and resolvable.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}F2.} Ontologies are described with rich ontology metadata. \textit{(maxCredits 27, portalMaxCredits 27)}}\\*
+F2Q1 & Is the ontology described with additional `MIRO must' metadata properties?\par\smallskip{\color{dtgrey}Properties: 24, see Table~\ref{tab:long}.} &
+    \textit{Number of `MIRO must' properties, and points:}\par\smallskip
+    \begin{tabular}{@{}lccccccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8+ \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4} & \textbf{6} & \textbf{8} & \textbf{10} & \textbf{12} & \textbf{14} & \textbf{16}
+    \end{tabular} \\
+F2Q2 & Is the ontology described with additional `MIRO should' or `optional' metadata properties?\par\smallskip{\color{dtgrey}Properties: \propb{mod:metrics}, \propb{omv:numberOfClasses}, \propb{omv:numberOfIndividuals}, \propb{omv:numberOfProperties}, \propb{omv:numberOfAxioms}, \propb{vann:preferredNamespacePrefix}} &
+    \textit{Number of `should or optional' properties, and points:}\par\smallskip
+    \begin{tabular}{@{}lccccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 & 5 & 6+ \\
+    Points & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{3} & \textbf{4} & \textbf{4}
+    \end{tabular} \\
+F2Q3 & Is the ontology described with another metadata property with no explicit corresponding MIRO requirement?\par\smallskip{\color{dtgrey}Properties: 37, see Table~\ref{tab:long}.} &
+    \textit{Number of additional properties, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7+ \\
+    Points & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7}
+    \end{tabular} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}F3.} Ontology metadata clearly and explicitly include the identifier of the ontologies they describe. \textit{(maxCredits 21, portalMaxCredits 21)}}\\*
+F3Q1 & Are the ontology metadata included and maintained in the ontology file? &
+    \pts{21}{\textit{(no text in the file)}} \\
+F3Q2 & If not, are the ontology metadata described in an external file? &
+    \pts{11}{The ontology repository provides ontology metadata in an external file.} \\
+F3Q3 & Does that external file explicitly link to the ontology and vice-versa? &
+    \pts{0}{No explicit link between the ontology and its metadata and vice-versa.}
+    \pts{5}{One explicit link between the ontology and its metadata (but no reciprocal).}
+    \pts{10}{Bidirectional links between the ontology and its metadata.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}F4.} Ontologies and ontology metadata are registered or indexed in a searchable resource typically an ontology repository. \textit{(maxCredits 24, portalMaxCredits 16)}}\\*
+F4Q1 & Is the ontology registered in multiple ontology `libraries'?\par\smallskip{\color{dtgrey}Properties: \propb{schema:includedInDataCatalog}} &
+    \textit{Number of ontology libraries, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccc@{}}
+    Number & 0 & 1 & 2 & 3+ \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4} & \textbf{6}
+    \end{tabular} \\
+F4Q2 & Is the ontology registered in multiple open ontology `repositories'?\par\smallskip{\color{dtgrey}Properties: \propb{schema:includedInDataCatalog}} &
+    \textit{Number of ontology repositories, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 & 5+ \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4} & \textbf{6} & \textbf{8} & \textbf{10}
+    \end{tabular} \\
+F4Q3 & Are the ontology libraries or repositories properly indexed by Web search engines? &
+    \pts{8}{\textit{(no text in the file)}} \\
+\end{longtable}}
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}p{1.5cm}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{8.8cm}@{}}
+\caption{Accessible: the questions of A1 to A2.}\\
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}A1.} Ontologies and ontology metadata are retrievable by their identifier using a standardized communication protocol. \textit{(maxCredits 43, portalMaxCredits 43)}}\\*
+A1Q1 & Does the ontology URI and other identifiers, if exist, resolve to the ontology?\par\smallskip{\color{dtgrey}Properties: \propb{owl:ontologyIRI}, \propb{dct:identifier}} &
+    \textit{Number of resolvable identifiers, and points:}\par\smallskip
+    \begin{tabular}{@{}lccc@{}}
+    Number & 0 & 1 & 2 \\
+    Points & \textbf{0} & \textbf{3} & \textbf{6}
+    \end{tabular} \\
+A1Q2 & Does the ontology URI (if metadata is included in the ontology file) or the external metadata URI resolve to the metadata record? &
+    \pts{7}{The repository provides an external metadata URI which resolves to the metadata record.} \\
+A1Q3 & Do the ontology URI and the external metadata URI (if the metadata are not included in the ontology file), support content negotiation?\par\smallskip{\color{dtgrey}Properties: \propb{owl:ontologyIRI}} &
+    \textit{Number of negotiation formats, and points:}\par\smallskip
+    \begin{tabular}{@{}lccccccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8+ \\
+    Points & \textbf{0} & \textbf{3} & \textbf{6} & \textbf{9} & \textbf{12} & \textbf{15} & \textbf{18} & \textbf{21} & \textbf{24}
+    \end{tabular} \\
+A1Q4 & Are the ontology and its metadata accessible through another standard protocol such as SPARQL?\par\smallskip{\color{dtgrey}Properties: \propb{sd:endpoint}} &
+    \pts{0}{The ontology is not accessible through a SPARQL endpoint.}
+    \pts{6}{The ontology declares being accessible through a SPARQL endpoint.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}A1.1.} The protocol to retrieve ontologies and ontology metadata is open, free and universally implementable. \textit{(maxCredits 28, portalMaxCredits 28)}}\\*
+A1.1Q1 & Is the ontology relying on HTTP/URIs for its identification and access mechanisms? &
+    \pts{20}{The repository uses HTTP/URIs for identification and access mechanisms.} \\
+A1.1Q2 & Is the ontology access protocol open, free, and universally implementable? &
+    \pts{4}{The repository access protocols (HTTP/URIs) are open, free and universally implementable.} \\
+A1.1Q3 & If the ontology and metadata are accessible through another protocol, is that protocol open, free, and universally implementable? &
+    \pts{4}{The repository uses another protocol (SPARQL) that is open, free and universally implementable.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}A1.2.} The protocol to retrieve ontologies and ontology metadata supports authentification and authorization when an ontology has access restriction. \textit{(maxCredits 22, portalMaxCredits 22)}}\\*
+A1.2Q1 & Is the ontology accessible through a protocol that supports authentication and authorization? &
+    \pts{11}{The repository supports authentification and authorization when an ontology has access restriction.} \\
+A1.2Q2 & Are the ontology metadata accessible through a protocol that supports authentification and authorization? &
+    \pts{11}{The repository supports authentification and authorization when an ontology has access restriction.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}A2.} Ontology metadata should be accessible even when the ontology is no longer available. \textit{(maxCredits 20, portalMaxCredits 20)}}\\*
+A2Q1 & Is the ontology accessible in a repository that supports versioning? &
+    \pts{7}{The repository supports versioning.} \\
+A2Q2 & Are the ontology metadata of each version available? &
+    \pts{5}{The repository provides metadata for each version of the ontology.} \\
+A2Q3 & Are the ontology metadata accessible even if no more versions of the ontology are available? &
+    \pts{4}{The repository provides metadata even if no more versions of the ontology are available.} \\
+A2Q4 & Is the status of the ontology clearly informed?\par\smallskip{\color{dtgrey}Properties: \propb{omv:status}, \propb{owl:deprecated}} &
+    \pts{0}{Ontology status absent.}
+    \pts{2}{Ontology status partially specified.}
+    \pts{4}{Ontology status fully specified.} \\
+\end{longtable}}
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}p{1.5cm}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{8.8cm}@{}}
+\caption{Interoperable: the questions of I1 to I3.}\\
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}I1.} Ontologies and ontology metadata use a formal, accessible, shared and broadly applicable language for knowledge representation. \textit{(maxCredits 44, portalMaxCredits 44)}}\\*
+I1Q1 & What is the representation language used for ontology and ontology metadata?\par\smallskip{\color{dtgrey}Properties: \propb{omv:hasOntologyLanguage}} &
+    \pts{0}{Ontology knowledge representation language absent.}
+    \pts{5}{Ontology and ontology metadata are represented in PDF.}
+    \pts{7}{Ontology and ontology metadata are represented in TXT.}
+    \pts{9}{Ontology and ontology metadata are represented in CSV.}
+    \pts{10}{Ontology and ontology metadata are represented in XML.}
+    \pts{11}{Ontology and ontology metadata are represented in OBO.}
+    \pts{12}{Ontology and ontology metadata are represented in RDFS.}
+    \pts{15}{Ontology and ontology metadata are represented in SKOS.}
+    \pts{18}{Ontology and ontology metadata are represented in OWL.} \\
+I1Q2 & Is the representation language used a W3C Recommendation?\par\smallskip{\color{dtgrey}Properties: \propb{omv:hasOntologyLanguage}} &
+    \pts{0}{Ontology and ontology metadata are not represented using a W3C Recommendation.}
+    \pts{10}{Ontology and ontology metadata are represented using a W3C Recommendatione.} \\
+I1Q3 & Is the syntax of the ontology informed?\par\smallskip{\color{dtgrey}Properties: \propb{omv:hasOntologySyntax}} &
+    \pts{0}{Ontology syntax is absent.}
+    \pts{5}{Ontology syntax is present.} \\
+I1Q4 & Is the formality level of the ontology informed?\par\smallskip{\color{dtgrey}Properties: \propb{omv:hasFormalityLevel}} &
+    \pts{0}{Ontology formality level absent.}
+    \pts{5}{Ontology formality level present.} \\
+I1Q5 & Is the availability of other syntaxes/formats informed?\par\smallskip{\color{dtgrey}Properties: \propb{dct:hasFormat}, \propb{dct:isFormatOf}} &
+    \pts{0}{No information is provided about the availability of the ontology in other formats.}
+    \pts{4}{The availability of other ontology formats is informed.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}I2.} Ontologies and ontology metadata use vocabularies that follow FAIR principles. \textit{(maxCredits 32, portalMaxCredits 22)}}\\*
+I2Q1 & Does the ontology import other FAIR vocabularies?\par\smallskip{\color{dtgrey}Properties: \propb{owl:imports}} &
+    \pts{0}{The ontology does not import other vocabularies.}
+    \pts{5}{The ontology imports other vocabularies (independently of their level of FAIRness).} \\
+I2Q2 & Does the ontology reuse terms from other FAIR vocabularies (URIs)?\par\smallskip{\color{dtgrey}Properties: \propb{dct:relation}} &
+    \pts{0}{The ontology does not declare reusing other vocabularies.}
+    \pts{5}{The ontology declares reusing terms from other vocabularies (independently of their level of FAIRness).} \\
+I2Q3 & If yes, does it include the minimum information for those terms? &
+    \pts{3}{\textit{(no text in the file)}} \\
+I2Q4 & Is the ontology aligned to other FAIR vocabularies?\par\smallskip{\color{dtgrey}Properties: \propb{voaf:hasEquivalencesWith}} &
+    \pts{0}{The ontology does not declare being aligned to other vocabularies.}
+    \pts{5}{The ontology declares being aligned to other vocabularies (independently of their level of FAIRness).} \\
+I2Q5 & If yes, are those alignments well represented and to unambiguous entities? If yes, are those alignements curated? &
+    \pts{7}{\textit{(no text in the file)}} \\
+I2Q6 & Does the ontology provide metadata information about relation to or influence of other FAIR vocabularies?\par\smallskip{\color{dtgrey}Properties: \propb{voaf:specializes}, \propb{schema:translationOfWork}, \propb{voaf:similar}, \propb{voaf:generalizes}, \propb{dct:isPartOf}} &
+    \pts{0}{The ontology does not declare influential relations to other vocabularies.}
+    \pts{2}{The ontology declares influential relations to other vocabularies (independently of their level of FAIRness).} \\
+I2Q7 & Does the ontology reuse standard and FAIR metadata vocabularies to describe its metadata?\par\smallskip{\color{dtgrey}Properties: \propb{voaf:metadataVoc}} &
+    \pts{0}{The ontology does not declare reusing standards metadata vocabularies to describe its metadata.}
+    \pts{5}{The ontology declares reusing standards metadata vocabularies (more or less `FAIR') to describe its metadata.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}I3.} Ontologies or ontology metadata include qualified references to other (meta)data. \textit{(maxCredits 33, portalMaxCredits 7)}}\\*
+I3Q1 & Does an ontology provide qualified cross-references to external resources/databases? &
+    \pts{20}{\textit{(no text in the file)}} \\
+I3Q2 & If yes, are those cross-references well represented and to unambiguous entities? &
+    \pts{6}{\textit{(no text in the file)}} \\
+I3Q3 & Does the ontology use valid URIs to encode some metadata values?\par\smallskip{\color{dtgrey}Properties: 30, see Table~\ref{tab:long}.} &
+    \textit{Number of metadata values encoded as URIs, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7+ \\
+    Points & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7}
+    \end{tabular} \\
+\end{longtable}}
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}p{1.5cm}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{8.8cm}@{}}
+\caption{Reusable: the questions of R1 to R1.3.}\\
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Question} & \textbf{Text} & \textbf{Possible answers, with their points} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}R1.} Ontologies and ontology metadata are richly described with a plurality of accurate and relevant attributes. \textit{(maxCredits 32, portalMaxCredits 5)}}\\*
+R1Q1 & Does the ontology provide information about how classes or concepts are defined?\par\smallskip{\color{dtgrey}Properties: \propb{mod:prefLabelProperty}, \propb{mod:synonymProperty}, \propb{mod:definitionProperty}, \propb{mod:authorProperty}, \propb{mod:obsoleteProperty}} &
+    \textit{Number of properties that inform how classes or concepts are defined, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 & 5 \\
+    Points & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5}
+    \end{tabular} \\
+R1Q2 & Does the ontology provide information about its hierarchy?\par\smallskip{\color{dtgrey}Properties: \propb{mod:hierarchyProperty}, \propb{mod:obsoleteParent}, \propb{mod:maxDepth}} &
+    \textit{Number of properties that inform about the hierarchy, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccc@{}}
+    Number & 0 & 1 & 2 & 3 \\
+    Points & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3}
+    \end{tabular} \\
+R1Q3 & How much of the ontology objects are described with labels? &
+    \pts{7}{\textit{(no text in the file)}} \\
+R1Q4 & How much of the ontology objects are defined using a text description? &
+    \pts{6}{\textit{(no text in the file)}} \\
+R1Q5 & How much ontology objects are defined using a property restriction or an equivalent class? &
+    \pts{6}{\textit{(no text in the file)}} \\
+R1Q6 & How much of the ontology objects provide provenance information with annotation properties? &
+    \pts{5}{\textit{(no text in the file)}} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}R1.1.} Ontologies and ontology metadata are released with a clear and accessible usage license. \textit{(maxCredits 37, portalMaxCredits 37)}}\\*
+R1.1Q1 & Is the ontology license clearly specified, with an URI that is resolvable and supports content negotiation?\par\smallskip{\color{dtgrey}Properties: \propb{dct:license}} &
+    \pts{0}{Ontology license absent.}
+    \pts{4}{Ontology license present but not a valid URI.}
+    \pts{8}{Ontology license present and valid but not resolvable.}
+    \pts{12}{Ontology license present, valid, resolvable but with no content negotiation.}
+    \pts{15}{Ontology license is clearly specified with a valid and resolvable URI that supports content negotiation.} \\
+R1.1Q2 & Are the ontology access rights specified and permissions documented?\par\smallskip{\color{dtgrey}Properties: \propb{dct:accessRights}, \propb{cc:morePermissions}} &
+    \pts{0}{Ontology access rights and permissions absent.}
+    \pts{4}{Ontology access rights are clearly specified.}
+    \pts{7}{Ontology access rights are clearly specified and permissions are documented.} \\
+R1.1Q3 & Are the ontology usage guidelines and copyright holder documented?\par\smallskip{\color{dtgrey}Properties: \propb{cc:useGuidelines}, \propb{dct:rightsHolder}} &
+    \pts{0}{Ontology usage guidelines and copyright holder are absent.}
+    \pts{7}{Ontology usage guidelines or copyright holder is absent.}
+    \pts{15}{Ontology usage guidelines and copyright holder are present.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}R1.2.} Ontologies and ontology metadata are associated with detailed provenance. \textit{(maxCredits 38, portalMaxCredits 36)}}\\*
+R1.2Q1 & Does the ontology provide information about the actors involved in its development?\par\smallskip{\color{dtgrey}Properties: \propb{dct:creator}, \propb{pav:curatedBy}, \propb{dct:contributor}, \propb{schema:translator}} &
+    \textit{Number of properties about the actors involved in the development, and points:}\par\smallskip
+    \begin{tabular}{@{}lccccc@{}}
+    Number & 0 & 1 & 2 & 3 & 4 \\
+    Points & \textbf{0} & \textbf{3} & \textbf{5} & \textbf{7} & \textbf{8}
+    \end{tabular} \\
+R1.2Q2 & Does an ontology provide information on its general provenance?\par\smallskip{\color{dtgrey}Properties: \propb{dct:source}, \propb{prov:wasGeneratedBy}, \propb{prov:wasInvalidatedBy}} &
+    \textit{Number of properties about the general provenance, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccc@{}}
+    Number & 0 & 1 & 2 & 3 \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4} & \textbf{6}
+    \end{tabular} \\
+R1.2Q3 & Are the accrual methods and policy of the ontology documented?\par\smallskip{\color{dtgrey}Properties: \propb{dct:accrualMethod}, \propb{dct:accrualPeriodicity}, \propb{dct:accrualPolicy}} &
+    \textit{Number of accrual properties, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccc@{}}
+    Number & 0 & 1 & 2 & 3 \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4} & \textbf{6}
+    \end{tabular} \\
+R1.2Q4 & Is the ontology clearly versioned with version information and links to previous versions?\par\smallskip{\color{dtgrey}Properties: \propb{owl:versionInfo}, \propb{owl:priorVersion}, \propb{dct:hasVersion}} &
+    \textit{Number of properties about versioning, and points:}\par\smallskip
+    \begin{tabular}{@{}lccc@{}}
+    Number & 0 & 1 & 2+ \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4}
+    \end{tabular} \\
+R1.2Q5 & Are the ontology latest changes documented? &
+    \pts{2}{\textit{(no text in the file)}} \\
+R1.2Q6 & Are the methodology and tools used to build the ontology documented?\par\smallskip{\color{dtgrey}Properties: \propb{omv:usedOntologyEngineeringTool}, \propb{omv:usedOntologyEngineeringMethodology}, \propb{omv:conformsToKnowledgeRepresentationParadigm}} &
+    \textit{Number of properties about the methodology and tools used, and points:}\par\smallskip
+    \begin{tabular}{@{}lcccc@{}}
+    Number & 0 & 1 & 2 & 3 \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4} & \textbf{6}
+    \end{tabular} \\
+R1.2Q7 & Is the ontology rationale documented?\par\smallskip{\color{dtgrey}Properties: \propb{omv:designedForOntologyTask}, \propb{mod:competencyQuestion}} &
+    \textit{Number of properties about the rationale, and points:}\par\smallskip
+    \begin{tabular}{@{}lccc@{}}
+    Number & 0 & 1 & 2 \\
+    Points & \textbf{0} & \textbf{2} & \textbf{4}
+    \end{tabular} \\
+R1.2Q8 & Does an ontology inform about its funding organization?\par\smallskip{\color{dtgrey}Properties: \propb{foaf:fundedBy}} &
+    \pts{0}{The ontology does not inform about its funding organization.}
+    \pts{2}{The ontology informs about its funding organization.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{16.0cm}@{}}{\cellcolor{dtband}\textbf{\color{dtnavy}R1.3.} Ontologies and ontology metadata meet domain-relevant community standards. \textit{(maxCredits 36, portalMaxCredits 36)}}\\*
+R1.3Q1 & Does an ontology provide information about projects using or organizations endorsing?\par\smallskip{\color{dtgrey}Properties: \propb{mod:ontologyInUse}, \propb{omv:endorsedBy}} &
+    \pts{0}{The ontology does not provide information about projects or endorsing organizations.}
+    \pts{5}{The ontology provide information about projects or endorsing organizations.}
+    \pts{10}{The ontology provide information about projects and endorsing organizations.} \\
+R1.3Q2 & Is the ontology included in a specific community set or group?\par\smallskip{\color{dtgrey}Properties: \propb{mod:group}} &
+    \pts{0}{The ontology does not provide information about its community set or group.}
+    \pts{10}{The ontology is included in one of this groups: ``WHEAT`', ``CROP`', ``INRAE`'.}
+    \pts{15}{The ontology is included in the OBO library.}
+    \pts{20}{The ontology is included in the OBO library and is part of the OBO Foundry.} \\
+R1.3Q3 & Is the ontology openly and freely available?\par\smallskip{\color{dtgrey}Properties: \propb{dct:accessRights}} &
+    \pts{0}{The ontology is not openly and freely available.}
+    \pts{6}{The ontology is openly and freely available.} \\
+\end{longtable}}
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}p{1.5cm}r>{\raggedright\arraybackslash}p{13.2cm}@{}}
+\caption{The three long lists of properties, in the order of the file.}
+\label{tab:long}\\
+\toprule
+\textbf{Question} & \textbf{N} & \textbf{Properties} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Question} & \textbf{N} & \textbf{Properties} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+F2Q1 & 24 & \propb{omv:acronym}, \propb{dct:title}, \propb{dct:alternative}, \propb{skos:hiddenLabel}, \propb{dct:description}, \propb{foaf:page}, \propb{omv:resourceLocator}, \propb{omv:keywords}, \propb{dct:coverage}, \propb{foaf:homepage}, \propb{vann:example}, \propb{vann:preferredNamespaceUri}, \propb{void:uriRegexPattern}, \propb{idot:exampleIdentifier}, \propb{dct:publisher}, \propb{dct:subject}, \propb{owl:backwardCompatibleWith}, \propb{door:comesFromTheSameDomain}, \propb{omv:knownUsage}, \propb{dct:audience}, \propb{doap:repository}, \propb{doap:bugDatabase}, \propb{doap:mailing-list}, \propb{mod:hasEvaluation} \\
+F2Q3 & 37 & \propb{dct:language}, \propb{dct:abstract}, \propb{mod:analytics}, \propb{dct:bibliographicCitation}, \propb{rdfs:comment}, \propb{foaf:depiction}, \propb{foaf:logo}, \propb{voaf:toDoList}, \propb{schema:award}, \propb{schema:associatedMedia}, \propb{owl:incompatibleWith}, \propb{dct:hasPart}, \propb{schema:workTranslation}, \propb{door:hasDisparateModelling}, \propb{voaf:usedBy}, \propb{voaf:hasDisjunctionsWith}, \propb{omv:keyClasses}, \propb{void:rootResource}, \propb{mod:browsingUI}, \propb{void:propertyPartition}, \propb{void;classPartition}, \propb{void:dataDump}, \propb{void:openSearchDescription}, \propb{void:uriLookupEndpoint}, \propb{schema:comment}, \propb{dct:created}, \propb{dct:modified}, \propb{dct:valid}, \propb{dct:dateSubmitted}, \propb{pav:curatedOn}, \propb{omv:isOfType}, \propb{void:propertyPartition}, \propb{void:classPartition}, \propb{mod:classesWithMoreThan25Children}, \propb{mod:classesWithOneChild}, \propb{mod:classesWithNoDefinition}, \propb{mod:maxChildCount} \\
+I3Q3 & 30 & \propb{owl:imports}, \propb{owl:priorVersion}, \propb{owl:backwardCompatibleWith}, \propb{owl:incompatibleWith}, \propb{dct:isPartOf}, \propb{dct:hasPart}, \propb{dct:hasVersion}, \propb{dct:isFormatOf}, \propb{dct:hasFormat}, \propb{dct:relation}, \propb{voaf:specializes}, \propb{schema:workTranslation}, \propb{schema:translationOfWork}, \propb{door:comesFromTheSameDomain}, \propb{voaf:similar}, \propb{voaf:hasEquivalencesWith}, \propb{door:hasDisparateModelling}, \propb{voaf:usedBy}, \propb{voaf:generalizes}, \propb{voaf:hasDisjunctionsWith}, \propb{omv:hasFormalityLevel}, \propb{dct:license}, \propb{omv:hasOntologySyntax}, \propb{dct:subject}, \propb{mod:prefLabelProperty}, \propb{mod:definitionProperty}, \propb{mod:synonymProperty}, \propb{mod:authorProperty}, \propb{mod:hierarchyProperty}, \propb{mod:obsoleteProperty} \\
+\end{longtable}}
+
+
+% =====================================================================
+\section{Conclusion}
+While converting the file, I noticed a few things that are worth mentioning:
+\begin{itemize}
+  \item The points of the questions add up to 497, while the \prop{maxCredits} add up to
+    478. The difference comes from two sub-principles: the questions of F3 add up to
+    42 for a \prop{maxCredits} of 21, and those of I1 add up to 42 for a \prop{maxCredits} of 44.
+  \item 23 questions have no list of properties.
+  \item The list of F2Q3 contains \prop{void:propertyPartition} twice, and \prop{void;classPartition}
+    written once with a semicolon.
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{DataTerra_internship}
+
+\end{document}
