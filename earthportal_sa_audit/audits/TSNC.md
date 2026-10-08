@@ -1,10 +1,10 @@
 # TSNC: Territorial Statistical Nomenclature Change Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/TSNC
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/TSNC
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 55 / 100 | 264.33 / 478 | 68.5 % of 386 | 33 of 71 artefacts |
+| 55 / 100 | 264.33 / 478 | 68.5 % of 386 | 32 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

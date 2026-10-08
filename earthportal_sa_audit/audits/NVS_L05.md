@@ -1,10 +1,10 @@
 # NVS_L05: SeaDataNet device categories
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/NVS_L05
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_L05
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 59 / 100 | 286.75 / 478 | 74.3 % of 386 | 6 of 71 artefacts |
+| 59 / 100 | 286.75 / 478 | 74.3 % of 386 | 6 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

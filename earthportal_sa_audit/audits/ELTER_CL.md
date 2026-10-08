@@ -1,10 +1,10 @@
 # ELTER_CL: eLTER Controlled Lists
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/ELTER_CL
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ELTER_CL
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 277 / 478 | 71.8 % of 386 | 14 of 71 artefacts |
+| 57 / 100 | 277 / 478 | 71.8 % of 386 | 14 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

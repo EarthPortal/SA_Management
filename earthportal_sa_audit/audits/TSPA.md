@@ -1,6 +1,6 @@
 # TSPA: Theia Spatial
 
-Kind: **view** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/TSPA
+Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/TSPA
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

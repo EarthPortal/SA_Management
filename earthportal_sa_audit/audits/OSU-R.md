@@ -1,10 +1,10 @@
 # OSU-R: OSU-Reunion
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/OSU-R
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/OSU-R
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 43 / 100 | 208 / 478 | 53.9 % of 386 | 69 of 71 artefacts |
+| 43 / 100 | 208 / 478 | 53.9 % of 386 | 66 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,10 +1,10 @@
 # TERRA_VOCABS_ESV: Earth science variables - TerraVocabulary
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/TERRA_VOCABS_ESV
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/TERRA_VOCABS_ESV
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 56 / 100 | 270.75 / 478 | 70.1 % of 386 | 26 of 71 artefacts |
+| 56 / 100 | 270.75 / 478 | 70.1 % of 386 | 26 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

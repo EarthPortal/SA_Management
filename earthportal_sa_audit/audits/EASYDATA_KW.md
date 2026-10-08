@@ -1,6 +1,6 @@
 # EASYDATA_KW: Vocabulaire des mots clefs
 
-Kind: **view** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/EASYDATA_KW
+Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/EASYDATA_KW
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

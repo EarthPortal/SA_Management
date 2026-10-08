@@ -1,6 +1,6 @@
 # SCHEMA-ORG: Schema.org
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SCHEMA-ORG
+Kind: **artefact** · Snapshot: 2026-10-06 · Portal page: https://earthportal.eu/ontologies/SCHEMA-ORG
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

@@ -1,10 +1,10 @@
 # AERIS_THES: AERIS Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/AERIS_THES
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/AERIS_THES
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 53 / 100 | 254 / 478 | 65.8 % of 386 | 43 of 71 artefacts |
+| 53 / 100 | 254 / 478 | 65.8 % of 386 | 42 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

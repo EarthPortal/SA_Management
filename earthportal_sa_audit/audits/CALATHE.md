@@ -1,10 +1,10 @@
 # CALATHE: Cadastre and Land Administration Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/CALATHE
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/CALATHE
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 48 / 100 | 230 / 478 | 59.6 % of 386 | 62 of 71 artefacts |
+| 51 / 100 | 245 / 478 | 63.5 % of 386 | 49 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 
@@ -15,10 +15,8 @@ Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.e
 | F4Q2 | 0 / 10 | 10 | The ontology is registered in 0 ontology repository.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome] |
 | R1.3Q1 | 0 / 10 | 10 | The ontology does not provide information about projects or endorsing organizations. |
 | F1Q4 | 0 / 9 | 9 | Version URI is absent. |
-| A1Q3 | 15 / 24 | 9 | Ontology and its metadata support 5 negotiation formats. (Ontology is not content-negotiable, Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml]) |
 | R1.1Q3 | 7 / 15 | 8 | Ontology usage guidelines or copyright holder is absent. |
 | F4Q1 | 0 / 6 | 6 | The ontology is registered in 0 ontology library.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome][OBO Foundry, Agrisemantics, FAIRsharing, ROMULUS, DAML Ontology Library, Colore, BARTOC, TaxoBank, LusTRE, LOV4IoT, VOCAB OEG, LiveSchema, Protege Ontology Library] |
-| A1Q1 | 0 / 6 | 6 | The ontology provides 0 resolvable identifier. |
 | A1Q4 | 0 / 6 | 6 | The ontology is not accessible through a SPARQL endpoint. |
 | R1.2Q2 | 0 / 6 | 6 | The ontology provides O property to inform on its general provenance. |
 | R1.2Q3 | 0 / 6 | 6 | The ontology provides 0 accrual property. |

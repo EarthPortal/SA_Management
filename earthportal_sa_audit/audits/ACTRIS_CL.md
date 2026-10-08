@@ -1,10 +1,10 @@
 # ACTRIS_CL: ACTRIS Controlled List
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/ACTRIS_CL
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ACTRIS_CL
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 54 / 100 | 259 / 478 | 67.1 % of 386 | 37 of 71 artefacts |
+| 54 / 100 | 259 / 478 | 67.1 % of 386 | 36 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

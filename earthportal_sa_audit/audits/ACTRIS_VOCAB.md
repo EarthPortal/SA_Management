@@ -1,10 +1,10 @@
 # ACTRIS_VOCAB: ACTRIS Vocabulary
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/ACTRIS_VOCAB
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ACTRIS_VOCAB
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 55 / 100 | 266 / 478 | 68.9 % of 386 | 31 of 71 artefacts |
+| 55 / 100 | 266 / 478 | 68.9 % of 386 | 30 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

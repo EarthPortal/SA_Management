@@ -1,10 +1,10 @@
 # SXT_SNO: Services Nationaux d'Observation
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SXT_SNO
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SXT_SNO
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 47 / 100 | 225 / 478 | 58.3 % of 386 | 66 of 71 artefacts |
+| 47 / 100 | 225 / 478 | 58.3 % of 386 | 64 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,10 +1,10 @@
 # NVS_C19: SeaVoX salt and fresh water body gazetteer
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/NVS_C19
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_C19
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 55 / 100 | 264.75 / 478 | 68.6 % of 386 | 32 of 71 artefacts |
+| 55 / 100 | 264.75 / 478 | 68.6 % of 386 | 31 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

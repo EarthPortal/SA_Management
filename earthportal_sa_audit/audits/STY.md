@@ -1,10 +1,10 @@
 # STY: Semantic Types Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/STY
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/STY
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 39 / 100 | 191 / 478 | 49.5 % of 386 | 71 of 71 artefacts |
+| 39 / 100 | 191 / 478 | 49.5 % of 386 | 68 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

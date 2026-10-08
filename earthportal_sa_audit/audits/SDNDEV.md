@@ -1,10 +1,10 @@
 # SDNDEV: SeaDataNet Device Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SDNDEV
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SDNDEV
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 51 / 100 | 248 / 478 | 64.2 % of 386 | 49 of 71 artefacts |
+| 51 / 100 | 248 / 478 | 64.2 % of 386 | 48 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

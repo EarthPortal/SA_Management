@@ -1,10 +1,10 @@
 # GEOLTS: Chronostratigraphy
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/GEOLTS
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GEOLTS
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 54 / 100 | 258.44 / 478 | 67.0 % of 386 | 38 of 71 artefacts |
+| 54 / 100 | 258.44 / 478 | 67.0 % of 386 | 37 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

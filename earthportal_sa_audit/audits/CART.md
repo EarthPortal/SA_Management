@@ -1,10 +1,10 @@
 # CART: cartCoordOnt
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/CART
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/CART
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 52 / 100 | 248.75 / 478 | 64.4 % of 386 | 47 of 71 artefacts |
+| 52 / 100 | 248.75 / 478 | 64.4 % of 386 | 46 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

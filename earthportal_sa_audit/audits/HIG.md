@@ -1,6 +1,6 @@
 # HIG: HI Go
 
-Kind: **metadata-only** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/HIG
+Kind: **metadata-only** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/HIG
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

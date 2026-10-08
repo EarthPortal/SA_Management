@@ -1,10 +1,10 @@
 # POSO: Positioning System Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/POSO
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/POSO
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 59 / 100 | 285.25 / 478 | 73.9 % of 386 | 8 of 71 artefacts |
+| 59 / 100 | 285.25 / 478 | 73.9 % of 386 | 8 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

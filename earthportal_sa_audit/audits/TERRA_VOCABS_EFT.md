@@ -1,10 +1,10 @@
 # TERRA_VOCABS_EFT: Earth Feature Type - TerraVocabulary
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/TERRA_VOCABS_EFT
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/TERRA_VOCABS_EFT
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 276.75 / 478 | 71.7 % of 386 | 17 of 71 artefacts |
+| 57 / 100 | 276.75 / 478 | 71.7 % of 386 | 17 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,6 +1,6 @@
 # FMT_NET: FormaTerre Networks
 
-Kind: **view** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/FMT_NET
+Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/FMT_NET
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

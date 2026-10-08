@@ -1,10 +1,10 @@
 # IGNF: Ontology of coordinates reference systems
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/IGNF
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/IGNF
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 53 / 100 | 254.33 / 478 | 65.9 % of 386 | 42 of 71 artefacts |
+| 53 / 100 | 254.33 / 478 | 65.9 % of 386 | 41 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,10 +1,10 @@
 # GEOSPARQL: GeoSPARQL
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/GEOSPARQL
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GEOSPARQL
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 56 / 100 | 267.75 / 478 | 69.4 % of 386 | 29 of 71 artefacts |
+| 56 / 100 | 267.75 / 478 | 69.4 % of 386 | 29 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

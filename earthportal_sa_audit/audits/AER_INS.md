@@ -1,6 +1,6 @@
 # AER_INS: AERIS Instruments
 
-Kind: **view** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/AER_INS
+Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/AER_INS
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

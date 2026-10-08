@@ -1,10 +1,10 @@
 # IGEO: French Statistical ontology for geolocation
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/IGEO
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/IGEO
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 275.44 / 478 | 71.4 % of 386 | 19 of 71 artefacts |
+| 57 / 100 | 275.44 / 478 | 71.4 % of 386 | 19 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

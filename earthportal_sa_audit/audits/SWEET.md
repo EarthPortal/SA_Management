@@ -1,10 +1,10 @@
 # SWEET: SWEET Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SWEET
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SWEET
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 58 / 100 | 281.75 / 478 | 73.0 % of 386 | 11 of 71 artefacts |
+| 58 / 100 | 281.75 / 478 | 73.0 % of 386 | 11 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

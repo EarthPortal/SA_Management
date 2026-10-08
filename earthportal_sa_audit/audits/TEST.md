@@ -1,6 +1,6 @@
 # TEST: Test semantic
 
-Kind: **metadata-only** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/TEST
+Kind: **metadata-only** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/TEST
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

@@ -1,10 +1,10 @@
 # ODATIS: Thésaurus ODATIS
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/ODATIS
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ODATIS
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 275 / 478 | 71.2 % of 386 | 20 of 71 artefacts |
+| 57 / 100 | 275 / 478 | 71.2 % of 386 | 20 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

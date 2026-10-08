@@ -1,10 +1,10 @@
 # SEWERNET: Sewer Network Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SEWERNET
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SEWERNET
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 274 / 478 | 71.0 % of 386 | 22 of 71 artefacts |
+| 57 / 100 | 274 / 478 | 71.0 % of 386 | 22 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

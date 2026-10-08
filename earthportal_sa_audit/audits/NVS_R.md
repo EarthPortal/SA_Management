@@ -1,10 +1,10 @@
 # NVS_R: Argo Reference Tables
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/NVS_R
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_R
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 277 / 478 | 71.8 % of 386 | 14 of 71 artefacts |
+| 57 / 100 | 277 / 478 | 71.8 % of 386 | 14 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

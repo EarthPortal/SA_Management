@@ -1,10 +1,10 @@
 # NVS_L22: SeaVoX Device Catalogue
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/NVS_L22
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_L22
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 59 / 100 | 284.75 / 478 | 73.8 % of 386 | 9 of 71 artefacts |
+| 59 / 100 | 284.75 / 478 | 73.8 % of 386 | 9 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

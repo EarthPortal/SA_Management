@@ -1,6 +1,6 @@
 # TOZ: Theia-OZCAR Thesaurus
 
-Kind: **view** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/TOZ
+Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/TOZ
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

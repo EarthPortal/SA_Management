@@ -1,12 +1,12 @@
 # EarthPortal audits
 
-Snapshot of 2026-10-02. *P1*: empty Mandatory attributes; *P2*: empty Recommended attributes that cost O'FAIRe points.
+Snapshot of 2026-10-08. *P1*: empty Mandatory attributes; *P2*: empty Recommended attributes that cost O'FAIRe points.
 
-## Artefacts (71)
+## Artefacts (68)
 
 | Acronym | Name | O'FAIRe | Reachable | P1 | P2 |
 |---|---|---|---|---|---|
-| [OSO](OSO.md) | Observatories of the Seas Ontology | 75 | 93.9 % | 0 | 3 |
+| [OSO](OSO.md) | Observatories of the Seas Ontology | 76 | 94.4 % | 0 | 1 |
 | [NVS_OD1](NVS_OD1.md) | ODATIS aggregation parameters and Essential Variable names | 61 | 75.8 % | 4 | 18 |
 | [EASY_DATA_VOCAB](EASY_DATA_VOCAB.md) | EaSy Data Unified Thesaurus | 60 | 74.6 % | 1 | 15 |
 | [NVS_P06](NVS_P06.md) | Governance for vocabularies used within the data centre | 60 | 74.5 % | 1 | 18 |
@@ -35,7 +35,6 @@ Snapshot of 2026-10-02. *P1*: empty Mandatory attributes; *P2*: empty Recommende
 | [TERRA_VOCABS_ESV](TERRA_VOCABS_ESV.md) | Earth science variables - TerraVocabulary | 56 | 70.1 % | 3 | 24 |
 | [NVS_C17](NVS_C17.md) | ICES Platform Codes | 56 | 69.9 % | 2 | 21 |
 | [GEOSPARQL](GEOSPARQL.md) | GeoSPARQL | 56 | 69.4 % | 0 | 18 |
-| [OSO-DCAT](OSO-DCAT.md) | OSO - DCAT metadata | 56 | 69.4 % | 1 | 24 |
 | [ACTRIS_VOCAB](ACTRIS_VOCAB.md) | ACTRIS Vocabulary | 55 | 68.9 % | 1 | 16 |
 | [NVS_C19](NVS_C19.md) | SeaVoX salt and fresh water body gazetteer | 55 | 68.6 % | 2 | 22 |
 | [TSNC](TSNC.md) | Territorial Statistical Nomenclature Change Ontology | 55 | 68.5 % | 2 | 31 |
@@ -55,6 +54,7 @@ Snapshot of 2026-10-02. *P1*: empty Mandatory attributes; *P2*: empty Recommende
 | [CART](CART.md) | cartCoordOnt | 52 | 64.4 % | 3 | 34 |
 | [CFF](CFF.md) | Climate and Forecast (CF) features | 52 | 64.4 % | 3 | 33 |
 | [SDNDEV](SDNDEV.md) | SeaDataNet Device Thesaurus | 51 | 64.2 % | 7 | 40 |
+| [CALATHE](CALATHE.md) | Cadastre and Land Administration Thesaurus | 51 | 63.5 % | 2 | 39 |
 | [BRGM_UOM](BRGM_UOM.md) | Units of measure | 51 | 63.2 % | 1 | 39 |
 | [DIVCHRONOSTRAT](DIVCHRONOSTRAT.md) | Chronostratigraphic divisions | 51 | 63.2 % | 1 | 39 |
 | [DIVGEOCHRONO](DIVGEOCHRONO.md) | Geochronological divisions | 51 | 63.2 % | 1 | 39 |
@@ -67,25 +67,25 @@ Snapshot of 2026-10-02. *P1*: empty Mandatory attributes; *P2*: empty Recommende
 | [GEO](GEO.md) | WGS84 Geo Positioning | 49 | 61.9 % | 4 | 31 |
 | [ICOS](ICOS.md) | Integrated Carbon Observation System | 49 | 61.7 % | 1 | 37 |
 | [FORMATER_VOCAB](FORMATER_VOCAB.md) | FormaTerre Thesaurus | 48 | 60.6 % | 3 | 38 |
-| [CALATHE](CALATHE.md) | Cadastre and Land Administration Thesaurus | 48 | 59.6 % | 2 | 39 |
 | [SIH_TJDD](SIH_TJDD.md) | SIH - Types de jeu de données | 47 | 59.1 % | 4 | 41 |
 | [SXT_IR](SXT_IR.md) | Infrastructures de recherche | 47 | 59.1 % | 3 | 40 |
-| [SCHEMA-ORG](SCHEMA-ORG.md) | Schema.org | 47 | 59.1 % | 4 | 40 |
 | [SXT_SNO](SXT_SNO.md) | Services Nationaux d'Observation | 47 | 58.3 % | 3 | 40 |
-| [OSO-VOID](OSO-VOID.md) | OSO - VoID description | 46 | 57.0 % | 4 | 39 |
 | [SXT_CDO](SXT_CDO.md) | Centre de données ODATIS | 44 | 55.7 % | 3 | 39 |
 | [OSU-R](OSU-R.md) | OSU-Reunion | 43 | 53.9 % | 3 | 41 |
 | [SXT_AOB](SXT_AOB.md) | Area of benefit | 40 | 50.3 % | 8 | 46 |
 | [STY](STY.md) | Semantic Types Ontology | 39 | 49.5 % | 4 | 39 |
 
-## Views (16)
+## Views (19)
 
 | Acronym | Name | O'FAIRe | Reachable | P1 | P2 |
 |---|---|---|---|---|---|
+| [OSO-DCAT](OSO-DCAT.md) | OSO - DCAT metadata | 56 | 69.9 % | 1 | 22 |
 | [TSPA](TSPA.md) | Theia Spatial | 55 | 68.9 % | 0 | 34 |
 | [TOZ](TOZ.md) | Theia-OZCAR Thesaurus | 54 | 67.9 % | 0 | 35 |
+| [OSO-SHACL](OSO-SHACL.md) | OSO - SHACL (Shapes Constraint Language) | 52 | 65.5 % | 3 | 35 |
 | [EASYDATA_KW](EASYDATA_KW.md) | Vocabulaire des mots clefs | 52 | 64.5 % | 1 | 34 |
 | [EASYDATA_THEMES](EASYDATA_THEMES.md) | Vocabulaire thématique | 47 | 58.3 % | 2 | 38 |
+| [OSO-VOID](OSO-VOID.md) | OSO - VoID description | 46 | 58.0 % | 3 | 36 |
 | [FMT_PTF](FMT_PTF.md) | FormaTerre Platforms | 46 | 57.8 % | 2 | 36 |
 | [AER_INS](AER_INS.md) | AERIS Instruments | 46 | 57.0 % | 2 | 39 |
 | [AER_PFM](AER_PFM.md) | AERIS Platforms | 46 | 57.0 % | 2 | 39 |

@@ -1,10 +1,10 @@
 # ARG: Argo Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/ARG
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ARG
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 276.75 / 478 | 71.7 % of 386 | 17 of 71 artefacts |
+| 57 / 100 | 276.75 / 478 | 71.7 % of 386 | 17 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,10 +1,10 @@
 # SXT_CDO: Centre de données ODATIS
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SXT_CDO
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SXT_CDO
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 44 / 100 | 215 / 478 | 55.7 % of 386 | 68 of 71 artefacts |
+| 44 / 100 | 215 / 478 | 55.7 % of 386 | 65 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

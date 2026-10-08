@@ -1,0 +1,62 @@
+question,principle,sub_principle,max_credits,evaluable,reachable,text
+F1Q1,Findable,F1,9.0,True,True,"Does the ontology have a ""local"" identifier, i.e., a globally unique and potentially permanent identifier assigned by the developer (or developing organization)?"
+F1Q2,Findable,F1,11.0,True,True,"Does the ontology provide an additional ""external"" identifier, i.e., a guarantee globally unique and persistent identifier assigned by an accredited body? If yes, is the external identifier a DOI?"
+F1Q3,Findable,F1,12.0,True,True,Are the ontology metadata clearly identified either by the same identifier than the ontology (if included in the ontology file) or with its own globally unique and persistent identifier?
+F1Q4,Findable,F1,9.0,True,True,"Does the ontology provide a version-specific URI, and is this URI resolvable?"
+F2Q1,Findable,F2,16.0,True,True,Is the ontology described with additional 'MIRO must' metadata properties?
+F2Q2,Findable,F2,4.0,True,True,Is the ontology described with additional 'MIRO should' or 'optional' metadata properties?
+F2Q3,Findable,F2,7.0,True,True,Is the ontology described with another metadata property with no explicit corresponding MIRO requirement?
+F3Q1,Findable,F3,21.0,False,True,Are the ontology metadata included and maintained in the ontology file?
+F3Q2,Findable,F3,11.0,True,True,"If not, are the ontology metadata described in an external file?"
+F3Q3,Findable,F3,10.0,True,True,Does that external file explicitly link to the ontology and vice-versa?
+F4Q1,Findable,F4,6.0,True,True,Is the ontology registered in multiple ontology 'libraries'?
+F4Q2,Findable,F4,10.0,True,True,Is the ontology registered in multiple open ontology 'repositories'?
+F4Q3,Findable,F4,8.0,False,False,Are the ontology libraries or repositories properly indexed by Web search engines?
+A1Q1,Accessible,A1,6.0,True,True,"Does the ontology URI and other identifiers, if exist, resolve to the ontology?"
+A1Q2,Accessible,A1,7.0,True,True,Does the ontology URI (if metadata is included in the ontology file) or the external metadata URI resolve to the metadata record?
+A1Q3,Accessible,A1,24.0,True,True,"Do the ontology URI and the external metadata URI (if the metadata are not included in the ontology file), support content negotiation?"
+A1Q4,Accessible,A1,6.0,True,True,Are the ontology and its metadata accessible through another standard protocol such as SPARQL?
+A1.1Q1,Accessible,A1.1,20.0,True,True,Is the ontology relying on HTTP/URIs for its identification and access mechanisms?
+A1.1Q2,Accessible,A1.1,4.0,True,True,"Is the ontology access protocol open, free, and universally implementable?"
+A1.1Q3,Accessible,A1.1,4.0,True,True,"If the ontology and metadata are accessible through another protocol, is that protocol open, free, and universally implementable?"
+A1.2Q1,Accessible,A1.2,11.0,True,True,Is the ontology accessible through a protocol that supports authentication and authorization?
+A1.2Q2,Accessible,A1.2,11.0,True,True,Are the ontology metadata accessible through a protocol that supports authentification and authorization?
+A2Q1,Accessible,A2,7.0,True,True,Is the ontology accessible in a repository that supports versioning?
+A2Q2,Accessible,A2,5.0,True,True,Are the ontology metadata of each version available?
+A2Q3,Accessible,A2,4.0,True,True,Are the ontology metadata accessible even if no more versions of the ontology are available?
+A2Q4,Accessible,A2,4.0,True,True,Is the status of the ontology clearly informed?
+I1Q1,Interoperable,I1,18.0,True,True,What is the representation language used for ontology and ontology metadata?
+I1Q2,Interoperable,I1,10.0,True,True,Is the representation language used a W3C Recommendation?
+I1Q3,Interoperable,I1,5.0,True,True,Is the syntax of the ontology informed?
+I1Q4,Interoperable,I1,5.0,True,True,Is the formality level of the ontology informed?
+I1Q5,Interoperable,I1,4.0,True,True,Is the availability of other syntaxes/formats informed?
+I2Q1,Interoperable,I2,5.0,True,True,Does the ontology import other FAIR vocabularies?
+I2Q2,Interoperable,I2,5.0,True,True,Does the ontology reuse terms from other FAIR vocabularies (URIs)?
+I2Q3,Interoperable,I2,3.0,False,False,"If yes, does it include the minimum information for those terms?"
+I2Q4,Interoperable,I2,5.0,True,True,Is the ontology aligned to other FAIR vocabularies?
+I2Q5,Interoperable,I2,7.0,False,False,"If yes, are those alignments well represented and to unambiguous entities? If yes, are those alignements curated?"
+I2Q6,Interoperable,I2,2.0,True,True,Does the ontology provide metadata information about relation to or influence of other FAIR vocabularies?
+I2Q7,Interoperable,I2,5.0,True,True,Does the ontology reuse standard and FAIR metadata vocabularies to describe its metadata?
+I3Q1,Interoperable,I3,20.0,False,False,Does an ontology provide qualified cross-references to external resources/databases?
+I3Q2,Interoperable,I3,6.0,False,False,"If yes, are those cross-references well represented and to unambiguous entities?"
+I3Q3,Interoperable,I3,7.0,True,True,Does the ontology use valid URIs to encode some metadata values?
+R1Q1,Reusable,R1,5.0,True,True,Does the ontology provide information about how classes or concepts are defined?
+R1Q2,Reusable,R1,3.0,True,True,Does the ontology provide information about its hierarchy?
+R1Q3,Reusable,R1,7.0,False,False,How much of the ontology objects are described with labels?
+R1Q4,Reusable,R1,6.0,False,False,How much of the ontology objects are defined using a text description?
+R1Q5,Reusable,R1,6.0,False,False,How much ontology objects are defined using a property restriction or an equivalent class?
+R1Q6,Reusable,R1,5.0,False,False,How much of the ontology objects provide provenance information with annotation properties?
+R1.1Q1,Reusable,R1.1,15.0,True,True,"Is the ontology license clearly specified, with an URI that is resolvable and supports content negotiation?"
+R1.1Q2,Reusable,R1.1,7.0,True,True,Are the ontology access rights specified and permissions documented?
+R1.1Q3,Reusable,R1.1,15.0,True,True,Are the ontology usage guidelines and copyright holder documented?
+R1.2Q1,Reusable,R1.2,8.0,True,True,Does the ontology provide information about the actors involved in its development?
+R1.2Q2,Reusable,R1.2,6.0,True,True,Does an ontology provide information on its general provenance?
+R1.2Q3,Reusable,R1.2,6.0,True,True,Are the accrual methods and policy of the ontology documented?
+R1.2Q4,Reusable,R1.2,4.0,True,True,Is the ontology clearly versioned with version information and links to previous versions?
+R1.2Q5,Reusable,R1.2,2.0,False,False,Are the ontology latest changes documented?
+R1.2Q6,Reusable,R1.2,6.0,True,True,Are the methodology and tools used to build the ontology documented?
+R1.2Q7,Reusable,R1.2,4.0,True,True,Is the ontology rationale documented?
+R1.2Q8,Reusable,R1.2,2.0,True,True,Does an ontology inform about its funding organization?
+R1.3Q1,Reusable,R1.3,10.0,True,True,Does an ontology provide information about projects using or organizations endorsing?
+R1.3Q2,Reusable,R1.3,20.0,True,False,Is the ontology included in a specific community set or group?
+R1.3Q3,Reusable,R1.3,6.0,True,True,Is the ontology openly and freely available?

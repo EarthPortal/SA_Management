@@ -1,10 +1,10 @@
 # ENVTHES: Environmental Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/ENVTHES
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ENVTHES
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 57 / 100 | 273 / 478 | 70.7 % of 386 | 23 of 71 artefacts |
+| 57 / 100 | 273 / 478 | 70.7 % of 386 | 23 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

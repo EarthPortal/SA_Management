@@ -1,10 +1,10 @@
 # DIVCHRONOSTRAT: Chronostratigraphic divisions
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/DIVCHRONOSTRAT
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/DIVCHRONOSTRAT
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 51 / 100 | 244 / 478 | 63.2 % of 386 | 50 of 71 artefacts |
+| 51 / 100 | 244 / 478 | 63.2 % of 386 | 50 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

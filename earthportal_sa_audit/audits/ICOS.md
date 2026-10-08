@@ -1,10 +1,10 @@
 # ICOS: Integrated Carbon Observation System
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/ICOS
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ICOS
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 49 / 100 | 238 / 478 | 61.7 % of 386 | 60 of 71 artefacts |
+| 49 / 100 | 238 / 478 | 61.7 % of 386 | 60 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

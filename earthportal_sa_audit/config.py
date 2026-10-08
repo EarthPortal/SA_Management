@@ -10,13 +10,17 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-FOLDER = Path(__file__).resolve().parent          # earthportal_sa_audit/
-REPO = FOLDER.parent                              # root of the repository
+# __file__ holds the path of config.py itself, .resolve() turns it into an absolute path, and .parent moves up one level to the folder that contains it.
+FOLDER = Path(__file__).resolve().parent          # => earthportal_sa_audit/
+# REPO goes up one more level, to the root of SA_Management
+REPO = FOLDER.parent                              # => SA_Management/
+# The "/" operator on a Path joins path parts, so REPO / ".env" is <repo>/.env
 load_dotenv(REPO / ".env")
 
 # Web services
 API_URL = "https://data.earthportal.eu"
 OFAIRE_URL = "https://services.earthportal.eu/ofaire/"
+# os.getenv(name, "") returns the value, or an empty string if the variable is missing
 APIKEY = os.getenv("EARTHPORTAL_APIKEY", "")
 
 # Snapshot date: today by default, or the date written as RUN_DATE in .env
@@ -35,12 +39,16 @@ DATA = FOLDER / "data"                            # tables built from them
 REPORTS = FOLDER / "reports"
 MAPPING = FOLDER / "mapping"
 AUDITS = FOLDER / "audits"
+# "parents=True" creates any missing parent folders (data/, then raw/, then the date) while "exist_ok=True" means "no error if the folder is already there"
 for folder in (RAW, DATA, REPORTS, MAPPING, AUDITS):
     folder.mkdir(parents=True, exist_ok=True)
 
 
 def kind_of(ontology):
-    """artefact, view (a view of another artefact) or metadata-only (no content uploaded)."""
+    """
+    This function sorts each catalogue entry into the three groups we use in every count 
+    (for example 70 artefacts + 16 views (a view of another artefact) + 5 metadata-only (no content uploaded)).
+    """
     if ontology.get("viewOf"):
         return "view"
     if ontology.get("summaryOnly"):

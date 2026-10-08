@@ -1,6 +1,6 @@
 # AER_PJT: AERIS Projects
 
-Kind: **view** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/AER_PJT
+Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/AER_PJT
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

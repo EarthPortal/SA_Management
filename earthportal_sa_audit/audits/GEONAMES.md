@@ -1,10 +1,10 @@
 # GEONAMES: GeoNames Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/GEONAMES
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GEONAMES
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 56 / 100 | 271 / 478 | 70.2 % of 386 | 25 of 71 artefacts |
+| 56 / 100 | 271 / 478 | 70.2 % of 386 | 25 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,10 +1,10 @@
 # BRGM_LTH: Lithology
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/BRGM_LTH
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/BRGM_LTH
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 54 / 100 | 261 / 478 | 67.6 % of 386 | 36 of 71 artefacts |
+| 54 / 100 | 261 / 478 | 67.6 % of 386 | 35 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,10 +1,10 @@
 # THEIA_THES: Thesaurus Theia
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/THEIA_THES
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/THEIA_THES
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 58 / 100 | 280.75 / 478 | 72.7 % of 386 | 13 of 71 artefacts |
+| 58 / 100 | 280.75 / 478 | 72.7 % of 386 | 13 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

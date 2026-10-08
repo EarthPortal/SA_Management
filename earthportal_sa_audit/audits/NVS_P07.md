@@ -1,10 +1,10 @@
 # NVS_P07: Climate and Forecast Standard Names
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/NVS_P07
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_P07
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 60 / 100 | 287.75 / 478 | 74.5 % of 386 | 4 of 71 artefacts |
+| 60 / 100 | 287.75 / 478 | 74.5 % of 386 | 4 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

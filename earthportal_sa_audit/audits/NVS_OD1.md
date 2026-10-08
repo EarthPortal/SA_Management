@@ -1,10 +1,10 @@
 # NVS_OD1: ODATIS aggregation parameters and Essential Variable names
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/NVS_OD1
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_OD1
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 61 / 100 | 292.75 / 478 | 75.8 % of 386 | 2 of 71 artefacts |
+| 61 / 100 | 292.75 / 478 | 75.8 % of 386 | 2 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

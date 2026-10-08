@@ -1,10 +1,10 @@
 # NVS_P02: SeaDataNet Parameter Discovery Vocabulary
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/NVS_P02
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_P02
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 59 / 100 | 285.75 / 478 | 74.0 % of 386 | 7 of 71 artefacts |
+| 59 / 100 | 285.75 / 478 | 74.0 % of 386 | 7 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

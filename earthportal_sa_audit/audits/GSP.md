@@ -1,10 +1,10 @@
 # GSP: OGC GeoSPARQL
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/GSP
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GSP
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 54 / 100 | 262.75 / 478 | 68.1 % of 386 | 35 of 71 artefacts |
+| 54 / 100 | 262.75 / 478 | 68.1 % of 386 | 34 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

@@ -1,10 +1,10 @@
 # GEMET: General Multilingual Environmental Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/GEMET
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GEMET
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 50 / 100 | 242 / 478 | 62.7 % of 386 | 55 of 71 artefacts |
+| 50 / 100 | 242 / 478 | 62.7 % of 386 | 55 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

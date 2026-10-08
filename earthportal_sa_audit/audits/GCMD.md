@@ -1,10 +1,10 @@
 # GCMD: Global Change Master Directory Keywords
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/GCMD
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GCMD
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 53 / 100 | 253.75 / 478 | 65.7 % of 386 | 45 of 71 artefacts |
+| 53 / 100 | 253.75 / 478 | 65.7 % of 386 | 44 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

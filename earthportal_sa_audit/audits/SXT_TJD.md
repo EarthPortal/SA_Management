@@ -1,6 +1,6 @@
 # SXT_TJD: Type de jeux de données ODATIS
 
-Kind: **view** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/SXT_TJD
+Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SXT_TJD
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

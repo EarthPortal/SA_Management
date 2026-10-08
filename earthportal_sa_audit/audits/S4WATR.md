@@ -1,10 +1,10 @@
 # S4WATR: SAREF extension for water
 
-Kind: **artefact** · Snapshot: 2026-10-02 · Portal page: https://earthportal.eu/ontologies/S4WATR
+Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/S4WATR
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 58 / 100 | 277.33 / 478 | 71.8 % of 386 | 14 of 71 artefacts |
+| 58 / 100 | 277.33 / 478 | 71.8 % of 386 | 14 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 
