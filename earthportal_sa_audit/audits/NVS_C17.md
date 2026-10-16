@@ -1,6 +1,6 @@
 # NVS_C17: ICES Platform Codes
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_C17
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/NVS_C17
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

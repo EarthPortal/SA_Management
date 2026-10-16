@@ -1,6 +1,6 @@
 # TSNC: Territorial Statistical Nomenclature Change Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/TSNC
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/TSNC
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

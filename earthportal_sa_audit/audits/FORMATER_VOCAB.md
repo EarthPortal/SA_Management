@@ -1,10 +1,10 @@
 # FORMATER_VOCAB: FormaTerre Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/FORMATER_VOCAB
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/FORMATER_VOCAB
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 48 / 100 | 234 / 478 | 60.6 % of 386 | 61 of 68 artefacts |
+| 48 / 100 | 234 / 478 | 60.6 % of 386 | 59 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

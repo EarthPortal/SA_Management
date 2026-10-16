@@ -1,10 +1,10 @@
 # BRGM_UOM: Units of measure
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/BRGM_UOM
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/BRGM_UOM
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 51 / 100 | 244 / 478 | 63.2 % of 386 | 50 of 68 artefacts |
+| 47 / 100 | 229 / 478 | 59.3 % of 386 | 60 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 
@@ -14,10 +14,12 @@ Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.e
 | F4Q2 | 0 / 10 | 10 | The ontology is registered in 0 ontology repository.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome] |
 | R1.3Q1 | 0 / 10 | 10 | The ontology does not provide information about projects or endorsing organizations. |
 | F1Q4 | 0 / 9 | 9 | Version URI is absent. |
+| A1Q3 | 15 / 24 | 9 | Ontology and its metadata support 5 negotiation formats. (Ontology is not content-negotiable, Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml]) |
 | F2Q1 | 8 / 16 | 8 | The ontology is described with 4 'MIRO must' properties. |
 | R1.1Q3 | 7 / 15 | 8 | Ontology usage guidelines or copyright holder is absent. |
 | R1.2Q1 | 0 / 8 | 8 | The ontology provides 0 property to inform about the actors involved in its development. |
 | F4Q1 | 0 / 6 | 6 | The ontology is registered in 0 ontology library.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome][OBO Foundry, Agrisemantics, FAIRsharing, ROMULUS, DAML Ontology Library, Colore, BARTOC, TaxoBank, LusTRE, LOV4IoT, VOCAB OEG, LiveSchema, Protege Ontology Library] |
+| A1Q1 | 0 / 6 | 6 | The ontology provides 0 resolvable identifier. |
 | A1Q4 | 0 / 6 | 6 | The ontology is not accessible through a SPARQL endpoint. |
 | R1.2Q2 | 0 / 6 | 6 | The ontology provides O property to inform on its general provenance. |
 | R1.2Q3 | 0 / 6 | 6 | The ontology provides 0 accrual property. |

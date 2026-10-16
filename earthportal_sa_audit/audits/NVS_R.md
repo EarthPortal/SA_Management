@@ -1,6 +1,6 @@
 # NVS_R: Argo Reference Tables
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_R
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/NVS_R
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

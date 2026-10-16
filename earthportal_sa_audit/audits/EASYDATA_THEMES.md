@@ -1,6 +1,6 @@
 # EASYDATA_THEMES: Vocabulaire thématique
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/EASYDATA_THEMES
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/EASYDATA_THEMES
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

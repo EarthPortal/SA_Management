@@ -1,6 +1,6 @@
 # IGNF: Ontology of coordinates reference systems
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/IGNF
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/IGNF
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

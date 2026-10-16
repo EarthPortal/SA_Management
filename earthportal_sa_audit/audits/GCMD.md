@@ -1,6 +1,6 @@
 # GCMD: Global Change Master Directory Keywords
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GCMD
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/GCMD
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

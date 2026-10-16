@@ -1,6 +1,6 @@
 # AWS: Ontology for Meteorological sensors
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/AWS
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/AWS
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

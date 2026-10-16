@@ -1,6 +1,6 @@
 # HG: Hello Go
 
-Kind: **metadata-only** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/HG
+Kind: **metadata-only** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/HG
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

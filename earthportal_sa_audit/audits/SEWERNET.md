@@ -1,6 +1,6 @@
 # SEWERNET: Sewer Network Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SEWERNET
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SEWERNET
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

@@ -1,10 +1,10 @@
 # GEO: WGS84 Geo Positioning
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GEO
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/GEO
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 49 / 100 | 238.75 / 478 | 61.9 % of 386 | 59 of 68 artefacts |
+| 49 / 100 | 238.75 / 478 | 61.9 % of 386 | 56 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

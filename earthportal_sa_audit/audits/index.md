@@ -1,6 +1,6 @@
 # EarthPortal audits
 
-Snapshot of 2026-10-08. *P1*: empty Mandatory attributes; *P2*: empty Recommended attributes that cost O'FAIRe points.
+Snapshot of 2026-10-16. *P1*: empty Mandatory attributes; *P2*: empty Recommended attributes that cost O'FAIRe points.
 
 ## Artefacts (68)
 
@@ -55,20 +55,20 @@ Snapshot of 2026-10-08. *P1*: empty Mandatory attributes; *P2*: empty Recommende
 | [CFF](CFF.md) | Climate and Forecast (CF) features | 52 | 64.4 % | 3 | 33 |
 | [SDNDEV](SDNDEV.md) | SeaDataNet Device Thesaurus | 51 | 64.2 % | 7 | 40 |
 | [CALATHE](CALATHE.md) | Cadastre and Land Administration Thesaurus | 51 | 63.5 % | 2 | 39 |
-| [BRGM_UOM](BRGM_UOM.md) | Units of measure | 51 | 63.2 % | 1 | 39 |
 | [DIVCHRONOSTRAT](DIVCHRONOSTRAT.md) | Chronostratigraphic divisions | 51 | 63.2 % | 1 | 39 |
 | [DIVGEOCHRONO](DIVGEOCHRONO.md) | Geochronological divisions | 51 | 63.2 % | 1 | 39 |
-| [GEOLTSBOUND](GEOLTSBOUND.md) | Chronostratigraphical / geochronological boundaries | 51 | 63.2 % | 1 | 39 |
 | [GEOLUNITTYPE](GEOLUNITTYPE.md) | Geologic Units types | 51 | 63.2 % | 1 | 39 |
 | [GEMET](GEMET.md) | General Multilingual Environmental Thesaurus | 50 | 62.7 % | 5 | 26 |
-| [BRGM_OBSPROP](BRGM_OBSPROP.md) | Observed Properties | 50 | 62.7 % | 1 | 40 |
 | [SF](SF.md) | Simplified Features Geometry | 50 | 62.1 % | 3 | 33 |
 | [SOSA](SOSA.md) | Sensor, Observation, Sample, and Actuator Ontology | 50 | 62.1 % | 5 | 26 |
 | [GEO](GEO.md) | WGS84 Geo Positioning | 49 | 61.9 % | 4 | 31 |
 | [ICOS](ICOS.md) | Integrated Carbon Observation System | 49 | 61.7 % | 1 | 37 |
+| [GEOLTSBOUND](GEOLTSBOUND.md) | Chronostratigraphical / geochronological boundaries | 49 | 60.9 % | 1 | 39 |
 | [FORMATER_VOCAB](FORMATER_VOCAB.md) | FormaTerre Thesaurus | 48 | 60.6 % | 3 | 38 |
+| [BRGM_UOM](BRGM_UOM.md) | Units of measure | 47 | 59.3 % | 1 | 39 |
 | [SIH_TJDD](SIH_TJDD.md) | SIH - Types de jeu de données | 47 | 59.1 % | 4 | 41 |
 | [SXT_IR](SXT_IR.md) | Infrastructures de recherche | 47 | 59.1 % | 3 | 40 |
+| [BRGM_OBSPROP](BRGM_OBSPROP.md) | Observed Properties | 47 | 58.8 % | 1 | 40 |
 | [SXT_SNO](SXT_SNO.md) | Services Nationaux d'Observation | 47 | 58.3 % | 3 | 40 |
 | [SXT_CDO](SXT_CDO.md) | Centre de données ODATIS | 44 | 55.7 % | 3 | 39 |
 | [OSU-R](OSU-R.md) | OSU-Reunion | 43 | 53.9 % | 3 | 41 |
@@ -81,9 +81,9 @@ Snapshot of 2026-10-08. *P1*: empty Mandatory attributes; *P2*: empty Recommende
 |---|---|---|---|---|---|
 | [OSO-DCAT](OSO-DCAT.md) | OSO - DCAT metadata | 56 | 69.9 % | 1 | 22 |
 | [TSPA](TSPA.md) | Theia Spatial | 55 | 68.9 % | 0 | 34 |
-| [TOZ](TOZ.md) | Theia-OZCAR Thesaurus | 54 | 67.9 % | 0 | 35 |
+| [TOZ](TOZ.md) | Theia-OZCAR Thesaurus | 53 | 66.1 % | 0 | 35 |
 | [OSO-SHACL](OSO-SHACL.md) | OSO - SHACL (Shapes Constraint Language) | 52 | 65.5 % | 3 | 35 |
-| [EASYDATA_KW](EASYDATA_KW.md) | Vocabulaire des mots clefs | 52 | 64.5 % | 1 | 34 |
+| [EASYDATA_KW](EASYDATA_KW.md) | Vocabulaire des mots clefs | 51 | 63.7 % | 1 | 34 |
 | [EASYDATA_THEMES](EASYDATA_THEMES.md) | Vocabulaire thématique | 47 | 58.3 % | 2 | 38 |
 | [OSO-VOID](OSO-VOID.md) | OSO - VoID description | 46 | 58.0 % | 3 | 36 |
 | [FMT_PTF](FMT_PTF.md) | FormaTerre Platforms | 46 | 57.8 % | 2 | 36 |

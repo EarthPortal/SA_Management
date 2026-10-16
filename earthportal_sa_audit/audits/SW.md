@@ -1,6 +1,6 @@
 # SW: Semantic Web
 
-Kind: **metadata-only** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SW
+Kind: **metadata-only** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SW
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

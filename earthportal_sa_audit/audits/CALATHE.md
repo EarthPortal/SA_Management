@@ -1,6 +1,6 @@
 # CALATHE: Cadastre and Land Administration Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/CALATHE
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/CALATHE
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

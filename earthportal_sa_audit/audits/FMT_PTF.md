@@ -1,6 +1,6 @@
 # FMT_PTF: FormaTerre Platforms
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/FMT_PTF
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/FMT_PTF
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

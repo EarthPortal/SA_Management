@@ -1,6 +1,6 @@
 # FMT_FOI: FormaTerre Feature of Interest
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/FMT_FOI
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/FMT_FOI
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

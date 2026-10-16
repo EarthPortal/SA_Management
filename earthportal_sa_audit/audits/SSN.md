@@ -1,6 +1,6 @@
 # SSN: Semantic Sensor Network Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SSN
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SSN
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

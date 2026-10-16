@@ -1,6 +1,6 @@
 # CFF: Climate and Forecast (CF) features
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/CFF
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/CFF
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

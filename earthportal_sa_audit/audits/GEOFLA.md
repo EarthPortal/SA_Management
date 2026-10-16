@@ -1,6 +1,6 @@
 # GEOFLA: Ontology of administrative units at IGN-France
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/GEOFLA
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/GEOFLA
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

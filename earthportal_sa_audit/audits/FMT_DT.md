@@ -1,6 +1,6 @@
 # FMT_DT: FormaTerre Disciplines and Themes
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/FMT_DT
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/FMT_DT
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

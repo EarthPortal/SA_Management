@@ -1,6 +1,6 @@
 # SXT_AOB: Area of benefit
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SXT_AOB
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SXT_AOB
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

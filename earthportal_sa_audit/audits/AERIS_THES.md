@@ -1,6 +1,6 @@
 # AERIS_THES: AERIS Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/AERIS_THES
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/AERIS_THES
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

@@ -1,6 +1,6 @@
 # EASY_DATA_VOCAB: EaSy Data Unified Thesaurus
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/EASY_DATA_VOCAB
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/EASY_DATA_VOCAB
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

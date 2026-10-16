@@ -1,6 +1,6 @@
 # SEMTS: The Semantic Time Series Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SEMTS
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SEMTS
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

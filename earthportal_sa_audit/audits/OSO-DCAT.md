@@ -1,6 +1,6 @@
 # OSO-DCAT: OSO - DCAT metadata
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/OSO-DCAT
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/OSO-DCAT
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

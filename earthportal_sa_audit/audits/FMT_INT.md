@@ -1,6 +1,6 @@
 # FMT_INT: FormaTerre Instruments
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/FMT_INT
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/FMT_INT
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

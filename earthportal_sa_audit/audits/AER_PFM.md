@@ -1,6 +1,6 @@
 # AER_PFM: AERIS Platforms
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/AER_PFM
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/AER_PFM
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

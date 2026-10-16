@@ -1,10 +1,10 @@
 # SXT_IR: Infrastructures de recherche
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SXT_IR
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SXT_IR
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 47 / 100 | 228 / 478 | 59.1 % of 386 | 62 of 68 artefacts |
+| 47 / 100 | 228 / 478 | 59.1 % of 386 | 61 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

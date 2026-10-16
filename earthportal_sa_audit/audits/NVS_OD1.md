@@ -1,6 +1,6 @@
 # NVS_OD1: ODATIS aggregation parameters and Essential Variable names
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_OD1
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/NVS_OD1
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

@@ -1,10 +1,10 @@
 # EASYDATA_KW: Vocabulaire des mots clefs
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/EASYDATA_KW
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/EASYDATA_KW
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 52 / 100 | 249 / 478 | 64.5 % of 386 | not ranked (view) |
+| 51 / 100 | 246 / 478 | 63.7 % of 386 | not ranked (view) |
 
 ## Where O'FAIRe points are lost
 
@@ -29,6 +29,7 @@ Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/on
 | I2Q7 | 0 / 5 | 5 | The ontology does not declare reusing standards metadata vocabularies to describe its metadata. |
 | I1Q5 | 0 / 4 | 4 | No information is provided about the availability of the ontology in other formats. |
 | R1.2Q7 | 0 / 4 | 4 | The ontology provides 0 property to inform about rationale documentation. |
+| A1Q3 | 21 / 24 | 3 | Ontology and its metadata support 7 negotiation formats. (Ontology accept the following formats: [application/xml, application/rdf+xml], Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml]) |
 | I1Q1 | 15 / 18 | 3 | Ontology and ontology metadata are represented in SKOS. |
 | R1.1Q2 | 4 / 7 | 3 | Ontology access rights are clearly specified. |
 | R1.2Q8 | 0 / 2 | 2 | The ontology does not inform about its funding organization. |

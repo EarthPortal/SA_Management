@@ -1,6 +1,6 @@
 # NVS_P06: Governance for vocabularies used within the data centre
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_P06
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/NVS_P06
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

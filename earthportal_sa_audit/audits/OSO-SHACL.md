@@ -1,6 +1,6 @@
 # OSO-SHACL: OSO - SHACL (Shapes Constraint Language)
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/OSO-SHACL
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/OSO-SHACL
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

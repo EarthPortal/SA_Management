@@ -1,10 +1,10 @@
 # SOSA: Sensor, Observation, Sample, and Actuator Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SOSA
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SOSA
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 50 / 100 | 239.75 / 478 | 62.1 % of 386 | 57 of 68 artefacts |
+| 50 / 100 | 239.75 / 478 | 62.1 % of 386 | 54 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

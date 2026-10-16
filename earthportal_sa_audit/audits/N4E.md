@@ -1,6 +1,6 @@
 # N4E: NFDI4Earth Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/N4E
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/N4E
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

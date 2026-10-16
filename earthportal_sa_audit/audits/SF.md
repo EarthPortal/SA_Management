@@ -1,10 +1,10 @@
 # SF: Simplified Features Geometry
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SF
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SF
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 50 / 100 | 239.75 / 478 | 62.1 % of 386 | 57 of 68 artefacts |
+| 50 / 100 | 239.75 / 478 | 62.1 % of 386 | 54 of 68 artefacts |
 
 ## Where O'FAIRe points are lost
 

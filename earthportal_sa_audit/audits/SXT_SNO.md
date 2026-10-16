@@ -1,6 +1,6 @@
 # SXT_SNO: Services Nationaux d'Observation
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/SXT_SNO
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/SXT_SNO
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

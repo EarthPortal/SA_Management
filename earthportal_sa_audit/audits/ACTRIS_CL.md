@@ -1,6 +1,6 @@
 # ACTRIS_CL: ACTRIS Controlled List
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ACTRIS_CL
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/ACTRIS_CL
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

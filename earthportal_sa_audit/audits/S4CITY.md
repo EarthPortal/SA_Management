@@ -1,6 +1,6 @@
 # S4CITY: SAREF extension for Smart City
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/S4CITY
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/S4CITY
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

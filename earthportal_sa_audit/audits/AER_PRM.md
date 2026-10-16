@@ -1,6 +1,6 @@
 # AER_PRM: AERIS Parameters
 
-Kind: **view** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/AER_PRM
+Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/AER_PRM
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

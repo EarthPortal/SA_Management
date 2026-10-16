@@ -1,6 +1,6 @@
 # ELTER_CL: eLTER Controlled Lists
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/ELTER_CL
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/ELTER_CL
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|

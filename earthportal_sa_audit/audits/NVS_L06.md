@@ -1,6 +1,6 @@
 # NVS_L06: SeaDataNet Platform categories (NVS Platform Categories_L06)
 
-Kind: **artefact** · Snapshot: 2026-10-08 · Portal page: https://earthportal.eu/ontologies/NVS_L06
+Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/NVS_L06
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
