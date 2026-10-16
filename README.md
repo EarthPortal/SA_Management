@@ -108,3 +108,9 @@ you did not have before):
 5. Compare `.env.example` with your `.env`, and add any new variable it lists.
 
 Then open the README of the new folder to learn how to use it.
+## How to cite
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23417011.svg)](https://doi.org/10.5281/zenodo.23417011)
+
+If you use these notebooks or reports, please cite them with the DOI above. It always points to
+the latest release on Zenodo. You can also click **Cite this repository** on the GitHub page.

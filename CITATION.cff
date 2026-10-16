@@ -10,6 +10,7 @@ title: "SA_Management: Management and Curation of EarthPortal Resources"
 version: "v0.1.0"
 
 date-released: "2026-10-16"
+doi: "10.5281/zenodo.23417011"
 
 abstract: >-
   Jupyter notebooks that build a dated state of the art of the semantic
