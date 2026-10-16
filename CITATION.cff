@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+
+message: >-
+  If you use these notebooks or reports, please cite them as below.
+
+type: software
+
+title: "SA_Management: Management and Curation of EarthPortal Resources"
+
+version: "v0.1.0"
+
+date-released: "2026-10-16"
+
+abstract: >-
+  Jupyter notebooks that build a dated state of the art of the semantic
+  artefacts hosted on EarthPortal: they collect the catalogue through the
+  EarthPortal API, read the O'FAIRe scores, compare the metadata with the
+  OntoPortal Metadata Guideline and write one audit page per artefact.
+  The repository also holds short reports written during an internship
+  at CNRS / Data Terra.
+
+authors:
+  - family-names: "Nyandu Kagarabi"
+    given-names: "Emmanuel"
+    email: "emmanuelnk@aims.ac.za"
+    orcid: "https://orcid.org/0009-0000-4837-4712"
+    affiliation: >-
+      https://ror.org/0518tra10;
+      https://ror.org/004fze387
+
+  - family-names: "Pierkot"
+    given-names: "Christelle"
+    orcid: "https://orcid.org/0000-0002-2591-3311"
+    affiliation: >-
+      https://ror.org/0518tra10;
+      https://ror.org/02feahw73
+
+repository-code: "https://github.com/EarthPortal/SA_Management"
+
+license: MIT
+
+keywords:
+  - EarthPortal
+  - OntoPortal
+  - semantic artefacts
+  - ontologies
+  - metadata curation
+  - FAIR principles
+  - O'FAIRe
+  - MOD
+  - Jupyter notebooks
+  - Data Terra
