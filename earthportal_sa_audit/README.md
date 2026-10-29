@@ -49,12 +49,13 @@ The cheatsheet itself is read from [`docs/`](../docs).
 - **Empty attribute.** A value that is null, `""`, `[]` or `{}`. An agent or a contact with nothing
   but its identifier counts as empty too.
 - **Priority of an action.** 1 = Mandatory; 2 = Recommended and costing O'FAIRe points;
-  3 = Recommended only; 4 = Optional but costing O'FAIRe points.
+  3 = Optional but costing O'FAIRe points; 4 = Recommended only. After the Mandatory attributes, what
+  costs points comes first. An audit page lists priorities 1 to 3 in detail, and priority 4 in one line.
 - **Share of the points lost.** When a question loses points and reads several empty attributes, the
   lost points are divided equally among them. It is a way to rank the actions, not a promise of
   points, because O'FAIRe has its own rule for each question: for example, I1Q5 needs *Has format* and
-  *Is format of* together, one attribute is enough for I2Q6, and F1Q2 gives its 11 points only to a
-  valid DOI.
+  *Is format of* together, one attribute is enough for I2Q6, and F1Q2 gives its full 11 points only to
+  a DOI that the DOI service knows (any other valid URL gives 6).
 - **Who fixes it.** *author* (in the file or the submission form), *curator* (the EarthPortal team: administrators, curation), or *portal* (values it generates
   itself). This split is a proposal, to be validated ...
 
