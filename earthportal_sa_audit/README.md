@@ -1,7 +1,8 @@
 # earthportal_sa_audit
 
 State of the art of the semantic artefacts hosted in [EarthPortal](https://earthportal.eu): their
-O'FAIRe scores, how their metadata compare with the Metadata Guidelines, and one audit per artefact.
+O'FAIRe scores, how their metadata compare with the Metadata Guidelines, and one audit per artefact,
+with two parts (FAIRness and compliance with the guideline).
 
 The setup (virtual environment, `requirements.txt`, `.env` with your API key) is described in the
 [README at the root of the repository](../README.md). This folder needs nothing more.
@@ -17,7 +18,7 @@ notebook reads only the files written by the ones before it.
 | `02_ofaire_scores.ipynb` | Builds one table: one row per ontology, its overall scores and its points on each of the 61 O'FAIRe questions | `data/ofaire_scores_<date>.csv`, `data/ofaire_questions_<date>.csv` |
 | `03_eda.ipynb` | Explores the scores of the artefacts: where the catalogue loses points, profiling report, plots | `reports/eda_<date>.html`, `data/question_summary_<date>.csv` |
 | `04_guideline_vs_ofaire.ipynb` | Turns the cheatsheet of the Metadata Guidelines into a machine-readable table, finds where EarthPortal stores each attribute, and links each O'FAIRe question to the attributes it reads | `mapping/guideline_profile.csv` (and `.json`), `mapping/ofaire_vs_guideline.csv` |
-| `05_audits.ipynb` | Writes one audit per ontology: its scores, the questions where it loses points, its empty attributes and who can fill them in | `audits/<ACRONYM>.md`, `audits/index.md`, `data/actions_<date>.csv` |
+| `05_audits.ipynb` | Writes one audit per ontology in two parts: its FAIRness (O'FAIRe scores, questions where it loses points) and its compliance with the guideline (status of the 99 properties), with the suggested actions and who can take them | `audits/json/<ACRONYM>.json` (the data), `audits/<ACRONYM>.md` (the page), `audits/index.md`, `data/guideline_status_<date>.csv`, `data/actions_<date>.csv` |
 
 Only notebook 01 needs the network and the API key. To work again on an older snapshot, write its
 date in `.env` (for example `RUN_DATE=2026-09-28`) and run notebooks 02 to 05.
@@ -46,11 +47,13 @@ The cheatsheet itself is read from [`docs/`](../docs).
   give more than 3.75 of its 5 points, I1Q1 gives its 18 points only to OWL (15 to SKOS), and the last
   2 points of R1.2Q2 ask for *Was invalidated by*, which only makes sense for a retired artefact (the
   audits do not suggest it for the others).
-- **Empty attribute.** A value that is null, `""`, `[]` or `{}`. An agent or a contact with nothing
-  but its identifier counts as empty too.
-- **Priority of an action.** 1 = Mandatory; 2 = Recommended and costing O'FAIRe points;
-  3 = Optional but costing O'FAIRe points; 4 = Recommended only. After the Mandatory attributes, what
-  costs points comes first. An audit page lists priorities 1 to 3 in detail, and priority 4 in one line.
+- **Status of a property.** *filled*, *empty* or *not applicable*. Empty means a value that is null,
+  `""`, `[]` or `{}`; an agent or a contact with nothing but its identifier counts as empty too. *This
+  ontology is a view of* applies only to views, and *Was invalidated by* only to retired ontologies.
+  Filled means present: whether the value is correct is not checked.
+- **Priority of an action.** Every empty property of the guideline is an action. 1 = Mandatory;
+  2 = Recommended and costing O'FAIRe points; 3 = Optional and costing O'FAIRe points; 4 = Recommended
+  only; 5 = Optional only. After the Mandatory properties, what costs points comes first.
 - **Share of the points lost.** When a question loses points and reads several empty attributes, the
   lost points are divided equally among them. It is a way to rank the actions, not a promise of
   points, because O'FAIRe has its own rule for each question: for example, I1Q5 needs *Has format* and
@@ -69,6 +72,15 @@ The cheatsheet itself is read from [`docs/`](../docs).
 - Of the 99 attributes of the cheatsheet, 26 are stored by EarthPortal under another property name.
 - Mandatory attributes most often empty: Modification date (28 artefacts), Location (26),
   Creator (24), Categories (20), License (16).
+
+## The JSON audits
+
+`audits/json/<ACRONYM>.json` holds everything the page `audits/<ACRONYM>.md` says, and the page is
+written from it. It is meant for programs, for example a curation interface. Its keys: `acronym`,
+`name`, `kind`, `snapshot`, `portal_page`; `fairness` (scores, rank, `points_lost`); `guideline`
+(`summary` by usage, and the 99 `properties` with their status); `actions` (priority, who fixes it,
+property, where the portal stores it, O'FAIRe questions, share of points, note). It holds no value of
+the metadata, so no name or e-mail address of a person.
 
 ## Note
 
