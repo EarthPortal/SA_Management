@@ -36,7 +36,7 @@ Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.e
 
 ## Suggested actions
 
-Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. The share is the points lost on the questions in brackets, divided among the empty attributes these questions read.
+Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. Priority 3: Optional, but costing O'FAIRe points. The share is the points lost on the questions in brackets, divided among the empty attributes these questions read.
 
 ### By the author (in the file or the submission form)
 
@@ -60,10 +60,22 @@ Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. The s
 - [P2] Fill **Disparate modelling with** (cheatsheet 10.10, Recommended, `door:hasDisparateModelling`); share of the O'FAIRe points lost: 0.1 (I3Q3)
 - [P2] Fill **Used by** (cheatsheet 10.15, Recommended, `voaf:usedBy`); share of the O'FAIRe points lost: 0.1 (I3Q3)
 - [P2] Fill **Translation** (cheatsheet 10.16, Recommended, `schema:workTranslation`); share of the O'FAIRe points lost: 0.1 (I3Q3)
+- [P3] Fill **Other identifier** (cheatsheet 1.14, Optional, `dct:identifier`); share of the O'FAIRe points lost: 11 (F1Q2). For F1Q2, only a registered DOI gives the 11 points; any other valid URL gives 6.
+- [P3] Fill **Generally related to** (cheatsheet 10.5, Optional, `door:ontologyRelatedTo`); share of the O'FAIRe points lost: 5.1 (I2Q2 I3Q3)
+- [P3] Fill **More permissions** (cheatsheet 4.4, Optional, `cc:morePermissions`); share of the O'FAIRe points lost: 3 (R1.1Q2)
+- [P3] Fill **Knowledge representation paradigm** (cheatsheet 12.1, Optional, `omv:conformsToKnowledgeRepresentationParadigm`); share of the O'FAIRe points lost: 2 (R1.2Q6)
+- [P3] Fill **Engineering methodology** (cheatsheet 12.2, Optional, `omv:usedOntologyEngineeringMethodology`); share of the O'FAIRe points lost: 2 (R1.2Q6)
+- [P3] Fill **Root of obsolete branch** (cheatsheet 11.1, Optional, `bpm:obsoleteParent`); share of the O'FAIRe points lost: 1 (R1Q2)
+- [P3] Fill **Generalization of** (cheatsheet 10.12, Optional, `voaf:generalizes`); share of the O'FAIRe points lost: 0.6 (I2Q6 I3Q3)
+- [P3] Fill **Specialization of** (cheatsheet 10.13, Optional, `door:explanationEvolution`); share of the O'FAIRe points lost: 0.6 (I2Q6 I3Q3)
+- [P3] Fill **Comes from the same domain** (cheatsheet 10.6, Optional, `door:comesFromTheSameDomain`); share of the O'FAIRe points lost: 0.1 (I3Q3)
+- [P3] Fill **Backward compatible** (cheatsheet 10.8, Optional, `omv:isBackwardCompatibleWith`); share of the O'FAIRe points lost: 0.1 (I3Q3)
+- [P3] Fill **Incompatible** (cheatsheet 10.9, Optional, `omv:isIncompatibleWith`); share of the O'FAIRe points lost: 0.1 (I3Q3)
+- [P3] Fill **Has disjunctions with** (cheatsheet 10.11, Optional, `voaf:hasDisjunctionsWith`); share of the O'FAIRe points lost: 0.1 (I3Q3)
 
 ### By the portal (generated values: check that processing succeeded)
 
 - [P1] Fill **Download URL** (cheatsheet 6.4, Mandatory, `void:dataDump`)
 - [P1] Fill **CSV dump** (cheatsheet 6.5, Mandatory, `bpm:csvDump`)
 
-Later (priorities 3 and 4): Documentation, Subjects, Hidden label, Bibliographic reference, Validity date, Curation date, Rights holder, Bug database, Repository, Mailing list, To do list, Award, Coverage, Preferred namespace URI, Sample Queries, Other identifier, Generally related to, More permissions, Knowledge representation paradigm, Engineering methodology, Root of obsolete branch, Generalization of, Specialization of, Comes from the same domain, Backward compatible, Incompatible, Has disjunctions with.
+Later (priority 4, Recommended but costing no point): Documentation, Subjects, Hidden label, Bibliographic reference, Validity date, Curation date, Rights holder, Bug database, Repository, Mailing list, To do list, Award, Coverage, Preferred namespace URI, Sample Queries.

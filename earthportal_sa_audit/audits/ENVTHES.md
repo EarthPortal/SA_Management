@@ -36,7 +36,7 @@ Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.e
 
 ## Suggested actions
 
-Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. The share is the points lost on the questions in brackets, divided among the empty attributes these questions read.
+Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. Priority 3: Optional, but costing O'FAIRe points. The share is the points lost on the questions in brackets, divided among the empty attributes these questions read.
 
 ### By the author (in the file or the submission form)
 
@@ -61,9 +61,16 @@ Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. The s
 - [P2] Fill **Preferred namespace prefix** (cheatsheet 11.4, Recommended, `vann:preferredNamespacePrefix`); share of the O'FAIRe points lost: 1 (F2Q2)
 - [P2] Fill **Similar to** (cheatsheet 10.4, Recommended, `door:similarTo`); share of the O'FAIRe points lost: 0.5 (I2Q6)
 - [P2] Fill **Translation of** (cheatsheet 10.17, Recommended, `schema:translationOfWork`); share of the O'FAIRe points lost: 0.5 (I2Q6)
+- [P3] Fill **Generally related to** (cheatsheet 10.5, Optional, `door:ontologyRelatedTo`); share of the O'FAIRe points lost: 5 (I2Q2)
+- [P3] Fill **More permissions** (cheatsheet 4.4, Optional, `cc:morePermissions`); share of the O'FAIRe points lost: 3 (R1.1Q2)
+- [P3] Fill **Knowledge representation paradigm** (cheatsheet 12.1, Optional, `omv:conformsToKnowledgeRepresentationParadigm`); share of the O'FAIRe points lost: 2 (R1.2Q6)
+- [P3] Fill **Engineering methodology** (cheatsheet 12.2, Optional, `omv:usedOntologyEngineeringMethodology`); share of the O'FAIRe points lost: 2 (R1.2Q6)
+- [P3] Fill **Root of obsolete branch** (cheatsheet 11.1, Optional, `bpm:obsoleteParent`); share of the O'FAIRe points lost: 1 (R1Q2)
+- [P3] Fill **Generalization of** (cheatsheet 10.12, Optional, `voaf:generalizes`); share of the O'FAIRe points lost: 0.5 (I2Q6)
+- [P3] Fill **Specialization of** (cheatsheet 10.13, Optional, `door:explanationEvolution`); share of the O'FAIRe points lost: 0.5 (I2Q6)
 
 ### By the curator (EarthPortal team)
 
 - [P2] Fill **Curator** (cheatsheet 5.4, Recommended, `pav:curatedBy`); share of the O'FAIRe points lost: 1.7 (R1.2Q1)
 
-Later (priorities 3 and 4): Notes, Homepage, Documentation, Hidden label, Alternative name, Validity date, Curation date, Rights holder, Bug database, Repository, Mailing list, To do list, Award, Coverage, Example of use, Prior version, Has part (has views), Disparate modelling with, Used by, Translation, Preferred namespace URI, Sample Queries, Generally related to, More permissions, Knowledge representation paradigm, Engineering methodology, Root of obsolete branch, Generalization of, Specialization of.
+Later (priority 4, Recommended but costing no point): Notes, Homepage, Documentation, Hidden label, Alternative name, Validity date, Curation date, Rights holder, Bug database, Repository, Mailing list, To do list, Award, Coverage, Example of use, Prior version, Has part (has views), Disparate modelling with, Used by, Translation, Preferred namespace URI, Sample Queries.

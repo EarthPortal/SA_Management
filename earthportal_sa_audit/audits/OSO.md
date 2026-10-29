@@ -18,10 +18,10 @@ Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.e
 
 ## Suggested actions
 
-Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. The share is the points lost on the questions in brackets, divided among the empty attributes these questions read.
+Priority 1: Mandatory. Priority 2: Recommended and costing O'FAIRe points. Priority 3: Optional, but costing O'FAIRe points. The share is the points lost on the questions in brackets, divided among the empty attributes these questions read.
 
 ### By the author (in the file or the submission form)
 
 - [P2] Fill **Is format of** (cheatsheet 6.2, Recommended, `dct:isFormatOf`); share of the O'FAIRe points lost: 4 (I1Q5)
 
-Later (priorities 3 and 4): Award, Similar to, Disparate modelling with, Used by, Translation, Translation of, Sample Queries.
+Later (priority 4, Recommended but costing no point): Award, Similar to, Disparate modelling with, Used by, Translation, Translation of, Sample Queries.
