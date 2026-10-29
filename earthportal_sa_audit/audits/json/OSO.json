@@ -1,0 +1,930 @@
+{
+ "acronym": "OSO",
+ "name": "Observatories of the Seas Ontology",
+ "kind": "artefact",
+ "snapshot": "2026-10-16",
+ "portal_page": "https://earthportal.eu/ontologies/OSO",
+ "fairness": {
+  "ofaire_score": 76,
+  "points": 364.36,
+  "max_points": 478,
+  "reachable_score_pct": 94.4,
+  "reachable_max": 386,
+  "rank": 1,
+  "ranked_among": 68,
+  "points_lost": [
+   {
+    "question": "F4Q2",
+    "score": 2,
+    "max": 10,
+    "lost": 8,
+    "ofaire_says": "The ontology is registered in 1 ontology repository."
+   },
+   {
+    "question": "A1Q3",
+    "score": 18,
+    "max": 24,
+    "lost": 6,
+    "ofaire_says": "Ontology and its metadata support 6 negotiation formats. (Ontology accept the following formats: [text/html], Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml])"
+   },
+   {
+    "question": "I1Q5",
+    "score": 0,
+    "max": 4,
+    "lost": 4,
+    "ofaire_says": "No information is provided about the availability of the ontology in other formats."
+   },
+   {
+    "question": "R1.2Q2",
+    "score": 4,
+    "max": 6,
+    "lost": 2,
+    "ofaire_says": "The ontology provides 2 properties to inform on its general provenance."
+   },
+   {
+    "question": "I2Q7",
+    "score": 3.36,
+    "max": 5,
+    "lost": 1.64,
+    "ofaire_says": "The ontology declares reusing standards metadata vocabularies (more or less 'FAIR') to describe its metadata."
+   }
+  ]
+ },
+ "guideline": {
+  "summary": {
+   "Mandatory": {
+    "filled": 20,
+    "empty": 0,
+    "not applicable": 0,
+    "total": 20
+   },
+   "Recommended": {
+    "filled": 49,
+    "empty": 8,
+    "not applicable": 1,
+    "total": 58
+   },
+   "Optional": {
+    "filled": 15,
+    "empty": 5,
+    "not applicable": 1,
+    "total": 21
+   }
+  },
+  "properties": [
+   {
+    "id": "1.1",
+    "section": "General",
+    "entry": "Acronym",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "1.2",
+    "section": "General",
+    "entry": "Name",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "1.3",
+    "section": "General",
+    "entry": "Representation language",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "1.4",
+    "section": "General",
+    "entry": "Categories",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "1.5",
+    "section": "General",
+    "entry": "Groups",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "1.6",
+    "section": "General",
+    "entry": "Administrators",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "1.7",
+    "section": "General",
+    "entry": "Status",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "1.8",
+    "section": "General",
+    "entry": "URI",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "1.9",
+    "section": "General",
+    "entry": "Version IRI",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "1.10",
+    "section": "General",
+    "entry": "Formality level",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "1.11",
+    "section": "General",
+    "entry": "Syntax",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "1.12",
+    "section": "General",
+    "entry": "Natural language",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "1.13",
+    "section": "General",
+    "entry": "Generic type",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "1.14",
+    "section": "General",
+    "entry": "Other identifier",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "2.1",
+    "section": "Description",
+    "entry": "Abstract",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.2",
+    "section": "Description",
+    "entry": "Description",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "2.3",
+    "section": "Description",
+    "entry": "Notes",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.4",
+    "section": "Description",
+    "entry": "Homepage",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.5",
+    "section": "Description",
+    "entry": "Documentation",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.6",
+    "section": "Description",
+    "entry": "Keywords",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.7",
+    "section": "Description",
+    "entry": "Subjects",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.8",
+    "section": "Description",
+    "entry": "Hidden label",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.9",
+    "section": "Description",
+    "entry": "Alternative name",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "2.10",
+    "section": "Description",
+    "entry": "Bibliographic reference",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "3.1",
+    "section": "Dates",
+    "entry": "Creation date",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "3.2",
+    "section": "Dates",
+    "entry": "Modification date",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "3.3",
+    "section": "Dates",
+    "entry": "Validity date",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "3.4",
+    "section": "Dates",
+    "entry": "Curation date",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "3.5",
+    "section": "Dates",
+    "entry": "Submission date",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "4.1",
+    "section": "Licensing",
+    "entry": "Visibility",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "4.2",
+    "section": "Licensing",
+    "entry": "License",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "4.3",
+    "section": "Licensing",
+    "entry": "Use guidelines",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "4.4",
+    "section": "Licensing",
+    "entry": "More permissions",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "4.5",
+    "section": "Licensing",
+    "entry": "Rights holder",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "5.1",
+    "section": "Persons and Organisations",
+    "entry": "Contacts",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "5.2",
+    "section": "Persons and Organisations",
+    "entry": "Creator",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "5.3",
+    "section": "Persons and Organisations",
+    "entry": "Contributor",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "5.4",
+    "section": "Persons and Organisations",
+    "entry": "Curator",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "5.5",
+    "section": "Persons and Organisations",
+    "entry": "Publisher",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "5.6",
+    "section": "Persons and Organisations",
+    "entry": "Funded or sponsored by",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "5.7",
+    "section": "Persons and Organisations",
+    "entry": "Endorsed by",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "5.8",
+    "section": "Persons and Organisations",
+    "entry": "Translator",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "6.1",
+    "section": "Links",
+    "entry": "Location",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "6.2",
+    "section": "Links",
+    "entry": "Is format of",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "6.3",
+    "section": "Links",
+    "entry": "Has format",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "6.4",
+    "section": "Links",
+    "entry": "Download URL",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "6.5",
+    "section": "Links",
+    "entry": "CSV dump",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "6.6",
+    "section": "Links",
+    "entry": "URI lookup Endpoint",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "6.7",
+    "section": "Links",
+    "entry": "Free-text search endpoint",
+    "usage": "Mandatory",
+    "status": "filled"
+   },
+   {
+    "id": "6.8",
+    "section": "Links",
+    "entry": "SPARQL endpoint",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "6.9",
+    "section": "Links",
+    "entry": "Source",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "6.10",
+    "section": "Links",
+    "entry": "Indexed or Included in catalog or repository",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "7.1",
+    "section": "Media",
+    "entry": "The URL of a media associated to the ontology",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "7.2",
+    "section": "Media",
+    "entry": "Depiction",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "7.3",
+    "section": "Media",
+    "entry": "Logo",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "8.1",
+    "section": "Community",
+    "entry": "Bug database",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "8.2",
+    "section": "Community",
+    "entry": "Audience",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "8.3",
+    "section": "Community",
+    "entry": "Repository",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "8.4",
+    "section": "Community",
+    "entry": "Mailing list",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "8.5",
+    "section": "Community",
+    "entry": "To do list",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "8.6",
+    "section": "Community",
+    "entry": "Award",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "9.1",
+    "section": "Usage",
+    "entry": "Known usage",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "9.2",
+    "section": "Usage",
+    "entry": "Design for task",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "9.3",
+    "section": "Usage",
+    "entry": "Coverage",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "9.4",
+    "section": "Usage",
+    "entry": "Example of use",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "10.1",
+    "section": "Relations",
+    "entry": "This ontology is a view of",
+    "usage": "Recommended",
+    "status": "not applicable"
+   },
+   {
+    "id": "10.2",
+    "section": "Relations",
+    "entry": "Prior version",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "10.3",
+    "section": "Relations",
+    "entry": "Has part (has views)",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "10.4",
+    "section": "Relations",
+    "entry": "Similar to",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "10.5",
+    "section": "Relations",
+    "entry": "Generally related to",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "10.6",
+    "section": "Relations",
+    "entry": "Comes from the same domain",
+    "usage": "Optional",
+    "status": "empty"
+   },
+   {
+    "id": "10.7",
+    "section": "Relations",
+    "entry": "Has equivalences with",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "10.8",
+    "section": "Relations",
+    "entry": "Backward compatible",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "10.9",
+    "section": "Relations",
+    "entry": "Incompatible",
+    "usage": "Optional",
+    "status": "empty"
+   },
+   {
+    "id": "10.10",
+    "section": "Relations",
+    "entry": "Disparate modelling with",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "10.11",
+    "section": "Relations",
+    "entry": "Has disjunctions with",
+    "usage": "Optional",
+    "status": "empty"
+   },
+   {
+    "id": "10.12",
+    "section": "Relations",
+    "entry": "Generalization of",
+    "usage": "Optional",
+    "status": "empty"
+   },
+   {
+    "id": "10.13",
+    "section": "Relations",
+    "entry": "Specialization of",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "10.14",
+    "section": "Relations",
+    "entry": "Imports",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "10.15",
+    "section": "Relations",
+    "entry": "Used by",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "10.16",
+    "section": "Relations",
+    "entry": "Translation",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "10.17",
+    "section": "Relations",
+    "entry": "Translation of",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "11.1",
+    "section": "Content",
+    "entry": "Root of obsolete branch",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "11.2",
+    "section": "Content",
+    "entry": "URI Regex Pattern",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "11.3",
+    "section": "Content",
+    "entry": "Preferred namespace URI",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "11.4",
+    "section": "Content",
+    "entry": "Preferred namespace prefix",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "11.5",
+    "section": "Content",
+    "entry": "Example of resource",
+    "usage": "Optional",
+    "status": "empty"
+   },
+   {
+    "id": "11.6",
+    "section": "Content",
+    "entry": "Key classes",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "11.7",
+    "section": "Content",
+    "entry": "Metadata vocabulary used",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "12.1",
+    "section": "Methodology",
+    "entry": "Knowledge representation paradigm",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "12.2",
+    "section": "Methodology",
+    "entry": "Engineering methodology",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "12.3",
+    "section": "Methodology",
+    "entry": "Created With",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "12.4",
+    "section": "Methodology",
+    "entry": "Accrual method",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "12.5",
+    "section": "Methodology",
+    "entry": "Accrual periodicity",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "12.6",
+    "section": "Methodology",
+    "entry": "Accrual policy",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "12.7",
+    "section": "Methodology",
+    "entry": "Competency question",
+    "usage": "Recommended",
+    "status": "filled"
+   },
+   {
+    "id": "12.8",
+    "section": "Methodology",
+    "entry": "Sample Queries",
+    "usage": "Recommended",
+    "status": "empty"
+   },
+   {
+    "id": "12.9",
+    "section": "Methodology",
+    "entry": "Was generated by",
+    "usage": "Optional",
+    "status": "filled"
+   },
+   {
+    "id": "12.10",
+    "section": "Methodology",
+    "entry": "Was invalidated by",
+    "usage": "Optional",
+    "status": "not applicable"
+   }
+  ]
+ },
+ "actions": [
+  {
+   "priority": 2,
+   "why": "Recommended, costing O'FAIRe points",
+   "who_fixes": "author",
+   "id": "6.2",
+   "entry": "Is format of",
+   "usage": "Recommended",
+   "portal_attribute": "dct:isFormatOf",
+   "questions": [
+    "I1Q5"
+   ],
+   "points_share": 4,
+   "note": ""
+  },
+  {
+   "priority": 4,
+   "why": "Recommended",
+   "who_fixes": "author",
+   "id": "8.6",
+   "entry": "Award",
+   "usage": "Recommended",
+   "portal_attribute": "schema:award",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 4,
+   "why": "Recommended",
+   "who_fixes": "author",
+   "id": "10.4",
+   "entry": "Similar to",
+   "usage": "Recommended",
+   "portal_attribute": "door:similarTo",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 4,
+   "why": "Recommended",
+   "who_fixes": "author",
+   "id": "10.10",
+   "entry": "Disparate modelling with",
+   "usage": "Recommended",
+   "portal_attribute": "door:hasDisparateModelling",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 4,
+   "why": "Recommended",
+   "who_fixes": "author",
+   "id": "10.15",
+   "entry": "Used by",
+   "usage": "Recommended",
+   "portal_attribute": "voaf:usedBy",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 4,
+   "why": "Recommended",
+   "who_fixes": "author",
+   "id": "10.16",
+   "entry": "Translation",
+   "usage": "Recommended",
+   "portal_attribute": "schema:workTranslation",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 4,
+   "why": "Recommended",
+   "who_fixes": "author",
+   "id": "10.17",
+   "entry": "Translation of",
+   "usage": "Recommended",
+   "portal_attribute": "schema:translationOfWork",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 4,
+   "why": "Recommended",
+   "who_fixes": "author",
+   "id": "12.8",
+   "entry": "Sample Queries",
+   "usage": "Recommended",
+   "portal_attribute": "mod:sampleQueries",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 5,
+   "why": "Optional",
+   "who_fixes": "author",
+   "id": "10.6",
+   "entry": "Comes from the same domain",
+   "usage": "Optional",
+   "portal_attribute": "door:comesFromTheSameDomain",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 5,
+   "why": "Optional",
+   "who_fixes": "author",
+   "id": "10.9",
+   "entry": "Incompatible",
+   "usage": "Optional",
+   "portal_attribute": "omv:isIncompatibleWith",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 5,
+   "why": "Optional",
+   "who_fixes": "author",
+   "id": "10.11",
+   "entry": "Has disjunctions with",
+   "usage": "Optional",
+   "portal_attribute": "voaf:hasDisjunctionsWith",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 5,
+   "why": "Optional",
+   "who_fixes": "author",
+   "id": "10.12",
+   "entry": "Generalization of",
+   "usage": "Optional",
+   "portal_attribute": "voaf:generalizes",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  },
+  {
+   "priority": 5,
+   "why": "Optional",
+   "who_fixes": "author",
+   "id": "11.5",
+   "entry": "Example of resource",
+   "usage": "Optional",
+   "portal_attribute": "idot:exampleIdentifier",
+   "questions": [],
+   "points_share": 0,
+   "note": ""
+  }
+ ]
+}
