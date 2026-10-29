@@ -1,0 +1,245 @@
+% =====================================================================
+%  Report 6
+%  A user interface for the curation of EarthPortal
+%  Build: latexmk -pdf emmanuel_dataTerra_Report6-Curation-Interface.tex
+%  Numbers: snapshot of 16 October 2026 (SA_Management v0.3.0, notebook 05).
+%  Screenshots: production submission form of EarthPortal, 29 October 2026.
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage{dataterra-report}
+\usetikzlibrary{positioning}
+
+\reportsubtitle{A user interface for the curation of EarthPortal}
+
+\begin{document}
+\makereporttitlepage
+
+% =====================================================================
+\section{Introduction}
+
+In this short report, we suggest a user interface that could facilitate the curation job on
+EarthPortal. It builds on the audits produced by our pipeline (SA\_Management, v0.3.0), which give, for
+each ontology, its FAIRness according to O'FAIRe, its compliance with the Metadata Guideline, and a
+list of suggested actions. Before describing the interface, we answer one question: \emph{who should
+use it}, the curator (an EarthPortal administrator), the author of an ontology, or both?
+
+% =====================================================================
+\section{Development}
+
+\subsection{Who does the work?}
+
+Each suggested action of our audits says who can take it: the \textbf{author} (in the ontology file or
+the submission form), the \textbf{curator} (the EarthPortal team), or the \textbf{portal} itself (values
+it generates). For the 68 artefacts of the snapshot of 16 October 2026, the actions of priorities 1 to 3
+(Mandatory properties, and properties that cost O'FAIRe points) are split as follows:
+
+\begin{center}\small\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{8.4cm}rr@{}}
+\toprule
+\textbf{Who} & \textbf{Examples of properties} & \textbf{Actions} & \textbf{Share} \\
+\midrule
+author  & License, Creator, Modification date, Other identifier (DOI), Version IRI & 2,626 & 96\,\% \\
+curator & Categories, Groups, Curator, Curation date, Included in catalog & 81 & 3\,\% \\
+portal  & CSV dump, Download URL, URI lookup endpoint & 37 & 1\,\% \\
+\midrule
+        & \textbf{Total} & \textbf{2,744} & \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Who can take the actions of priorities 1 to 3, for the 68 artefacts (16 October 2026).}
+\label{tab:who}
+\end{center}
+
+Most of the information that is missing is known only by the authors: the licence they chose, who
+created the ontology, its DOI. A curator cannot invent it. So an interface used by curators alone would
+mostly produce messages to authors; and an interface open to anyone would let people change metadata
+that is not theirs.
+
+\begin{keypoint}
+Our answer is \textbf{both, with different rights, and in two steps}. First, a curator interface,
+reserved to EarthPortal administrators. Then, once the suggestions have been validated by the team, an
+author view limited to the ontologies each author administers.
+\end{keypoint}
+
+OntoPortal already knows these two roles: an \textbf{administrator of the portal} can edit every
+ontology, and each ontology has its own administrators (the field \prop{administeredBy}), who can edit
+its metadata. The interface should reuse these rights, not create new ones.
+
+\noindent\begin{minipage}{\linewidth}
+\begin{center}\small\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{6.0cm}>{\raggedright\arraybackslash}p{6.0cm}@{}}
+\toprule
+& \textbf{Curator (portal administrator)} & \textbf{Author (administrator of an ontology)} \\
+\midrule
+Sees & the whole catalogue & only the ontologies they administer \\
+Acts on & the curator actions; the checks of the portal; the requests sent to authors & the author actions of their own ontologies \\
+Decides & accept, edit, reject (with a reason) or postpone each suggestion & fill or correct their metadata, or explain why not \\
+When & step 1 & step 2, after the team has validated the suggestions \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The two roles of the interface.}
+\label{tab:roles}
+\end{center}
+\end{minipage}
+
+
+\subsection{Four principles}
+
+\begin{enumerate}
+  \item \textbf{The pipeline proposes, a person decides.} Nothing is written to the portal without a
+    click. Our checks only see whether a value is \emph{present}, not whether it is \emph{correct}: for
+    example, 55 artefacts have the same default value for their object description properties.
+  \item \textbf{Every decision is recorded}: who, when, which suggestion, and why. A rejected
+    suggestion, with its reason, is not proposed again at the next run. A change can be undone.
+  \item \textbf{Both views of quality are shown, but the score does not decide alone.} Each action
+    says why the guideline asks for it and what it is worth in O'FAIRe. A property such as \emph{Abstract}
+    costs no O'FAIRe point, but the guideline recommends it.
+  \item \textbf{Every result has a date.} The audits describe one snapshot of the catalogue. The
+    interface shows that date, and marks a suggestion as outdated when the value has changed since.
+\end{enumerate}
+
+\subsection{Three screens}
+
+\begin{enumerate}
+  \item \textbf{Catalogue}: one row per ontology, with its O'FAIRe and reachable scores, its guideline
+    compliance (for example ``Mandatory 16/20, Recommended 2/57''), its open actions, and the date of
+    its last audit. It is our \texttt{index.md}, made interactive (sorting, filters).
+  \item \textbf{Ontology}: the two parts of its audit, then its actions grouped by who can take them.
+    For each action, the current value (read live from the portal), the suggestion, the evidence, and
+    the buttons to decide.
+  \item \textbf{Property}: one property of the guideline across the whole catalogue, for example the
+    23 artefacts without a Creator. This view shows patterns; a group action is still confirmed
+    ontology by ontology.
+\end{enumerate}
+
+Figure~\ref{fig:screen} sketches the second screen, the one where most decisions are taken.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\scriptsize,
+  box/.style={draw=dtgrey,rounded corners=1.5pt,inner sep=4pt},
+  btn/.style={draw=dtnavy,rounded corners=1.5pt,inner sep=2pt,font=\tiny,text=dtnavy}]
+  \draw[dtgrey,rounded corners=3pt] (0,0) rectangle (15,8.4);
+  \fill[dtnavy] (0,7.8) rectangle (15,8.4);
+  \node[anchor=west,text=white,font=\small\bfseries] at (0.3,8.1) {STY: Semantic Types Ontology};
+  \node[anchor=east,text=white] at (14.7,8.1) {snapshot 2026-10-16 \quad artefact};
+  \node[box,anchor=north west,text width=6.6cm] at (0.3,7.5)
+    {\textbf{1. FAIRness (O'FAIRe)}\\ 39/100 \quad reachable 49.5\,\% \quad rank 68 of 68\\
+     largest losses: I1Q1 (18), R1.1Q1 (15), F1Q2 (11)};
+  \node[box,anchor=north west,text width=6.6cm] at (7.8,7.5)
+    {\textbf{2. Metadata Guideline}\\ Mandatory 16/20 \quad Recommended 2/57\\ Optional 0/20 \quad
+     \textcolor{dtnavy}{show the 99 properties}};
+  \node[anchor=west,font=\small\bfseries,text=dtnavy] at (0.3,5.75) {3. Actions};
+  \node[anchor=west] at (2.3,5.75) {\textbf{author} \quad curator \quad portal};
+  \foreach \x/\h in {0.3/Priority, 1.3/Property, 4.4/Guideline, 6.7/O'FAIRe, 10.1/Value now}
+    \node[anchor=west,text=dtgrey,font=\tiny] at (\x,5.35) {\h};
+  \foreach \y/\p/\name/\why/\pts/\val in {
+     5.0/P1/License (4.2)/Mandatory/15 pts (R1.1Q1)/{\textit{empty}},
+     4.35/P1/Creator (5.2)/Mandatory/2 pts (R1.2Q1)/{\textit{empty}},
+     3.7/P2/Version IRI (1.9)/Recommended/9 pts (F1Q4)/{\textit{empty}},
+     3.05/P3/Other identifier (1.14)/Optional/{17 pts (A1Q1, F1Q2)}/{\textit{empty}},
+     2.4/P4/Abstract (2.1)/Recommended/no O'FAIRe point/{\textit{empty}}} {
+    \draw[dtgrey!50] (0.3,\y-0.32) -- (14.7,\y-0.32);
+    \node[anchor=west,font=\scriptsize\bfseries] at (0.3,\y) {\p};
+    \node[anchor=west] at (1.3,\y) {\name};
+    \node[anchor=west] at (4.4,\y) {\why};
+    \node[anchor=west] at (6.7,\y) {\pts};
+    \node[anchor=west] at (10.1,\y) {\val};
+    \node[btn] at (11.7,\y) {accept};
+    \node[btn] at (12.6,\y) {edit};
+    \node[btn] at (13.45,\y) {reject};
+    \node[btn] at (14.3,\y) {later};
+  }
+  \node[anchor=west,text=dtgrey] at (0.3,1.65) {\ldots};
+  \node[box,anchor=south west,text width=14.0cm,fill=dtband] at (0.3,0.25)
+    {\textbf{Request to the author}: the author actions above become one polite message, ready to send
+     to the contacts of the ontology, with a link to its audit page.};
+\end{tikzpicture}
+\caption{A sketch of the ``Ontology'' screen, with the data of STY on 16 October 2026. The buttons
+\emph{accept} and \emph{edit} write to the portal only for the curator actions; for the author actions,
+the curator prepares a request instead.}
+\label{fig:screen}
+\end{figure}
+
+\subsection{How the interface gets its data}
+
+The interface does not need to run our Python code. Since v0.3.0, the pipeline writes \textbf{one JSON
+file per ontology} (\prop{audits/json/<ACRONYM>.json}); the audit page that people read is written from
+the same file, so the two always agree. Each action looks like this:
+
+\begin{lstlisting}
+{ "priority": 3, "why": "Optional, costing O'FAIRe points", "who_fixes": "author",
+  "id": "1.14", "entry": "Other identifier", "usage": "Optional",
+  "portal_attribute": "dct:identifier", "questions": ["A1Q1", "F1Q2"], "points_share": 17,
+  "note": "For F1Q2, only a registered DOI gives the 11 points; any other valid URL gives 6." }
+\end{lstlisting}
+
+The JSON holds no value of the metadata, and so no name or e-mail address. The interface reads the
+current values live from the portal API, with the rights of the person who is logged in, and writes
+the accepted changes through the same API.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small, node distance=0.9cm,
+  b/.style={draw=dtnavy,rounded corners=2pt,align=center,minimum height=1.1cm,text width=3.3cm,fill=dtband},
+  a/.style={->,dtnavy,line width=0.8pt}]
+  \node[b] (p) {Pipeline\\ \scriptsize notebooks 01 to 05};
+  \node[b,right=of p] (j) {One JSON file\\ per ontology};
+  \node[b,right=of j] (u) {Curation\\ interface};
+  \node[b,below=0.8cm of u] (api) {EarthPortal API\\ \scriptsize current values and changes};
+  \node[b,below=0.8cm of j] (md) {Audit pages\\ \scriptsize for people};
+  \draw[a] (p) -- (j); \draw[a] (j) -- (u); \draw[a] (j) -- (md);
+  \draw[a,<->] (u) -- (api);
+  \draw[a,dashed] (api.south) -- ++(0,-0.45) -| node[pos=0.25,below,font=\scriptsize] {next snapshot} (p.south);
+\end{tikzpicture}
+\caption{The data flow. The pipeline and the interface only share the JSON files.}
+\label{fig:flow}
+\end{figure}
+
+\subsection{Preventing is better than curing}
+
+The submission form of EarthPortal (Figure~\ref{fig:form}) asks for name, acronym, visibility,
+administrators, URI, description, representation language, status, location, date of creation and
+contacts. It does not ask for the \textbf{licence}, the \textbf{creator} or the \textbf{modification
+date}, and it offers the \textbf{categories} without requiring them. These are exactly four of the five
+Mandatory properties most often empty in the catalogue:
+
+\begin{center}\small\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lrl@{}}
+\toprule
+\textbf{Mandatory property} & \textbf{Artefacts where it is empty} & \textbf{In the submission form} \\
+\midrule
+Modification date & 27 & not asked \\
+Location          & 24 & empty by design when a file is uploaded \\
+Creator           & 23 & not asked \\
+Categories        & 20 & offered, not required \\
+License           & 15 & not asked \\
+\bottomrule
+\end{tabular}
+\captionof{table}{The Mandatory properties most often empty among the 68 artefacts (16 October 2026).}
+\label{tab:form}
+\end{center}
+
+Asking for these properties at submission time would prevent many actions from ever reaching the
+curation interface. A small detail on the same form: the text at the top of step 2 ends with an
+untranslated \texttt{\%\{link\}}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=7.2cm]{EarthPortal_Ontology-Submission-production_Step1.png}\hfill
+\includegraphics[height=7.2cm]{EarthPortal_Ontology-Submission-production_Step2.png}\hfill
+\includegraphics[height=3.6cm]{EarthPortal_Ontology-Submission-production_Step3.png}
+\caption{The three steps of the submission form of EarthPortal (production, 29 October 2026).}
+\label{fig:form}
+\end{figure}
+
+% =====================================================================
+\section{Conclusion}
+
+We suggest one curation interface with two roles: first for the EarthPortal curators, then for the
+authors, each on their own ontologies, using the rights OntoPortal already has. It reads one JSON file
+per ontology produced by our pipeline, never writes without a person's decision, and keeps a record of
+every decision. In parallel, adding four properties to the submission form would reduce the work at the
+source. I would appreciate your feedback, in particular on the two roles and on the place of the
+interface: inside the EarthPortal administration pages, or as a separate tool.
+
+\end{document}
