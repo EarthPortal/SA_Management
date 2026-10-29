@@ -7,9 +7,9 @@ type: software
 
 title: "SA_Management: Management and Curation of EarthPortal Resources"
 
-version: "v0.1.0"
+version: "v0.2.0"
 
-date-released: "2026-10-16"
+date-released: "2026-10-29"
 doi: "10.5281/zenodo.23417011"
 
 abstract: >-
