@@ -7,7 +7,7 @@ type: software
 
 title: "SA_Management: Management and Curation of EarthPortal Resources"
 
-version: "v0.2.0"
+version: "v0.3.0"
 
 date-released: "2026-10-29"
 doi: "10.5281/zenodo.23417011"
@@ -26,14 +26,14 @@ authors:
     email: "emmanuelnk@aims.ac.za"
     orcid: "https://orcid.org/0009-0000-4837-4712"
     affiliation: >-
-      UAR Data Terra;
+      UAR Data Terra,
       Scuola Internazionale Superiore di Studi Avanzati
 
   - family-names: "Pierkot"
     given-names: "Christelle"
     orcid: "https://orcid.org/0000-0002-2591-3311"
     affiliation: >-
-      UAR Data Terra;
+      UAR Data Terra,
       Centre National de la Recherche Scientifique
 
 repository-code: "https://github.com/EarthPortal/SA_Management"
