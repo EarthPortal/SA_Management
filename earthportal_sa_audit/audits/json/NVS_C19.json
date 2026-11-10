@@ -2,7 +2,7 @@
  "acronym": "NVS_C19",
  "name": "SeaVoX salt and fresh water body gazetteer",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/NVS_C19",
  "fairness": {
   "ofaire_score": 55,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 68.6,
   "reachable_max": 386,
-  "rank": 31,
+  "rank": 30,
   "ranked_among": 68,
   "points_lost": [
    {

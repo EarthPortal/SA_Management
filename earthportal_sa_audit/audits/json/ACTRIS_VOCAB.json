@@ -2,7 +2,7 @@
  "acronym": "ACTRIS_VOCAB",
  "name": "ACTRIS Vocabulary",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/ACTRIS_VOCAB",
  "fairness": {
   "ofaire_score": 55,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 68.9,
   "reachable_max": 386,
-  "rank": 30,
+  "rank": 29,
   "ranked_among": 68,
   "points_lost": [
    {

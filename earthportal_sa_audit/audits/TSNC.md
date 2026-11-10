@@ -1,6 +1,6 @@
 # TSNC: Territorial Statistical Nomenclature Change Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/TSNC
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/TSNC
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 55 / 100 | 264.33 / 478 | 68.5 % of 386 | 32 of 68 artefacts |
+| 55 / 100 | 264.33 / 478 | 68.5 % of 386 | 31 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 

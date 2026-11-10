@@ -1,6 +1,6 @@
 # GEOFLA: Ontology of administrative units at IGN-France
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/GEOFLA
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/GEOFLA
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 

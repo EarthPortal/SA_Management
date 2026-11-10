@@ -1,6 +1,6 @@
 # ICOS: Integrated Carbon Observation System
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/ICOS
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/ICOS
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 49 / 100 | 238 / 478 | 61.7 % of 386 | 57 of 68 artefacts |
+| 49 / 100 | 238 / 478 | 61.7 % of 386 | 60 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 

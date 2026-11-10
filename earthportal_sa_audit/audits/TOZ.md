@@ -1,6 +1,6 @@
 # TOZ: Theia-OZCAR Thesaurus
 
-Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/TOZ
+Kind: **view** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/TOZ
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 53 / 100 | 255 / 478 | 66.1 % of 386 | not ranked (view) |
+| 54 / 100 | 262 / 478 | 67.9 % of 386 | not ranked (view) |
 
 ### Where O'FAIRe points are lost
 
@@ -18,7 +18,6 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 | F4Q2 | 0 / 10 | 10 | The ontology is registered in 0 ontology repository.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome] |
 | F1Q4 | 0 / 9 | 9 | Version URI is absent. |
 | R1.1Q3 | 7 / 15 | 8 | Ontology usage guidelines or copyright holder is absent. |
-| R1.1Q1 | 8 / 15 | 7 | Ontology license present and valid but not resolvable. |
 | F2Q1 | 10 / 16 | 6 | The ontology is described with 5 'MIRO must' properties. |
 | F4Q1 | 0 / 6 | 6 | The ontology is registered in 0 ontology library.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome][OBO Foundry, Agrisemantics, FAIRsharing, ROMULUS, DAML Ontology Library, Colore, BARTOC, TaxoBank, LusTRE, LOV4IoT, VOCAB OEG, LiveSchema, Protege Ontology Library] |
 | A1Q4 | 0 / 6 | 6 | The ontology is not accessible through a SPARQL endpoint. |

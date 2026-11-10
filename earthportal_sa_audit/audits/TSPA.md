@@ -1,6 +1,6 @@
 # TSPA: Theia Spatial
 
-Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/TSPA
+Kind: **view** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/TSPA
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 

@@ -2,13 +2,13 @@
  "acronym": "EASYDATA_KW",
  "name": "Vocabulaire des mots clefs",
  "kind": "view",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/EASYDATA_KW",
  "fairness": {
-  "ofaire_score": 51,
-  "points": 246,
+  "ofaire_score": 52,
+  "points": 249,
   "max_points": 478,
-  "reachable_score_pct": 63.7,
+  "reachable_score_pct": 64.5,
   "reachable_max": 386,
   "rank": null,
   "ranked_among": null,
@@ -145,13 +145,6 @@
     "max": 4,
     "lost": 4,
     "ofaire_says": "The ontology provides 0 property to inform about rationale documentation."
-   },
-   {
-    "question": "A1Q3",
-    "score": 21,
-    "max": 24,
-    "lost": 3,
-    "ofaire_says": "Ontology and its metadata support 7 negotiation formats. (Ontology accept the following formats: [application/xml, application/rdf+xml], Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml])"
    },
    {
     "question": "I1Q1",

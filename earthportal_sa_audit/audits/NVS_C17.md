@@ -1,6 +1,6 @@
 # NVS_C17: ICES Platform Codes
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/NVS_C17
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/NVS_C17
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 56 / 100 | 269.75 / 478 | 69.9 % of 386 | 28 of 68 artefacts |
+| 56 / 100 | 269.75 / 478 | 69.9 % of 386 | 27 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 

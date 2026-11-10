@@ -2,7 +2,7 @@
  "acronym": "BRGM_LTH",
  "name": "Lithology",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/BRGM_LTH",
  "fairness": {
   "ofaire_score": 54,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 67.6,
   "reachable_max": 386,
-  "rank": 35,
+  "rank": 34,
   "ranked_among": 68,
   "points_lost": [
    {

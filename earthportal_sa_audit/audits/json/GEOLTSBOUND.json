@@ -2,15 +2,15 @@
  "acronym": "GEOLTSBOUND",
  "name": "Chronostratigraphical / geochronological boundaries",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/GEOLTSBOUND",
  "fairness": {
-  "ofaire_score": 49,
-  "points": 235,
+  "ofaire_score": 51,
+  "points": 244,
   "max_points": 478,
-  "reachable_score_pct": 60.9,
+  "reachable_score_pct": 63.2,
   "reachable_max": 386,
-  "rank": 58,
+  "rank": 50,
   "ranked_among": 68,
   "points_lost": [
    {
@@ -40,13 +40,6 @@
     "max": 9,
     "lost": 9,
     "ofaire_says": "Version URI is absent."
-   },
-   {
-    "question": "A1Q3",
-    "score": 15,
-    "max": 24,
-    "lost": 9,
-    "ofaire_says": "Ontology and its metadata support 5 negotiation formats. (Ontology is not content-negotiable, Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml])"
    },
    {
     "question": "R1.1Q3",

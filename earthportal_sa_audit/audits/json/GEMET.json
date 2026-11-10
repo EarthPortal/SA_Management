@@ -2,7 +2,7 @@
  "acronym": "GEMET",
  "name": "General Multilingual Environmental Thesaurus",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/GEMET",
  "fairness": {
   "ofaire_score": 50,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 62.7,
   "reachable_max": 386,
-  "rank": 53,
+  "rank": 55,
   "ranked_among": 68,
   "points_lost": [
    {

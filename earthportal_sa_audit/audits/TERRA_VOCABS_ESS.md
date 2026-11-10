@@ -1,6 +1,6 @@
 # TERRA_VOCABS_ESS: Earth Science Sensors - TerraVocabulary
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/TERRA_VOCABS_ESS
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/TERRA_VOCABS_ESS
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 56 / 100 | 270.75 / 478 | 70.1 % of 386 | 26 of 68 artefacts |
+| 56 / 100 | 270.75 / 478 | 70.1 % of 386 | 25 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 

@@ -2,7 +2,7 @@
  "acronym": "TERRA_VOCABS_ESS",
  "name": "Earth Science Sensors - TerraVocabulary",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/TERRA_VOCABS_ESS",
  "fairness": {
   "ofaire_score": 56,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 70.1,
   "reachable_max": 386,
-  "rank": 26,
+  "rank": 25,
   "ranked_among": 68,
   "points_lost": [
    {

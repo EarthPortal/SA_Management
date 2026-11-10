@@ -2,7 +2,7 @@
  "acronym": "SIH_TJDD",
  "name": "SIH - Types de jeu de données",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/SIH_TJDD",
  "fairness": {
   "ofaire_score": 47,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 59.1,
   "reachable_max": 386,
-  "rank": 61,
+  "rank": 62,
   "ranked_among": 68,
   "points_lost": [
    {

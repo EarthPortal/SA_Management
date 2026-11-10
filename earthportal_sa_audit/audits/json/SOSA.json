@@ -2,7 +2,7 @@
  "acronym": "SOSA",
  "name": "Sensor, Observation, Sample, and Actuator Ontology",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/SOSA",
  "fairness": {
   "ofaire_score": 50,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 62.1,
   "reachable_max": 386,
-  "rank": 54,
+  "rank": 57,
   "ranked_among": 68,
   "points_lost": [
    {

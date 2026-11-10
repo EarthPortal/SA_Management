@@ -1,6 +1,6 @@
 # OSO-DCAT: OSO - DCAT metadata
 
-Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/OSO-DCAT
+Kind: **view** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/OSO-DCAT
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 

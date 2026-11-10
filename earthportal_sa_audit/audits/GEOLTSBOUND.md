@@ -1,6 +1,6 @@
 # GEOLTSBOUND: Chronostratigraphical / geochronological boundaries
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/GEOLTSBOUND
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/GEOLTSBOUND
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 49 / 100 | 235 / 478 | 60.9 % of 386 | 58 of 68 artefacts |
+| 51 / 100 | 244 / 478 | 63.2 % of 386 | 50 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 
@@ -18,7 +18,6 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 | F4Q2 | 0 / 10 | 10 | The ontology is registered in 0 ontology repository.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome] |
 | R1.3Q1 | 0 / 10 | 10 | The ontology does not provide information about projects or endorsing organizations. |
 | F1Q4 | 0 / 9 | 9 | Version URI is absent. |
-| A1Q3 | 15 / 24 | 9 | Ontology and its metadata support 5 negotiation formats. (Ontology is not content-negotiable, Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml]) |
 | R1.1Q3 | 7 / 15 | 8 | Ontology usage guidelines or copyright holder is absent. |
 | R1.2Q1 | 0 / 8 | 8 | The ontology provides 0 property to inform about the actors involved in its development. |
 | F2Q1 | 10 / 16 | 6 | The ontology is described with 5 'MIRO must' properties. |

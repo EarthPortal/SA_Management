@@ -1,6 +1,6 @@
 # FMT_INT: FormaTerre Instruments
 
-Kind: **view** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/FMT_INT
+Kind: **view** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/FMT_INT
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 

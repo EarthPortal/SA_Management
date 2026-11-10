@@ -1,6 +1,6 @@
 # GEONAMES: GeoNames Ontology
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/GEONAMES
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/GEONAMES
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 56 / 100 | 271 / 478 | 70.2 % of 386 | 25 of 68 artefacts |
+| 56 / 100 | 271 / 478 | 70.2 % of 386 | 24 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 

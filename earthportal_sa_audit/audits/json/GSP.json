@@ -2,7 +2,7 @@
  "acronym": "GSP",
  "name": "OGC GeoSPARQL",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/GSP",
  "fairness": {
   "ofaire_score": 54,
@@ -10,7 +10,7 @@
   "max_points": 478,
   "reachable_score_pct": 68.1,
   "reachable_max": 386,
-  "rank": 34,
+  "rank": 33,
   "ranked_among": 68,
   "points_lost": [
    {

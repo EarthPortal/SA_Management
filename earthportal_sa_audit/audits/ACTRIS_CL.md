@@ -1,6 +1,6 @@
 # ACTRIS_CL: ACTRIS Controlled List
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/ACTRIS_CL
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/ACTRIS_CL
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 54 / 100 | 259 / 478 | 67.1 % of 386 | 36 of 68 artefacts |
+| 54 / 100 | 259 / 478 | 67.1 % of 386 | 35 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 

@@ -1,6 +1,6 @@
 # GSP: OGC GeoSPARQL
 
-Kind: **artefact** · Snapshot: 2026-10-16 · Portal page: https://earthportal.eu/ontologies/GSP
+Kind: **artefact** · Snapshot: 2026-11-10 · Portal page: https://earthportal.eu/ontologies/GSP
 
 This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, and its compliance with the Metadata Guideline of the OntoPortal Federation. The suggested actions combine both.
 
@@ -8,7 +8,7 @@ This audit has two parts: the FAIRness of the ontology, as measured by O'FAIRe, 
 
 | O'FAIRe score | Points | Reachable score | Rank |
 |---|---|---|---|
-| 54 / 100 | 262.75 / 478 | 68.1 % of 386 | 34 of 68 artefacts |
+| 54 / 100 | 262.75 / 478 | 68.1 % of 386 | 33 of 68 artefacts |
 
 ### Where O'FAIRe points are lost
 

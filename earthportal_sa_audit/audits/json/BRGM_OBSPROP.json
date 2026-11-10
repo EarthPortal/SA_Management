@@ -2,15 +2,15 @@
  "acronym": "BRGM_OBSPROP",
  "name": "Observed Properties",
  "kind": "artefact",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/BRGM_OBSPROP",
  "fairness": {
-  "ofaire_score": 47,
-  "points": 227,
+  "ofaire_score": 50,
+  "points": 242,
   "max_points": 478,
-  "reachable_score_pct": 58.8,
+  "reachable_score_pct": 62.7,
   "reachable_max": 386,
-  "rank": 63,
+  "rank": 55,
   "ranked_among": 68,
   "points_lost": [
    {
@@ -42,13 +42,6 @@
     "ofaire_says": "Version URI is absent."
    },
    {
-    "question": "A1Q3",
-    "score": 15,
-    "max": 24,
-    "lost": 9,
-    "ofaire_says": "Ontology and its metadata support 5 negotiation formats. (Ontology is not content-negotiable, Ontology metadata accept the following formats: [application/json, application/xml, text/html, text/plain, application/rdf+xml])"
-   },
-   {
     "question": "F2Q1",
     "score": 8,
     "max": 16,
@@ -75,13 +68,6 @@
     "max": 6,
     "lost": 6,
     "ofaire_says": "The ontology is registered in 0 ontology library.[NCBO BioPortal, AgroPortal, SIFR BioPortal, EBI OLS, Ontobee, OntoHub, AberOWL, LOV, ONKI Ontology Library Service, MMI ORR, ESIP COR, LifeWatch EcoPortal, MatPortal, MedPortal, CISMeF HeTOP, FINTO, ANDC RVA, NVS, GFBIO TS, Loterre, Caliper, Crop Ontology Curation Tool, Planteome][OBO Foundry, Agrisemantics, FAIRsharing, ROMULUS, DAML Ontology Library, Colore, BARTOC, TaxoBank, LusTRE, LOV4IoT, VOCAB OEG, LiveSchema, Protege Ontology Library]"
-   },
-   {
-    "question": "A1Q1",
-    "score": 0,
-    "max": 6,
-    "lost": 6,
-    "ofaire_says": "The ontology provides 0 resolvable identifier."
    },
    {
     "question": "A1Q4",
@@ -1513,10 +1499,9 @@
    "usage": "Optional",
    "portal_attribute": "dct:identifier",
    "questions": [
-    "A1Q1",
     "F1Q2"
    ],
-   "points_share": 17,
+   "points_share": 11,
    "note": "For F1Q2, only a registered DOI gives the 11 points; any other valid URL gives 6."
   },
   {

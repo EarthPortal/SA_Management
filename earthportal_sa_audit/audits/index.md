@@ -1,6 +1,6 @@
 # EarthPortal audits
 
-Snapshot of 2026-10-16. *Mandatory*, *Recommended*, *Optional*: properties of the Metadata Guideline that are filled, out of those that apply. *P1*: empty Mandatory properties; *P2*: empty Recommended properties that cost O'FAIRe points; *P3*: empty Optional properties that cost O'FAIRe points.
+Snapshot of 2026-11-10. *Mandatory*, *Recommended*, *Optional*: properties of the Metadata Guideline that are filled, out of those that apply. *P1*: empty Mandatory properties; *P2*: empty Recommended properties that cost O'FAIRe points; *P3*: empty Optional properties that cost O'FAIRe points.
 
 ## Artefacts (68)
 
@@ -27,7 +27,6 @@ Snapshot of 2026-10-16. *Mandatory*, *Recommended*, *Optional*: properties of th
 | [IGEO](IGEO.md) | French Statistical ontology for geolocation | 57 | 71.4 % | 18/20 | 12/57 | 3/20 | 2 | 29 | 10 |
 | [NVS_L06](NVS_L06.md) | SeaDataNet Platform categories (NVS Platform Categories_L06) | 57 | 71.2 % | 19/20 | 15/57 | 3/20 | 1 | 20 | 9 |
 | [ODATIS](ODATIS.md) | Thésaurus ODATIS | 57 | 71.2 % | 18/20 | 21/57 | 4/20 | 2 | 17 | 7 |
-| [SEWERNET](SEWERNET.md) | Sewer Network Ontology | 57 | 71.0 % | 19/20 | 13/57 | 0/20 | 1 | 31 | 13 |
 | [ENVTHES](ENVTHES.md) | Environmental Thesaurus | 57 | 70.7 % | 20/20 | 13/57 | 2/20 | 0 | 22 | 7 |
 | [TSN](TSN.md) | Territorial Statistical Nomenclature Ontology | 56 | 70.3 % | 18/20 | 11/57 | 2/20 | 2 | 31 | 10 |
 | [GEONAMES](GEONAMES.md) | GeoNames Ontology | 56 | 70.2 % | 20/20 | 18/57 | 4/20 | 0 | 17 | 9 |
@@ -41,6 +40,7 @@ Snapshot of 2026-10-16. *Mandatory*, *Recommended*, *Optional*: properties of th
 | [SEMTS](SEMTS.md) | The Semantic Time Series Ontology | 55 | 68.2 % | 18/20 | 13/57 | 4/20 | 2 | 30 | 10 |
 | [GSP](GSP.md) | OGC GeoSPARQL | 54 | 68.1 % | 18/20 | 11/57 | 2/20 | 2 | 30 | 10 |
 | [BRGM_LTH](BRGM_LTH.md) | Lithology | 54 | 67.6 % | 20/20 | 9/57 | 1/20 | 0 | 34 | 13 |
+| [SEWERNET](SEWERNET.md) | Sewer Network Ontology | 54 | 67.1 % | 19/20 | 13/57 | 0/20 | 1 | 31 | 13 |
 | [ACTRIS_CL](ACTRIS_CL.md) | ACTRIS Controlled List | 54 | 67.1 % | 19/20 | 21/57 | 1/20 | 1 | 16 | 9 |
 | [GEOLTS](GEOLTS.md) | Chronostratigraphy | 54 | 67.0 % | 19/20 | 11/57 | 1/20 | 1 | 33 | 13 |
 | [SSN](SSN.md) | Semantic Sensor Network Ontology | 53 | 66.8 % | 15/20 | 20/57 | 3/20 | 5 | 24 | 13 |
@@ -55,20 +55,20 @@ Snapshot of 2026-10-16. *Mandatory*, *Recommended*, *Optional*: properties of th
 | [CFF](CFF.md) | Climate and Forecast (CF) features | 52 | 64.4 % | 17/20 | 8/57 | 1/20 | 3 | 33 | 11 |
 | [SDNDEV](SDNDEV.md) | SeaDataNet Device Thesaurus | 51 | 64.2 % | 13/20 | 7/57 | 1/20 | 7 | 40 | 15 |
 | [CALATHE](CALATHE.md) | Cadastre and Land Administration Thesaurus | 51 | 63.5 % | 18/20 | 2/57 | 1/20 | 2 | 39 | 13 |
+| [BRGM_UOM](BRGM_UOM.md) | Units of measure | 51 | 63.2 % | 19/20 | 2/57 | 1/20 | 1 | 39 | 13 |
 | [DIVCHRONOSTRAT](DIVCHRONOSTRAT.md) | Chronostratigraphic divisions | 51 | 63.2 % | 19/20 | 2/57 | 1/20 | 1 | 39 | 13 |
 | [DIVGEOCHRONO](DIVGEOCHRONO.md) | Geochronological divisions | 51 | 63.2 % | 19/20 | 4/57 | 1/20 | 1 | 39 | 13 |
+| [GEOLTSBOUND](GEOLTSBOUND.md) | Chronostratigraphical / geochronological boundaries | 51 | 63.2 % | 19/20 | 2/57 | 1/20 | 1 | 39 | 13 |
 | [GEOLUNITTYPE](GEOLUNITTYPE.md) | Geologic Units types | 51 | 63.2 % | 19/20 | 2/57 | 1/20 | 1 | 39 | 13 |
 | [GEMET](GEMET.md) | General Multilingual Environmental Thesaurus | 50 | 62.7 % | 15/20 | 14/57 | 2/20 | 5 | 26 | 13 |
+| [BRGM_OBSPROP](BRGM_OBSPROP.md) | Observed Properties | 50 | 62.7 % | 19/20 | 1/57 | 1/20 | 1 | 40 | 13 |
 | [SF](SF.md) | Simplified Features Geometry | 50 | 62.1 % | 17/20 | 8/57 | 1/20 | 3 | 33 | 11 |
 | [SOSA](SOSA.md) | Sensor, Observation, Sample, and Actuator Ontology | 50 | 62.1 % | 15/20 | 18/57 | 3/20 | 5 | 26 | 13 |
 | [GEO](GEO.md) | WGS84 Geo Positioning | 49 | 61.9 % | 16/20 | 9/57 | 1/20 | 4 | 31 | 11 |
 | [ICOS](ICOS.md) | Integrated Carbon Observation System | 49 | 61.7 % | 19/20 | 4/57 | 0/20 | 1 | 37 | 13 |
-| [GEOLTSBOUND](GEOLTSBOUND.md) | Chronostratigraphical / geochronological boundaries | 49 | 60.9 % | 19/20 | 2/57 | 1/20 | 1 | 39 | 13 |
 | [FORMATER_VOCAB](FORMATER_VOCAB.md) | FormaTerre Thesaurus | 48 | 60.6 % | 17/20 | 7/57 | 1/20 | 3 | 38 | 13 |
-| [BRGM_UOM](BRGM_UOM.md) | Units of measure | 47 | 59.3 % | 19/20 | 2/57 | 1/20 | 1 | 39 | 13 |
 | [SIH_TJDD](SIH_TJDD.md) | SIH - Types de jeu de données | 47 | 59.1 % | 16/20 | 1/57 | 1/20 | 4 | 41 | 13 |
 | [SXT_IR](SXT_IR.md) | Infrastructures de recherche | 47 | 59.1 % | 17/20 | 2/57 | 2/20 | 3 | 40 | 12 |
-| [BRGM_OBSPROP](BRGM_OBSPROP.md) | Observed Properties | 47 | 58.8 % | 19/20 | 1/57 | 1/20 | 1 | 40 | 13 |
 | [SXT_SNO](SXT_SNO.md) | Services Nationaux d'Observation | 47 | 58.3 % | 17/20 | 2/57 | 1/20 | 3 | 40 | 13 |
 | [SXT_CDO](SXT_CDO.md) | Centre de données ODATIS | 44 | 55.7 % | 17/20 | 4/57 | 2/20 | 3 | 39 | 12 |
 | [OSU-R](OSU-R.md) | OSU-Reunion | 43 | 53.9 % | 17/20 | 1/57 | 0/20 | 3 | 41 | 13 |
@@ -81,9 +81,9 @@ Snapshot of 2026-10-16. *Mandatory*, *Recommended*, *Optional*: properties of th
 |---|---|---|---|---|---|---|---|---|---|
 | [OSO-DCAT](OSO-DCAT.md) | OSO - DCAT metadata | 56 | 69.9 % | 19/20 | 11/58 | 2/20 | 1 | 22 | 6 |
 | [TSPA](TSPA.md) | Theia Spatial | 55 | 68.9 % | 20/20 | 10/58 | 2/20 | 0 | 34 | 10 |
-| [TOZ](TOZ.md) | Theia-OZCAR Thesaurus | 53 | 66.1 % | 20/20 | 7/58 | 4/20 | 0 | 35 | 9 |
+| [TOZ](TOZ.md) | Theia-OZCAR Thesaurus | 54 | 67.9 % | 20/20 | 7/58 | 4/20 | 0 | 35 | 9 |
 | [OSO-SHACL](OSO-SHACL.md) | OSO - SHACL (Shapes Constraint Language) | 52 | 65.5 % | 17/20 | 7/58 | 2/20 | 3 | 35 | 9 |
-| [EASYDATA_KW](EASYDATA_KW.md) | Vocabulaire des mots clefs | 51 | 63.7 % | 19/20 | 6/58 | 2/20 | 1 | 34 | 10 |
+| [EASYDATA_KW](EASYDATA_KW.md) | Vocabulaire des mots clefs | 52 | 64.5 % | 19/20 | 6/58 | 2/20 | 1 | 34 | 10 |
 | [EASYDATA_THEMES](EASYDATA_THEMES.md) | Vocabulaire thématique | 47 | 58.3 % | 18/20 | 4/58 | 1/20 | 2 | 38 | 11 |
 | [OSO-VOID](OSO-VOID.md) | OSO - VoID description | 46 | 58.0 % | 17/20 | 6/58 | 1/20 | 3 | 36 | 11 |
 | [FMT_PTF](FMT_PTF.md) | FormaTerre Platforms | 46 | 57.8 % | 18/20 | 4/58 | 2/20 | 2 | 36 | 10 |

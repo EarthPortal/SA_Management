@@ -2,13 +2,13 @@
  "acronym": "TOZ",
  "name": "Theia-OZCAR Thesaurus",
  "kind": "view",
- "snapshot": "2026-10-16",
+ "snapshot": "2026-11-10",
  "portal_page": "https://earthportal.eu/ontologies/TOZ",
  "fairness": {
-  "ofaire_score": 53,
-  "points": 255,
+  "ofaire_score": 54,
+  "points": 262,
   "max_points": 478,
-  "reachable_score_pct": 66.1,
+  "reachable_score_pct": 67.9,
   "reachable_max": 386,
   "rank": null,
   "ranked_among": null,
@@ -40,13 +40,6 @@
     "max": 15,
     "lost": 8,
     "ofaire_says": "Ontology usage guidelines or copyright holder is absent."
-   },
-   {
-    "question": "R1.1Q1",
-    "score": 8,
-    "max": 15,
-    "lost": 7,
-    "ofaire_says": "Ontology license present and valid but not resolvable."
    },
    {
     "question": "F2Q1",
