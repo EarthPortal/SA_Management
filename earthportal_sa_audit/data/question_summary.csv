@@ -9,8 +9,8 @@ R1.2Q1,Reusable,8.0,34.6,19,356.0,Does the ontology provide information about th
 A1Q4,Accessible,6.0,13.2,59,354.0,Are the ontology and its metadata accessible through another standard protocol such as SPARQL?
 R1.2Q6,Reusable,6.0,13.2,51,354.0,Are the methodology and tools used to build the ontology documented?
 R1.2Q3,Reusable,6.0,15.7,44,344.0,Are the accrual methods and policy of the ontology documented?
+A1Q3,Accessible,24.0,79.4,0,336.0,"Do the ontology URI and the external metadata URI (if the metadata are not included in the ontology file), support content negotiation?"
 F4Q1,Findable,6.0,20.6,32,324.0,Is the ontology registered in multiple ontology 'libraries'?
-A1Q3,Accessible,24.0,80.1,0,324.0,"Do the ontology URI and the external metadata URI (if the metadata are not included in the ontology file), support content negotiation?"
 I2Q4,Interoperable,5.0,8.8,62,310.0,Is the ontology aligned to other FAIR vocabularies?
 R1.1Q1,Reusable,15.0,71.8,15,288.0,"Is the ontology license clearly specified, with an URI that is resolvable and supports content negotiation?"
 I1Q5,Interoperable,4.0,0.0,68,272.0,Is the availability of other syntaxes/formats informed?
@@ -21,7 +21,7 @@ I2Q7,Interoperable,5.0,39.6,31,205.48000000000002,Does the ontology reuse standa
 R1.1Q2,Reusable,7.0,57.8,0,201.0,Are the ontology access rights specified and permissions documented?
 F2Q1,Findable,16.0,81.6,0,200.0,Is the ontology described with additional 'MIRO must' metadata properties?
 I1Q4,Interoperable,5.0,45.6,37,185.0,Is the formality level of the ontology informed?
-A1Q1,Accessible,6.0,63.2,25,150.0,"Does the ontology URI and other identifiers, if exist, resolve to the ontology?"
+A1Q1,Accessible,6.0,60.3,27,162.0,"Does the ontology URI and other identifiers, if exist, resolve to the ontology?"
 I1Q1,Interoperable,18.0,88.7,1,138.0,What is the representation language used for ontology and ontology metadata?
 R1.2Q8,Reusable,2.0,20.6,54,108.0,Does an ontology inform about its funding organization?
 I2Q6,Interoperable,2.0,27.9,49,98.0,Does the ontology provide metadata information about relation to or influence of other FAIR vocabularies?
