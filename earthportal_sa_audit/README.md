@@ -9,22 +9,50 @@ The setup (virtual environment, `requirements.txt`, `.env` with your API key) is
 
 ## How to run it
 
-Open the notebooks in VS Code, choose the kernel **Data Terra (.venv)**, and run them in order. Each
-notebook reads only the files written by the ones before it.
+Open the notebooks in VS Code, choose the kernel **Data Terra (.venv)** (step 4 of the
+[root README](../README.md)), and run them in order. Each notebook reads only the files written by the
+ones before it.
 
 | Notebook | What it does | What it saves |
 |---|---|---|
 | `01_collect_data.ipynb` | Downloads the catalogue, the portal's metadata schema, the latest submission of every ontology and its O'FAIRe assessment | `data/raw/<date>/` |
-| `02_ofaire_scores.ipynb` | Builds one table: one row per ontology, its overall scores and its points on each of the 61 O'FAIRe questions | `data/ofaire_scores_<date>.csv`, `data/ofaire_questions_<date>.csv` |
-| `03_eda.ipynb` | Explores the scores of the artefacts: where the catalogue loses points, profiling report, plots | `reports/eda_<date>.html`, `data/question_summary_<date>.csv` |
-| `04_guideline_vs_ofaire.ipynb` | Turns the cheatsheet of the Metadata Guidelines into a machine-readable table, finds where EarthPortal stores each attribute, and links each O'FAIRe question to the attributes it reads | `mapping/guideline_profile.csv` (and `.json`), `mapping/ofaire_vs_guideline.csv` |
-| `05_audits.ipynb` | Writes one audit per ontology in two parts: its FAIRness (O'FAIRe scores, questions where it loses points) and its compliance with the guideline (status of the 99 properties), with the suggested actions and who can take them | `audits/json/<ACRONYM>.json` (the data), `audits/<ACRONYM>.md` (the page), `audits/index.md`, `data/guideline_status_<date>.csv`, `data/actions_<date>.csv` |
+| `02_ofaire_scores.ipynb` | Builds one table: one row per ontology, its overall scores and its points on each of the 61 O'FAIRe questions | `data/ofaire_scores_<date>.csv`, `data/ofaire_questions.csv` |
+| `03_eda.ipynb` | Explores the scores of the artefacts: where the catalogue loses points, profiling report, plots, duplicated artefacts | `data/question_summary.csv`, `reports/eda_<date>.html`, four figures in `figures/` |
+| `04_guideline_vs_ofaire.ipynb` | Turns the cheatsheet of the Metadata Guidelines into a machine-readable table, finds where the portal stores each attribute, and links each O'FAIRe question to the attributes it reads | `mapping/guideline_profile.csv` (and `.json`), `mapping/ofaire_vs_guideline.csv` |
+| `05_audits.ipynb` | Writes one audit per ontology in two parts: its FAIRness (O'FAIRe scores, questions where it loses points) and its compliance with the guideline (status of the 99 properties), with the suggested actions and who can take them | `audits/json/<ACRONYM>.json` (the data), `audits/<ACRONYM>.md` (the page), `audits/index.md`, `data/guideline_status.csv`, `data/actions.csv`, two figures in `figures/` |
+
+**Figures.** Notebooks 03 and 05 save their figures as PDF in `figures/`. The slides in `docs/` use these
+files as they are, so every figure shown in a presentation comes from the same data as the tables.
 
 Only notebook 01 needs the network and the API key. To work again on an older snapshot, write its
-date in `.env` (for example `RUN_DATE=2026-09-28`) and run notebooks 02 to 05.
+date in `.env` (for example `RUN_DATE=2026-10-16`) and run notebooks 02 to 05.
 
-`config.py` is a small script shared by the notebooks: it reads `.env` and defines where each file
-goes. The `reference/` folder holds four short tables used by the notebooks:
+**Which files keep a date?** The raw data (`data/raw/<date>/`, not committed) and the scores
+(`data/ofaire_scores_<date>.csv`, small, one file per snapshot, to follow the catalogue over time).
+Every other output describes the **latest snapshot only** and is replaced at each run: the tables, the
+audits, the figures, and the profiling report (`reports/eda_<date>.html`: notebook 03 removes the report
+of the previous run, so the folder always holds one report, whose name gives its date). The snapshot
+date of the audits is written in `audits/index.md`, at the top of each audit page and in the key
+`snapshot` of each JSON file. Older versions stay in the Git history and in
+the Zenodo archive of each release. `data/ofaire_questions.csv` does not depend on the snapshot at
+all: it is the same table of the 61 questions every time.
+
+To run the notebooks without opening them, for example on a server:
+
+```bash
+cd earthportal_sa_audit
+for nb in 0[1-5]_*.ipynb; do
+  jupyter nbconvert --to notebook --execute --inplace "$nb"
+done
+```
+
+This needs `jupyter nbconvert` (`pip install jupyterlab` installs it; it is not in `requirements.txt`)
+and the registered kernel `data-terra-venv` (step 4 of the [root README](../README.md)), or add
+`--ExecutePreprocessor.kernel_name=python3` with the virtual environment activated.
+
+`config.py` is a small script shared by the notebooks: it reads `.env` and defines the portal
+addresses and where each file goes. It works for EarthPortal by default; for another OntoPortal
+portal, see [`ADAPTING.md`](../ADAPTING.md). The `reference/` folder holds four short tables used by the notebooks:
 
 - `ofaire_properties.config.json`: the fields O'FAIRe reads, from the O'FAIRe source code
   ([agroportal/fairness](https://github.com/agroportal/fairness), commit `24def6b`);
@@ -59,19 +87,24 @@ The cheatsheet itself is read from [`docs/`](../docs).
   points, because O'FAIRe has its own rule for each question: for example, I1Q5 needs *Has format* and
   *Is format of* together, one attribute is enough for I2Q6, and F1Q2 gives its full 11 points only to
   a DOI that the DOI service knows (any other valid URL gives 6).
-- **Who fixes it.** *author* (in the file or the submission form), *curator* (the EarthPortal team: administrators, curation), or *portal* (values it generates
+- **Who fixes it.** *author* (in the file or the submission form), *curator* (the portal team: administrators, curation), or *portal* (values it generates
   itself). This split is a proposal, to be validated ...
 
-## First results (snapshot of 28 September 2026)
+## Latest results (snapshot of 10 November 2026)
 
-- 91 public entries: 70 artefacts, 16 views, 5 records without content.
-- Artefacts: O'FAIRe score median 53.5 / 100; reachable score median about 67 %, from 49.5 % to
-  93.9 % (OSO is first).
-- The catalogue loses most points on F1Q2 (external identifier or DOI: 66 of 70 artefacts score 0),
-  F4Q2 (registration in other repositories), R1.3Q1 (projects or endorsements) and F1Q4 (version IRI).
-- Of the 99 attributes of the cheatsheet, 26 are stored by EarthPortal under another property name.
-- Mandatory attributes most often empty: Modification date (28 artefacts), Location (26),
-  Creator (24), Categories (20), License (16).
+- 92 public entries: 68 artefacts, 19 views, 5 records without content.
+- Artefacts: O'FAIRe score median 54 / 100; reachable score median about 67 %, from 49.5 % to
+  94.4 % (OSO is first).
+- The catalogue loses most points on F1Q2 (external identifier or DOI: 65 of 68 artefacts score 0),
+  F4Q2 (registration in other repositories), R1.3Q1 (projects or endorsements: 50 artefacts score 0)
+  and F1Q4 (version IRI).
+- Of the 99 attributes of the cheatsheet, 72 are found under the same name, 21 through a mapping and
+  6 by hand (`reference/manual_links.csv`); 26 are stored by EarthPortal under another property name.
+- Mandatory attributes most often empty: Modification date (27 artefacts), Location (24),
+  Creator (23), Categories (20), License (15).
+
+The results of earlier snapshots (28 September, 2, 6, 8 and 16 October 2026) are in the Git history
+and in the earlier releases on Zenodo.
 
 ## The JSON audits
 
