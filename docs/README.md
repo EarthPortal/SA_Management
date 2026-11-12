@@ -11,21 +11,21 @@ This folder holds the reports and slides of my internship at Data Terra (CNRS), 
 | Report 4: O'FAIRe Java implementation | How the Java code of O'FAIRe computes each question, and where it works differently from the configuration files. | [PDF](build/emmanuel_dataTerra_Report4-OFAIRe-Java-Implementation.pdf) |
 | Report 5: cheatsheet vs EarthPortal | Two observations on the guidelines and the EarthPortal schema: some properties are stored under another name, and some fields expected by the portal are not in the guidelines. | [PDF](build/emmanuel_dataTerra_Report5-Cheatsheet-vs-EarthPortal.pdf) |
 | Report 6: curation interface | A proposal for a user interface for the curation of EarthPortal, built on the JSON audits (design, not code). | [PDF](build/emmanuel_dataTerra_Report6-Curation-Interface.pdf) |
-| Slides, 9 October 2026 | *Monitoring and improving the FAIRness of EarthPortal semantic artefacts*: first results, presented at the Data Terra team meeting. | [PDF](build/emmanuel_dataTerra_Slides_2026-10-09.pdf) |
-| Slides, 13 November 2026 | *From the Metadata Guidelines to curation actions*: the pipeline and the results of 10 November 2026, presented to the OntoPortal Federation (Editorial Board and coordination group). | [PDF](build/emmanuel_dataTerra_Slides_2026-11-13_EditorialBoard.pdf) |
+| Slides, 9 October 2026 | *Monitoring and improving the FAIRness of EarthPortal semantic artefacts*: first results, presented at the Data Terra team meeting. On Zenodo: [10.5281/zenodo.23391528](https://doi.org/10.5281/zenodo.23391528). | [PDF](build/emmanuel_dataTerra_Slides_2026-10-09.pdf) |
+| Slides, 13 November 2026 (TIB) | *EarthPortal: curation and FAIRness*: the methodology, the results and the proposals in 10 minutes, presented at the TIB and Data Terra meeting. On Zenodo: [10.5281/zenodo.24132003](https://doi.org/10.5281/zenodo.24132003). | [PDF](build/emmanuel_dataTerra_Slides_2026-11-13_TIB.pdf) |
+| Slides, 13 November 2026 (OntoPortal Federation) | *From the Metadata Guidelines to curation actions*: the pipeline and the results of 10 November 2026, presented to the OntoPortal Federation (Editorial Board and coordination group). On Zenodo: [10.5281/zenodo.24145898](https://doi.org/10.5281/zenodo.24145898). | [PDF](build/emmanuel_dataTerra_Slides_2026-11-13_EditorialBoard.pdf) |
 
-The slides are also archived on Zenodo, one version per presentation:
-[10.5281/zenodo.23391527](https://doi.org/10.5281/zenodo.23391527). The slides of the TIB and Data
-Terra meeting of 13 November 2026 are only there, as their own version
-([10.5281/zenodo.24132003](https://doi.org/10.5281/zenodo.24132003)).
+The slides are also archived on Zenodo, one version per presentation, under the concept DOI
+[10.5281/zenodo.23391527](https://doi.org/10.5281/zenodo.23391527).
 
 ## Figures
 
 - `Figures/`: the figures of the reports and of the slides of 9 October, and the logos of CNRS,
   Data Terra and SISSA.
-- `Figures/slides_2026-11-13/`: for the slides of 13 November, the screenshots of the audits taken
-  from the snapshot of 10 November 2026, the logos, the Earth picture and the QR codes.
-- The charts of the slides of 13 November are not copied here: they are read from
+- `Figures/slides_2026-11-13/`: for the two decks of 13 November, the screenshots of the audits of
+  STY and SWEET and of the index (taken from the snapshot of 10 November 2026), a screenshot of notebook 04
+  (who fills which field in), the logos, the Earth picture and the QR codes.
+- The charts of the OntoPortal Federation deck are not copied here: they are read from
   `../earthportal_sa_audit/figures/`, where notebooks 03 and 05 save them, so that each chart comes
   from the same data as the tables.
 
@@ -44,5 +44,5 @@ latexmk emmanuel_dataTerra_Report5-Cheatsheet-vs-EarthPortal.tex
 
 - the reports: `dataterra-report.sty` and `DataTerra_internship.bib`, which are in this folder;
 - the slides of 9 October: the Beamer theme `metropolis`;
-- the slides of 13 November: the packages `lato` (the font; without it, pdfLaTeX uses Helvetica) and
-  `qrcode`, and the figures of `../earthportal_sa_audit/figures/`.
+- the two decks of 13 November: the packages `lato` (the font; without it, pdfLaTeX uses Helvetica)
+  and `qrcode`; the OntoPortal Federation deck also needs the figures of `../earthportal_sa_audit/figures/`.
