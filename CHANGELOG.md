@@ -3,7 +3,7 @@
 Each release is archived on Zenodo with its own DOI; the concept DOI
 [10.5281/zenodo.23417011](https://doi.org/10.5281/zenodo.23417011) always points to the latest one.
 
-## v1.0.0 (11 November 2026)
+## v1.0.0 (12 November 2026)
 
 First stable version. The file names of the outputs change, hence the new major version.
 
